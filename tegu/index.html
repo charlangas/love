@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York - Tegu Live!</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+			
+			
+			
+	$(function() {
+
+        // Find all YouTube videos
+        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+            // The element that is fluid width
+            $fluidEl = $("#fluidVideo");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+
+                $(this)
+                        .data('aspectRatio', this.height / this.width)
+
+                        // and remove the hard coded width/height
+                        .removeAttr('height')
+                        .removeAttr('width');
+
+        });
+
+        // When the window is resized
+        // (You'll probably want to debounce this)
+        $(window).resize(function() {
+
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+
+                        var $el = $(this);
+                        $el
+                                .width(newWidth)
+                                .height(newWidth * $el.data('aspectRatio'));
+
+                });
+
+        // Kick off one resize to fix all videos on page load
+        }).resize();
+
+	});
+});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageTeguSK">
+			<div id="topLinkSK"><a href="http://live.tegu.com/" target="_blank">See it live ></a></div>
+		</div>
+	</header>
+
+  <div id="container" class="container">
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About Tegu Live</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/33672301?byline=0&amp;portrait=0&amp;color=f06924" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+					
+			<div class="one-third column alpha">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK"/>
+					<a rel="gallery" title="Tegu" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+			</div>
+		
+			<div class="one-third column omega">
+				<div class="frameLargeSK gallery">
+					<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
+					<a rel="gallery" title="Tegu" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
+				<a href="http://c2719532.cdn.cloudfiles.rackspacecloud.com/the_tegu_story.pdf"><img class="largeFrameOverlaySK" src="../images/overlayLargeSKteguPDF.png"></a>
+			</div>
+
+			<p class="tucked"><br /><strong>Helping Honduras, one block at a time</strong><br />Brothers Chris and Will Haughey founded Tegu with the vision of making a difference in the lives and economy of the people of Honduras, where 65% of the population lives below the poverty line. They invented Tegu blocks, magnetic wooden building blocks that inspire creative, open-ended play.  Tegu blocks are responsibly manufactured with the company's commitment to sustainability and education in mind</p>
+
+			<p class="tucked"><strong>Collaborative play, social shopping</strong><br />In November 2010 Tegu launched "Tegu Live", bringing viewers an interactive playground where they could tangibly experience Tegu's magnetic wooden blocks from their living room.  Daily deals offered on the homepage gave shoppers the opportunity to earn free shipping and Tegu product bundles by sharing their purchase via Twitter and Facebook.</p>
+
+			<p class="tucked"><strong>We built 575 block creations</strong><br />How do you build the Large Hadron Collider? A cupcake? A unicorn fighting a narwhal? The Tegu Genius&ndash;Tegu's master builder&ndash;hosted a daily, three-hour long live show on tegu.com where viewers could place requests via Twitter and watch the Tegu Genius bring them to life in real-time.</p>
+			
+		</div>	   
+				 
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.coolhunting.com/design/tegu-tints.php">
+						<img src="images/logo_coolhunting.png" alt="logo_coolhunting" width="140" height="17" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Demonstrating just how innovative their blocks really are, Tegu recently began live-streaming building sessions online.</span>&nbsp;&ndash;&nbsp;<a href="http://www.coolhunting.com/design/tegu-tints.php" class="source" target="_blank">coolhunting.com</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.neatorama.com/2010/11/12/tegu-block-guy-builds-your-requests-live/">
+						<img src="images/logo_neatorama.png" alt="logo_neatorama" width="140" height="20" />
+					</a>
+				</div>
+				<div class="seven columns omega"><span class="quote">span class="quote">I just stumbled across this on Twitter and am utterly fascinated.</span>&nbsp;&ndash;&nbsp;<a href="http://www.neatorama.com/2010/11/12/tegu-block-guy-builds-your-requests-live/" class="source" target="_blank">neatorama.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.notcot.com/archives/2010/11/tegu-live.php">
+						<img src="images/logo_notcot.png" alt="logo_notcot" width="140" height="28" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">The Tegu guy made me a castle! With a draw bridge! Out of magnetic wood blocks! LIVE! That was my silly excitement this morning as they let me put in the first request as Tegu LIVE! went... well, live...</span>&nbsp;&ndash;&nbsp;<a href="http://www.notcot.com/archives/2010/11/tegu-live.php" class="source" target="_blank">notcot.com</a></div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://celebritybabies.people.com/2010/11/11/tegu-launches-cool-online-block-building-service/">
+						<img src="images/logo_people.png" alt="logo_people" width="140" height="59" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">We were already in love with Tegu's magnetic wooden blocks but now we're swooning!</span>&nbsp;&ndash;&nbsp;<a href="http://celebritybabies.people.com/2010/11/11/tegu-launches-cool-online-block-building-service/" class="source" target="_blank">people.com</a></div>
+			</div>			
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://blogs.babble.com/family-style/2010/11/10/if-you-dream-it-tegu-will-build-it/">
+						<img src="images/logo_babble.png" alt="logo_babble" width="140" height="57" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">Start tweeting your requests, order your blocks now and start an amazing journey of the imagination that will take your kids and you anywhere they want to go, and you won't even need batteries to get there.</span>&nbsp;&ndash;&nbsp;<a href="http://blogs.babble.com/family-style/2010/11/10/if-you-dream-it-tegu-will-build-it/" class="source" target="_blank">babble.com</a></div>
+			</div>			
+			
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_sarann.png" alt="profile_sarann" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@sarann</strong><br />@Tegu man, I think I want to marry you. Can you build a set of wedding bands? #TeguLive</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_mychaos.png" alt="profile_mychaos" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@MyChaos</strong><br />I cannot believe he's still building!! #TeguLive! A friend's over with her kids, and they are addicted now too. Hee @Tegu</div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_courtneystearns.png" alt="profile_courtneystearns" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@courtneystearns</strong><br />@Tegu That helicopter was a gem. This Ferris Wheel? A diamond.</div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_14mindy14.png" alt="profile_14mindy14" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@14mindy14</strong><br />@tegu you are so good you made me get a twitter account so I could make my request! - #tegu live on http://www.tegu.com</div>
+			</div>
+			
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">208</span> days of school funded and <span class="orange">696</span> trees planted in Honduras. <span class="orange">108,657</span> visitors watched the Tegu Genius for <span class="orange">935,322</span> minutes, resulting in <span class="orange">15,553,308</span> total earned media impressions, including <span class="orange">1,489</span> Twitter mentions and retweets, a <span class="orange">38%</span> increase in followers and <span class="orange">98%</span> more Facebook fans who responded with <span class="orange">114%</span> more feedback. <span class="orange"><a href="http://www.youtube.com/watch?v=tdOp28ucgps" target=_blank>And a partridge in a pear tree.</a></span>
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>

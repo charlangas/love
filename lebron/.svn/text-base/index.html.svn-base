@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York -  NY&lt;3Lebron!</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+			
+			
+			
+	$(function() {
+
+        // Find all YouTube videos
+        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+            // The element that is fluid width
+            $fluidEl = $("#fluidVideo");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+
+                $(this)
+                        .data('aspectRatio', this.height / this.width)
+
+                        // and remove the hard coded width/height
+                        .removeAttr('height')
+                        .removeAttr('width');
+
+        });
+
+        // When the window is resized
+        // (You'll probably want to debounce this)
+        $(window).resize(function() {
+
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+
+                        var $el = $(this);
+                        $el
+                                .width(newWidth)
+                                .height(newWidth * $el.data('aspectRatio'));
+
+                });
+
+        // Kick off one resize to fix all videos on page load
+        }).resize();
+
+	});
+});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageLebronSK"></div>
+	</header>
+
+  <div id="container" class="container">
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About NY&lt;3Lebron!</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/28721806?title=0&amp;byline=0&amp;portrait=0" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+					
+			<div class="one-third column alpha">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK"/>
+					<a rel="gallery" title="NY&lt;3Lebron!" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+			</div>
+		
+			<div class="one-third column omega">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
+					<a rel="gallery" title="NY&lt;3Lebron!" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="one-third column omega">
+
+			<p class="tucked"><br /><strong>Two boys on a mission</strong><br />When the NBA's Most Valuable Player became a free agent on July 1, 2010, his future became the subject of intense debate among basketball fans nationwide, all of whom wanted LeBron James to join their team. POKE New York, along with a group of collaborators including the Berger Shop, was inspired to help 12-year old twins Jason and Corey Grant (who live and play basketball in the Bronx) create a grass roots youth movement hell bent on getting LeBron to the Knicks.
+			</p>
+
+			<p class="tucked"><strong>A brand, a button, a movement</strong><br />A simple, smart and social idea&mdash;NY&lt;3LeBron&mdash;was co-created with Jason and Corey to give the youth of New York a way to show LeBron all the love from our great city. The movement was driven by a physical and digital device, the LeBron Button&mdash;an arduino-powered basketball button that could be pushed to submit LeBron love (and votes) from 15 iconic locations (like the West 4th Street Courts) around the city, which automatically updated the companion website, in real time.
+			</p>
+			
+			<p class="tucked"><strong>Drafting more players onto the team</strong><br />To broaden the impact and ensure that everyone's love was sharable, Knicks fans who couldn't make it in person to vote at a LeBron Button could still vote online at www.nyheartlebron.com, or send out a tweet with the #NY&lt;3LEBRON hashtag, both of which also registered a vote. Fans could also join Jason and Corey on their quest to bring LeBron to the New York Knicks by voting via their Facebook Fan Page, or by watching and sharing the twins' YouTube video.
+			</p>
+			
+		</div>	   
+				 
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.notcot.com/archives/2010/06/ny-3-lebron-buttons-irl-twitte.php">
+						<img src="images/logo_notcot.png" alt="logo_notcot" width="140" height="28" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Leave it to Poke NY to enable 12 year old twins, Jason and Corey Grant, who desperately want LeBron James to join the Knicks. The result? A playful on and offline campaign that lives at nyHeartLeBron.com</span>&nbsp;&ndash;&nbsp;<a href="http://www.notcot.com/archives/2010/06/ny-3-lebron-buttons-irl-twitte.php" class="source" target="_blank">notcot.com</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://content.usatoday.com/communities/gameon/post/2010/06/lebron-james-getting-full-court-press-from-12-year-old-twins/1">
+						<img src="images/logo_usatoday.png" alt="logo_usatoday" width="140" height="77" />
+					</a>
+				</div>
+				<div class="seven columns omega"><span class="quote">Forget all the celebrities that the New York Knicks are planning to trot out to sway LeBron James to come to the city. The team should just use Jason and Corey Grant.</span>&nbsp;&ndash;&nbsp;<a href="http://content.usatoday.com/communities/gameon/post/2010/06/lebron-james-getting-full-court-press-from-12-year-old-twins/1" class="source" target="_blank">usatoday.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://nymag.com/daily/sports/2010/06/for_what_its_worth_lebron_woul.html">
+						<img src="images/logo_nymag.png" alt="logo_nymag" width="140" height="31" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">It's been relatively quiet on the LeBron front lately &ndash; unless you count recent campaigns to bring him here organized by a moving company and a couple of hopeful 12-year-olds</span>&nbsp;&ndash;&nbsp;<a href="http://nymag.com/daily/sports/2010/06/for_what_its_worth_lebron_woul.html" class="source" target="_blank">nymag.com</a></div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.nydailynews.com/ny_local/2010/06/16/2010-06-16_fullcourt_press_by_twins_to_land_lebron.html">
+						<img src="images/logo_nydailynews.png" alt="logo_nydailynews" width="140" height="21" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">These twins are putting double pressure on LeBron James</span>&nbsp;&ndash;&nbsp;<a href="http://www.nydailynews.com/ny_local/2010/06/16/2010-06-16_fullcourt_press_by_twins_to_land_lebron.html" class="source" target="_blank">nydailynews.com</a></div>
+			</div>			
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.sikids.com/blogs/2010/06/17/nyc-hearts-lebron">
+						<img src="images/logo_sikids.png" alt="logo_sikids" width="140" height="24" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">#NY&lt;3LEBRON movement... has grown like wildfire</span>&nbsp;&ndash;&nbsp;<a href="http://www.sikids.com/blogs/2010/06/17/nyc-hearts-lebron" class="source" target="_blank">sikids.com</a></div>
+			</div>			
+					
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">15 </span>buttons, <span class="orange">350 </span> shirts and <span class="orange">1 </span>hashtag generated <span class="orange">3,850,506</span> unique votes, not to mention <span class="orange">a boatload</span> of coverage in <span class="orange">14</span> major media publications.
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>

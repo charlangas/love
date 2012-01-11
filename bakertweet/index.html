@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York - BakerTweet!</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+			
+			
+			
+	$(function() {
+
+        // Find all YouTube videos
+        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+            // The element that is fluid width
+            $fluidEl = $("#fluidVideo");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+
+                $(this)
+                        .data('aspectRatio', this.height / this.width)
+
+                        // and remove the hard coded width/height
+                        .removeAttr('height')
+                        .removeAttr('width');
+
+        });
+
+        // When the window is resized
+        // (You'll probably want to debounce this)
+        $(window).resize(function() {
+
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+
+                        var $el = $(this);
+                        $el
+                                .width(newWidth)
+                                .height(newWidth * $el.data('aspectRatio'));
+
+                });
+
+        // Kick off one resize to fix all videos on page load
+        }).resize();
+
+	});
+});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageBakerTweetSK">
+			<div id="topLinkSK"><a href="http://www.bakertweet.com/" target="_blank">See it live ></a></div>
+		</div>
+	</header>
+
+  <div id="container" class="container">
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About BakerTweet</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/31806440?byline=0&amp;portrait=0&amp;color=ea531c" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+					
+			<div class="one-third column alpha">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK"/>
+					<a rel="gallery" title="BakerTweet" href="images/large/bakertweet.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+			</div>
+		
+			<div class="one-third column omega">
+				<div class="frameLargeSK gallery">
+					<img src="images//medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK" />
+					<a rel="gallery" title="BakerTweet" href="images/large/albion.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
+				<a href="http://www.bakertweet.com/"><img class="largeFrameOverlaySK" src="../images/overlayLargeSKbakertweet.png"></a>
+			</div>
+
+			<p class="tucked"><br /><strong>Fresh out of the oven</strong><br />When a new bakery opened across the street from the offices of POKE London, perhaps selfishly, we wanted a way to get the freshest baked stuff first. We built a wall-mounted, Wi-Fi device with a large, friendly dial for doughy hands. It had a bespoke Arduino circuit board and hygienic wipe-clean controls that could announce the arrival of fresh-baked goods on Twitter. 
+			</p>
+
+			<p class="tucked"><strong>Easy as pie</strong><br />BakerTweet allows businesses to use Twitter to communicate in real-time about offers, pricing and stock from a device that can withstand kitchen peril and is much simpler to operate than a laptop or a mobile. We designed the CMS so even the tech-averse could edit the tweets and we trained the staff up, so they didn't need us after launch. It solved a simple problem for bakers and customers, making them both happier. The first BakerTweet was installed at the Albion Cafe, and you can check out what's baking by following <a href="http://www.twitter.com/albionsoven" class="orange" target="_blank">@albionsoven</a> on Twitter.
+			</p>
+			
+		</div>	   
+				 
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://creativity-online.com/work/albion-cafe-baker-tweet/15553">
+						<img src="images/logo_creativity.png" alt="logo_creativity" width="140" height="86" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">POKE built a Twitter system that allows bakers to twitter what's coming fresh out of their ovens &nbsp;&ndash;&nbsp;and communicate with their customers in real time. The setup uses arduino technology to enable tweets via a dial and button system, instead of by mobile.</span>&nbsp;&ndash;&nbsp;<a href="http://creativity-online.com/work/albion-cafe-baker-tweet/15553" class="source" target="_blank">creativity-online.com</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.engadget.com/2009/04/03/bakertweet-the-arduino-based-pastry-early-warning-system/">
+						<img src="images/logo_engadget.png" alt="logo_engadget" width="140" height="44" />
+					</a>
+				</div>
+				<div class="seven columns omega"><span class="quote">BakerTweet, the Arduino-based pastry early warning system.
+				</span>&nbsp;&ndash;&nbsp;<a href="http://www.engadget.com/2009/04/03/bakertweet-the-arduino-based-pastry-early-warning-system/" class="source" target="_blank">engadget.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.core77.com/blog/technology/bakertweet_insider_tips_from_your_local_bakery_13082.asp">
+						<img src="images/logo_core77.png" alt="logo_core77" width="140" height="38" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">BakerTweet&nbsp;&ndash;&nbsp;Insider tips from your local bakery.
+				</span>&nbsp;&ndash;&nbsp;<a href="http://www.core77.com/blog/technology/bakertweet_insider_tips_from_your_local_bakery_13082.asp" class="source" target="_blank">core77.com</a></div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.wired.com/gadgetlab/2009/04/baker-tweet-giv/">
+						<img src="images/logo_wired.png" alt="logo_wired" width="140" height="29" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">I so wanted to be cynical about the BakerTweet. I wanted to put it in the box with the applications which tell you about the weather. You know, the same weather you could see by looking out the window. But the more I read, the smarter the BakerTweet looks.</span>&nbsp;&ndash;&nbsp;<a href="http://www.wired.com/gadgetlab/2009/04/baker-tweet-giv/" class="source" target="_blank">wired.com</a></div>
+			</div>			
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.guardian.co.uk/media/pda/2009/apr/03/twitter-marketingandpr">
+						<img src="images/logo_guardian.png" alt="logo_guardian" width="140" height="21" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">BakerTweet gives geeks fresh oven updates in 140 characters.
+				</span>&nbsp;&ndash;&nbsp;<a href="http://www.guardian.co.uk/media/pda/2009/apr/03/twitter-marketingandpr" class="source" target="_blank">guardian.co.uk</a></div>
+			</div>			
+			
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_josephingram.png" alt="profile_josephingram" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@josephingram</strong><br />Never miss another warm baguette! Baker Tweet allows Albion in London to tweet what's fresh with the click of a button <a href="http://t.co/aSTsoH5">http://t.co/aSTsoH5</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/prifle_profbruce.png" alt="prifle_profbruce" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@ProfBruce</strong><br />BakerTweet tweets to followers when cookies r done. Physical mktg tech, brand new/very cool.</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_palmer.png" alt="profile_palmer" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@palmer_o_O</strong><br />This will always be classic genius - BakerTweet</div>
+			</div>
+			
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				Generated over <span class="orange">$1,300,000</span> worth of media, <span class="orange">2,200</span> followers tuning in to check for fresh-baked goods <a href="http://www.twitter.com/albionsoven" class="orange">@AlbionsOven</a>, <span class="orange">1,152 tweets</span>, and after the BakerTweet launched the Albion Cafe rose to <span class="orange">#2</span> in Google under the keyword search "<span class="orange">fresh bread London.</span>"
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>

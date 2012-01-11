@@ -1,0 +1,269 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>POKE New York - If I Can Dream</title>
+  <meta name="description" content="">
+  <meta name="author" content="POKE New York">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="../css/style.css?v=2">
+  <link rel="stylesheet" href="../css/960.css?v=2">
+  <link rel="stylesheet" href="../css/webbys.css?v=2">
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/
+		jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<link rel="stylesheet" href="../css/fancybox.css" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   jQuery calls for Fancybox
+			*/
+			
+		$("#paperPrototypes").click(function() {
+	        $.fancybox([
+	            'http://farm5.static.flickr.com/4041/4554991176_d235bf2fe7_z_d.jpg',
+	            'http://farm4.static.flickr.com/3171/4554381895_20d4e313ed_z_d.jpg',
+	            'http://farm4.static.flickr.com/3584/4554995642_d6b18ce4dc_z_d.jpg',
+	            'http://farm5.static.flickr.com/4014/4555014640_5642bde7ed_z_d.jpg',
+	            'http://farm4.static.flickr.com/3443/4554996722_8686990921_z_d.jpg',
+	            'http://farm4.static.flickr.com/3468/4555007862_5490c272b4_z_d.jpg',
+	            'http://farm4.static.flickr.com/3084/4554383771_513b7b1f0d_z_d.jpg',
+	            'http://farm4.static.flickr.com/3443/4554360291_de647a0e95_z_d.jpg',
+	            'http://farm5.static.flickr.com/4053/4554366265_d7900328a0_z_d.jpg',
+	            'http://farm4.static.flickr.com/3287/4554378555_536d85b863_z_d.jpg',
+	            'http://farm3.static.flickr.com/2771/4554998340_e283d8445d_z_d.jpg',
+	            'http://farm4.static.flickr.com/3265/4554997182_a2b638f124_z_d.jpg',
+	            'http://farm5.static.flickr.com/4023/4554382957_e56f900831_z_d.jpg',
+	            'http://farm4.static.flickr.com/3488/4555008826_50ed3c4f39_z_d.jpg',
+	            'http://farm4.static.flickr.com/3494/4554991640_9be3e94a29_z_d.jpg',
+	            'http://farm4.static.flickr.com/3637/4555008200_2aa49c71f6_z_d.jpg',
+	            'http://farm4.static.flickr.com/3579/4554382423_3d4473f570_z_d.jpg',
+	        ], {
+	        	'title'			: '"If I Can Dream" Paper UX Prototype Gallery - click to view more',
+		        'titlePosition' : 'over',
+	            'padding'       : 0,
+	            'transitionIn'        : 'none',
+	            'transitionOut'        : 'none',
+	            'type'              : 'image',
+	            'changeFade'        : 0,
+	            'overlayColor'      : '#000000',
+	            'opacity'			: '0.5'
+	        });
+	    });
+			
+		$("#screencast").click(function() {
+				$.fancybox({
+				'padding'		: 0,
+				'autoScale'		: true,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',				
+				'overlayColor'  : '#000000',
+				'opacity'		: '0.5',
+				'title'			: this.title,
+				'width'			: 780,
+				'height'		: 497,
+				'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+				'type'			: 'swf',
+				'swf'           : { 
+                    'wmode'                             : 'transparent', 
+                    'allowfullscreen'   : 'true' 
+                }
+			});		
+			
+		return false;
+		
+		});
+			
+		$("#videoPrototype").click(function() {
+				$.fancybox({
+				'padding'		: 0,
+				'autoScale'		: true,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',
+				'overlayColor'  : '#000000',
+				'opacity'		: '0.5',
+				'title'			: this.title,
+				'width'			: 780,
+				'height'		: 497,
+				'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+				'type'			: 'swf',
+				'swf'           : { 
+                    'wmode'                             : 'transparent', 
+                    'allowfullscreen'   : 'true' 
+                }
+			});		
+			
+		return false;
+		
+		});
+			
+			$("#hulu").click(function() {
+				$.fancybox(
+					'<object width="512" height="288"><param name="movie" value="http://www.hulu.com/embed/KRkwp2tYD8xZUYWtJtayAg/i1202"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.hulu.com/embed/KRkwp2tYD8xZUYWtJtayAg/i1202" type="application/x-shockwave-flash"  width="512" height="288" allowFullScreen="true"></embed></object>',
+					{
+		        	'title'			: 'Watch more If I Can Dream <a href="http://www.hulu.com/if-i-can-dream" target="_blank">on Hulu</a>',
+			        'titlePosition' : 'inside',
+					'autoDimensions'	: false,
+					'width'         		: 512,
+					'height'        		: 'auto',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none',
+					'overlayColor'  : '#000000',
+					'opacity'		: '0.5'
+				}
+			);				
+		return false;
+		
+		});
+		
+		});
+	</script>
+  
+</head>
+
+<body>
+
+	<header>
+		<div id="mainImageIICD"></div>
+	</header>
+
+  <div id="containerIICD" class="container_12">
+
+    <div id="main" class="grid_12">
+    	
+    	<div class="grid_12 alpha omega"><h1>About If I Can Dream</h1></div>
+		
+		<div id="leftContent" class="grid_4 alpha">
+			<img src="images/contentImageLeft.png" alt="contentImageLeft" width="300" height="208" class="content" />
+			<p class="tucked"><strong>Realizing the dream</strong><br />2010 brought the first show created specifically internet: If I Can Dream. The program was conceived as an entirely web-based reality show that followed five young aspiring stars as they tried to become successful in their own right, in real time, with episodes specifically output for hulu.com. The show's cast members&mdash;three actors, a model, and a musician&mdash;moved into a Hollywood, California house wired with 60 AXIS cameras streaming live 24/7.</p>		
+		</div>
+		
+		<div id="middleContent" class="grid_4">
+			<img src="images/contentImageMiddle.png" alt="contentImageMiddle" width="301" height="208" class="content" />
+			<p class="tucked"><strong>Many rooms with many views</strong><br />POKE New York collaborated with Simon Fuller and 19 Entertainment to create this innovative entertainment property that gave viewers of the show direct and continued access to the stars of the show, and vice versa. Viewers could navigate a 3D house to follow the day-to-day lives of the five cast members as they moved around the house, taking full control of any of the 60 live-streaming cameras. And the stars could access their fans, in real time.</div>
+		
+		<div id="rightContent" class="grid_4 omega">
+			<img src="images/contentImageRight.png" alt="contentImageRight" width="301" height="208" class="content" />
+			<p class="tucked"><strong>Connecting stars and fans, in real-time</strong><br />Fans could also interact, seamlessly, with the five stars through social channels like Twitter, Facebook, and Myspace, in real time. A large video screen in the living room displayed a live social feed to the inhabitants of the If I Can Dream house, allowing them to answer fan questions live and, in many cases, take impromptu performance, song or "special" requests as they liked. Anything was fair in the pursuit of stardom.</p>
+		</div>
+
+		
+    	<div class="divider grid_12 alpha omega"><img src="../images/divider.png" alt="divider" width="941" height="7" /></div>
+	
+		<div id="noteworthy">
+		<div class="grid_3 alpha"><a id="videoPrototype" href="http://vimeo.com/12366837">See the original 3D/Video prototype of If I Can Dream&nbsp;&rsaquo;</a></div>
+		<div class="grid_3"><a id="paperPrototypes" title="Paper UX Prototypes" href="javascript:;">See the original UX paper prototypes of If I Can Dream&nbsp;&rsaquo;</a></div>
+		<div class="grid_3"><a id="screencast" href="http://vimeo.com/19497187">See a recorded screencast <br />of the live If I Can Dream site&nbsp;&rsaquo;</a></div>
+		<div class="grid_3 omega"><a id="hulu" href="">Take a peek at the episodes <br />of If I Can Dream on Hulu&nbsp;&rsaquo;</a></div>
+    	</div>
+    	
+    	<div class="divider grid_12 alpha omega"><img src="../images/divider.png" alt="divider" width="941" height="7" /></div>
+    	<div class="grid_12 alpha omega">
+			<span class="pdf">See</span> the original If I Can Dream press release <a href="http://extranet.pokenewyork.com/iicd/IICD_pressBk_0305_sm.pdf">here.</a> (1mb)
+		</div> 
+    	<div class="divider grid_12 alpha omega"><img src="../images/divider.png" alt="divider" width="941" height="7" /></div>
+    	
+
+		
+		<div id="keyPress" class="grid_8 alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press grid_8 alpha firstPress">
+				<div class="grid_2 alpha"><img src="images/logo_mashable.png" alt="logo_mashable" width="140" height="27" /></div>
+				<div class="grid_6 omega"><span class="quote">If I Can Dream is coming at the right time &ndash; a time when the confluence of video technology and 24/7 Internet access is changing the way consumers relate to media and entertainment</span>&nbsp;&ndash;&nbsp;<a href="http://mashable.com/2010/04/20/exclusive-tour-if-i-can-dream-command-center/" class="source" target="_blank">mashable.com</a></div>
+			</div>
+			
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_salon.png" alt="logo_salon" width="140" height="135" /></div>
+				<div class="grid_6 omega"><span class="quote">Starting tomorrow, when the live-streaming of 19 Entertainment's If I Can Dream begins on Hulu, 56 cameras will be broadcasting the adventures of five attractive young people living together and pursuing their dreams of fame and fortune, 24/7</span>&nbsp;&ndash;&nbsp;<a href="http://www.salon.com/technology/the_gigaom_network/online_video/index.html?section=online_video&blog=/tech/giga_om/online_video/2010/03/01/inside_the_if_i_can_dream_house_5_aspiring_dreamers_3_cdns_56_h_264_cameras&source=rss&aim=/tech/giga_om/online_video" class="source" target="_blank">salon.com</a></div>
+			</div>
+
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_ew.png" alt="logo_ew" width="140" height="43" /></div>
+				<div class="grid_6 omega"><span class="quote">If you like those backstory packages on American Idol, you'll love the first epis	ode of Idol producer Simon Fuller's new web series, If I Can Dream, debuting today on Hulu.</span>&nbsp;&ndash;&nbsp;<a href="http://popwatch.ew.com/2010/03/02/if-i-can-dream/" class="source" target="_blank">popwatch.ew.com</a></div>
+			</div>
+			
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_mtv.png" alt="logo_mtv" width="140" height="89" /></div>
+				<div class="grid_6 omega"><span class="quote">How many times have you watched a reality singing, dancing or performance show and wished you could give the pop-star wannabe a bit of advice or a real-time verbal smackdown?</span>&nbsp;&ndash;&nbsp;<a href="http://www.mtv.com/news/articles/1628457/american-idol-cocreator-launch-webtv-hybrid-i-can-dream.jhtml" class="source" target="_blank">mtv.com</a></div>
+			</div>
+			
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_adage.png" alt="logo_adage" width="140" height="26" /></div>
+				<div class="grid_6 omega"><span class="quote">An ambitious web series, "If I Can Dream," is launching in early 2010 with three distribution partners, two major sponsors and one goal -- to do for web video what "American Idol" did for broadcast TV in 2002.</span>&nbsp;&ndash;&nbsp;<a href="http://adage.com/digital/article?article_id=141133" class="source" target="_blank">adage.com</a></div>
+			</div>
+
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_nydailynews.png" alt="logo_nydailynews" width="140" height="21" /></div>
+				<div class="grid_6 omega"><span class="quote">"If I Can Dream" web series from "American Idol" creator tracks musicians on their way to stardom</span>&nbsp;&ndash;&nbsp;<a href="http://www.nydailynews.com/entertainment/tv/2010/03/03/2010-03-03_if_i_can_dream_web_series_from_american_idol_creator_tracks_musicians_on_their_w.html" class="source" target="_blank">nydailynews.com</a></div>
+			</div>
+
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_variety.png" alt="logo_variety" width="140" height="42" /></div>
+				<div class="grid_6 omega"><span class="quote">"If I Can Dream" will become an interactive cultural experiment, opening up the American Dream and democratizing the process of the making of a star," Fuller's 19 Entertainment said in announcing the project</span>&nbsp;&ndash;&nbsp;<a href="http://www.variety.com/article/VR1118012882" class="source" target="_blank">variety.com</a></div>
+			</div>
+			
+			<div class="press grid_8 alpha">
+				<div class="grid_2 alpha"><img src="images/logo_fastco.png" alt="logo_fastco" width="140" height="23" /></div>
+				<div class="grid_6 omega"><span class="quote">A weekly, 30-minute round-up, but round-the-clock access to the five hopefuls' life, thanks to 50 cameras set up throughout the house. No doubt, TV movers and shakers will be glued to their screens tonight to see whether it works or not.</span>&nbsp;&ndash;&nbsp;<a href="http://www.fastcompany.com/1567244/i-can-dream-simon-fuller-interactive-tv-launch" class="source" target="_blank">fastcompany.com</a></div>
+			</div>
+
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="grid_4 omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRagged">
+			
+			<span class="orange">5 stars</span> lived out LIVE from inside <span class="orange">1 house</span> with <span class="orange">60 h.264</span> cameras in <span class="orange">12 rooms</span> and <span class="orange">2 cars</span> recording their every move while generating <span class="orange">millions</span> of unique views all over Twitter, Facebook, The Blogosphere and IfICanDream.com. <span class="orange">2TB of footage</span> was shared each day on a <span class="orange">45 mbps DS3</span> connection to the web over <span class="orange">3 CDNs</span> streaming video <span class="orange">24/7</span>. Each housemate performed their own social campaign, uploading <span class="orange">865</span> video blog, Twitter, MySpace, and Facebook posts while simultaneously recording <span class="orange">32 half-hour episodes</span> that became <span class="orange">internet's first "TV" series made for the internet, by the internet. </span>			
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+		
+    </div> <!-- end #main -->
+    
+    
+    <footer>
+		<div class="divider grid_12 alpha omega"><img src="../images/divider.png" alt="divider" width="941" height="7" /></div>
+		<div class="grid_2 prefix_10 alpha omega "><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div>
+    </footer>
+    
+  </div> <!--! end of #container -->
+
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+
+</body>
+</html>

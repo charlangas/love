@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York - Dyson Air Multiplier!</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+		
+
+
+	$(function() {
+
+        // Find all YouTube videos
+        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+            // The element that is fluid width
+            $fluidEl = $("#fluidVideo");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+
+                $(this)
+                        .data('aspectRatio', this.height / this.width)
+
+                        // and remove the hard coded width/height
+                        .removeAttr('height')
+                        .removeAttr('width');
+
+        });
+
+        // When the window is resized
+        // (You'll probably want to debounce this)
+        $(window).resize(function() {
+
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+
+                        var $el = $(this);
+                        $el
+                                .width(newWidth)
+                                .height(newWidth * $el.data('aspectRatio'));
+
+                });
+
+        // Kick off one resize to fix all videos on page load
+        }).resize();
+
+	});
+});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageDysonSK">
+			<div id="topLinkSK"><a href="http://www.dysonairmultiplier.com/" target="_blank">See it live ></a></div>
+		</div>
+	</header>
+    
+  <div id="container" class="container">
+
+    <div id="DysonAnchorSK">
+    	<img id="DysonPlugSK" src="images/plug_03.png"/>
+    </div>
+
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About Dyson Air Multiplier</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/9046735?byline=0&amp;portrait=0&amp;color=f06924" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+					
+			<div class="one-third column alpha">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK"/>
+					<a rel="gallery" title="Dyson Air Multiplier" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+			</div>
+		
+			<div class="one-third column omega">
+				<div class="frameLargeSK gallery">
+					<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
+					<a rel="gallery" title="Dyson Air Multiplier" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK" />
+				<a rel="gallery" title="Dyson Air Multiplier" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+			</div>
+
+			<p class="tucked"><br /><strong>Introducing the world's first bladeless fan</strong><br />What do you do when a company known for innovation and revolutionary design turns to you to launch their new, first-of-its-kind invention? Already an established name in airflow technology, Dyson engineered the world's first bladeless fan, the Air Multiplier.
+			</p>
+
+			<p class="tucked"><strong>Bladeless fans seeking Facebook fans</strong><br />Several years had passed since Dyson's last product launch, and the world of communications had changed around them. While Dyson was fully capable of handling a traditional media launch, they needed some help navigating the digital space.
+			</p>
+			<p class="tucked"><strong>Tech innovation meets social</strong><br />With that in mind, Dyson turned to POKE to architect their first all digital product launch. POKE created a six-month strategy that would successfully generate buzz about the Air Multiplier through a full-scale digital launch and global retail launch. The entire strategy was executed without using any paid media.
+			</p>
+			
+		</div>	   
+				 
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.boingboing.net/2009/10/19/dysons-air-multiplie.html">
+						<img src="images/logo_boingboing.png" alt="logo_boingboing" width="140" height="26" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">The "multiplied" air feels good and it can blow as hard as similarly-sized fans, but design is what sets it apart. It looks like a portable Stargate by way of Cupertino (Imaginary Steve: what are all those hieroglyphics for? Remove them!) and even has a practical element--no accretions of greasy black fuzz in difficult-to-clean places. </span>&nbsp;&ndash;&nbsp;<a href="http://www.boingboing.net/2009/10/19/dysons-air-multiplie.html" class="source" target="_blank">boingboing.net</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.crunchgear.com/2009/10/13/must-resist-obvious-dyson-vacuum-fan-joke/">
+						<img src="images/logo_crunchgear.png" alt="logo_crunchgear" width="140" height="23" />
+					</a>
+				</div>
+				<div class="seven columns omega"><span class="quote">The Air Multiplier can push out 119 gallons of air per second at a significantly less amount of power than needed for an air conditioning unit. The airfoil design amplifies the air stream by 15 times the intake amount.</span>&nbsp;&ndash;&nbsp;<a href="http://www.crunchgear.com/2009/10/13/must-resist-obvious-dyson-vacuum-fan-joke/" class="source" target="_blank">crunchgear.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://design-milk.com/dyson-launches-air-multiplier-fan/">
+						<img src="images/logo_designmilk.png" alt="logo_designmilk" width="140" height="60" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">When I say that this thing really works, I mean it blows as much as my current Hunter fan, but it's quieter and I can stick my hand through it!</span>&nbsp;&ndash;&nbsp;<a href="http://design-milk.com/dyson-launches-air-multiplier-fan/" class="source" target="_blank">design-milk.com</a></div>
+			</div>
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.fastcompany.com/blog/noah-robischon/editors-desk/dyson-air-multiplier-doesnt-suck-it-blows">
+						<img src="images/logo_fastco.png" alt="logo_fastco" width="140" height="25" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">Normally, fans create moving air by chopping and pushing air, with angled, rotating blades. The Dyson Air Multiplier, by contrast, blows just a single sheet of air, from a thin opening towards the rear of its circular wing.</span>&nbsp;&ndash;&nbsp;<a href="http://www.fastcompany.com/blog/noah-robischon/editors-desk/dyson-air-multiplier-doesnt-suck-it-blows" class="source" target="_blank">fastcompany.com</a></div>
+			</div>			
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://gizmodo.com/5379890/dyson-air-multiplier-review-making-a-300-fan-takes-cojones">
+						<img src="images/logo_gizmodo.png" alt="logo_gizmodo" width="140" height="24" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">And, exploring the device more, I realized that while it didn't look like any fan I'd used before, it worked almost exactly like every fan I'd used before.</span>&nbsp;&ndash;&nbsp;<a href="http://gizmodo.com/5379890/dyson-air-multiplier-review-making-a-300-fan-takes-cojones" class="source" target="_blank">gizmodo.com</a></div>
+			</div>			
+			
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://joshspear.com/item/dyson-air-multiplier/">
+						<img src="images/logo_joshspear.png" alt="logo_joshspear" width="140" height="26" />
+					</a></div> 
+				<div class="seven columns omega"><span class="quote">So, what's awesome about it? It's relatively quiet, easy to clean, and I wont chop my hand off reaching through it.</span>&nbsp;&ndash;&nbsp;<a href="http://joshspear.com/item/dyson-air-multiplier/" class="source" target="_blank">joshspear.com</a></div>
+			</div>			
+	
+		<!-- ends Press, begins Twitter/Facebook comments-->
+		
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega">
+					<img src="images/Twitter_0002_DustfluffGrit.png" alt="profile_naren" width="60" height="60" />
+				</div>
+				<div class="seven columns offset-by-one omega"<strong>@DustFluffGrit</strong><br />Just did my interview for Radio Wey! Showed Jon Andrews the Air Multiplier; I think he's a believer now!</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega">
+					<img src="images/Twitter_0001_ScottRhodie.png" alt="profile_scott" width="60" height="60" />
+				</div>
+				<div class="seven columns offset-by-one omega"><strong>@ScottRhodie</strong><br />That's it my Dyson fan is going everwhere with me from now on. Staying at mates place. No air con and no fan = no sleep</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega">
+					<img src="images/Twitter_0000_Clothes-girl.png" alt="profile_spanna" width="60" height="60" />
+				</div>
+				<div class="seven columns offset-by-one omega"><strong>@clothes_girl</strong><br />@DitaVonTeese Honestly? All you really need is a #Dyson It will change your life.</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega">
+					<img src="images/Twitter_0003_Beamerized.png" alt="profile_spanna" width="60" height="60" />
+				</div>
+				<div class="seven columns offset-by-one omega"><strong>Beamerized</strong><br />bladeless fan = awesome.</div>
+			</div>
+
+
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">150 influencers</span> each received a <span class="orange">limited edition Dyson product</span> on launch day, generating <span class="orange">4,957</span> Twitter mentions, <span class="orange">127,292</span> blog posts, <span class="orange">112</span> YouTube videos, <span class="orange">11,071</span> Flickr images, <span class="orange">154</span> Facebook pages,<span class="orange">1,635</span> requests for notification of future availability, and <span class="orange">1 massively oversold product</span>.
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>

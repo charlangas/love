@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York - Serve Money Mover!</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+			
+			
+			
+	$(function() {
+
+        // Find all YouTube videos
+        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+            // The element that is fluid width
+            $fluidEl = $("#fluidVideo");
+
+        // Figure out and save aspect ratio for each video
+        $allVideos.each(function() {
+
+                $(this)
+                        .data('aspectRatio', this.height / this.width)
+
+                        // and remove the hard coded width/height
+                        .removeAttr('height')
+                        .removeAttr('width');
+
+        });
+
+        // When the window is resized
+        // (You'll probably want to debounce this)
+        $(window).resize(function() {
+
+                var newWidth = $fluidEl.width();
+
+                // Resize all videos according to their own aspect ratio
+                $allVideos.each(function() {
+
+                        var $el = $(this);
+                        $el
+                                .width(newWidth)
+                                .height(newWidth * $el.data('aspectRatio'));
+
+                });
+
+        // Kick off one resize to fix all videos on page load
+        }).resize();
+
+	});
+});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageTeguSK"></div>
+	</header>
+
+  <div id="container" class="container">
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About Serve Money Mover</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/9050136?byline=0&amp;portrait=0&amp;color=f06924" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+									
+			<div class="one-third column alpha">
+				<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK"/>
+					<a rel="gallery" title="BakerTweet" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+			</div>
+		
+			<div class="one-third column omega">
+				<div class="frameLargeSK gallery">
+					<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
+					<a rel="gallery" title="BakerTweet" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
+				<a href="http://c2719532.cdn.cloudfiles.rackspacecloud.com/the_tegu_story.pdf"><img class="largeFrameOverlaySK" src="../images/overlayLargeSKteguPDF.png"></a>
+			</div>
+
+			<p class="tucked"><br /><strong>Title</strong><br />Description.</p>
+
+			<p class="tucked"><strong>Title</strong></strong><br />Description.</p>
+
+			<p class="tucked"><strong>Title</strong><br />Description.</p>
+			
+		</div>	   
+				 
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://creativity-online.com/work/ky-keep-life-sexy/2266">
+						<img src="images/logo_creativity.png" alt="logo_creativity" width="140" height="86" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Press Item 1
+</span>&nbsp;&ndash;&nbsp;<a href="http://creativity-online.com/work/ky-keep-life-sexy/2266" class="source" target="_blank">creativity-online.com</a></div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://www.bannerblog.com.au/news/2008/01/keep_life_sexy.php">
+						<img src="images/logo_bannerblog.png" alt="logo_bannerblog" width="140" height="28" />
+					</a>
+				</div>
+				<div class="seven columns omega"><span class="quote">Press Item 2</span>&nbsp;&ndash;&nbsp;<a href="http://www.bannerblog.com.au/news/2008/01/keep_life_sexy.php" class="source" target="_blank">bannerblog.com.au</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha">
+				<div class="three columns alpha">
+					<a href="http://boinkology.com/2008/03/18/keep-life-sexy-with-k-y/">
+						<img src="images/logo_boinkology.png" alt="logo_boinkology" width="140" height="14" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Press Item 3sd</span>&nbsp;&ndash;&nbsp;<a href="http://boinkology.com/2008/03/18/keep-life-sexy-with-k-y/" class="source" target="_blank">boinkology.com</a></div>
+			</div>
+			
+		<!-- begin tweets -->			
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_sarann.png" alt="profile_sarann" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@twitter_handle</strong><br />Tweet</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_sarann.png" alt="profile_sarann" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@twitter_handle</strong><br />Tweet</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_sarann.png" alt="profile_sarann" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@twitter_handle</strong><br />Tweet</div>
+			</div>
+			
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">Key</span> Facts. 
+			</p>
+			
+			
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE New York - Coach Poppy</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/webbys.css">
+	
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Javascript
+	=================================================== -->
+
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+  
+    <script type="text/javascript">var coachSettings = {account: 65745, pattern: 'wide', top: 0, side: 'right'};</script> 
+	<script src="http://poppyproject.coach.com/awards/1cp.js" type="text/javascript"></script> 
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script src="javascripts/tabs.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			//disable fancybox on mobile
+			if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+				console.log($('a[rel=gallery]'));
+				$('a[rel=gallery]').removeAttr('rel');
+			}
+		 
+			//jQuery calls for Fancybox
+			
+			$("a#left").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+ 							
+			$("a#middle").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+							
+			$("a#right").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5'
+			});
+				
+			$("#video").click(function() {
+				$.fancybox({
+					'padding'		: 0,
+					'overlayColor'  : '#000000',
+		            'opacity'		: '0.5',
+					'autoScale'		: false,
+					'transitionIn'	: 'none',
+					'transitionOut'	: 'none',
+					'title'			: this.title,
+					'width'			: 780,
+					'height'		: 497,
+					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+					'type'			: 'swf'
+				});
+ 			
+ 				return false;
+			});
+			
+			$("a[rel=gallery]").fancybox({
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+			    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+				}
+			});
+			
+			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+			
+			$(function() {
+		
+		        // Find all YouTube videos
+		        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+		
+		            // The element that is fluid width
+		            $fluidEl = $("#fluidVideo");
+		
+		        // Figure out and save aspect ratio for each video
+		        $allVideos.each(function() {
+		
+		                $(this)
+		                        .data('aspectRatio', this.height / this.width)
+		
+		                        // and remove the hard coded width/height
+		                        .removeAttr('height')
+		                        .removeAttr('width');
+		
+		        });
+		
+		        // When the window is resized
+		        // (You'll probably want to debounce this)
+		        $(window).resize(function() {
+		                var newWidth = $fluidEl.width();
+		
+		                // Resize all videos according to their own aspect ratio
+		                $allVideos.each(function() {
+		
+		                        var $el = $(this);
+		                        $el
+		                                .width(newWidth)
+		                                .height(newWidth * $el.data('aspectRatio'));
+		
+		                });
+		                		
+		        // Kick off one resize to fix all videos on page load
+		        }).resize();
+		
+			});
+		});
+		
+			</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImageCoachSK"></div>
+	</header>
+
+  <div id="container" class="container">
+  <div class="sixteen columns">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>About the Poppy Project</h1></div></div>
+					
+		<div class="one-third column alpha">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK"/>
+				<a rel="gallery" title="The Poppy Project" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+			</div>
+			<p class="tucked"><br /><strong>Meet the Poppy Project</strong><br />To celebrate the first birthday of Poppy in 2010, POKE and Coach, Inc. created The Poppy Project, a socially-fueled online art project that engaged bloggers and blog readers in the youthful and spirited attitude of the new Coach Poppy collection.</p><p class="tuckedSpace">What better way to celebrate than with a campaign as sassy and sequined as Coach Poppy herself. Coach invited a select group of fashion-passionate, style-savvy bloggers to be the first to paint the web Poppy by asking them to register their site and install a small piece of code, a "Poppy Seed." <br /><br /></p>
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
+				<a rel="gallery" title="The Poppy Project" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+			</div>
+			<p class="tucked"><br /><strong>How it worked</strong><br />Once installed the seed activated by creating a single Poppy Blossom on their site that&mdash;among other things&mdash;listened to its owner and their network on Twitter. As it was played with, talked to, and treated with care, their Poppy Pattern bloomed.</p><p class="tuckedSpace">The more each fan played with their pattern and got their respective network and visitors to do the same, the bigger, more unique, and more interesting the blossom grew. Savvy participants quickly unlocked many secrets of the campaign such as "creative Tweeting" and its direct relationship with their specific blossom.</p>
+
+		</div>
+		
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+				<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK" />
+				<a rel="gallery" title="The Poppy Project" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+			</div>
+
+				<p class="tucked"><br /><strong>Follow the Poppy trail</strong><br />With each interaction, view, <i>Like</i> and Tweet, the art project grew and grew. The small group of trend-spotters from the fashion blogosphere quickly grew into a network of Poppy patterns and sites that blazed across the social web.</p><p class="tuckedSpace">Poppy's fans and their personal networks jumped on the <a href="http://poppyproject.coach.com" target="_blank">Poppy Trail</a> generating more than <b>20,000,000</B> earned media interactions, experiences and impressions. <!--The more the Poppy Trail grew, the more prizes and Coach goodies fans discovered within it.--> As an added perk, participants also enjoyed personal traffic boosts as fans followed the Poppy Trail discovering new fashion inspiration along the way.</p>			
+		</div>	   
+
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+			<div class="sixteen columns alpha omega"><br><p class="tucked"><span class="pdf">Noteworthy</span>: Coach received top marks in the L2 Digital IQ index, citing the Poppy Project. See it <a href="http://c2111772.cdn.cloudfiles.rackspacecloud.com/luxury2010digitaliq.pdf">here.</a> (3.2mb)</p></div>
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+    	
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+						
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.wwd.com/media-news/marketings-new-rage-brands-sponsor-influential-bloggers-3230386?full=true">
+						<img src="images/logo_wwd.png" alt="logo_wwd" width="140" height="30" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Coach is becoming well known for its campaigns with bloggers, perhaps more than other brands.</span>&nbsp;&ndash;&nbsp;<a href="http://www.wwd.com/media-news/marketings-new-rage-brands-sponsor-influential-bloggers-3230386?full=true" class="source" target="_blank">wwdretail.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://creativity-online.com/work/coach-poppy-project/21015">
+						<img src="images/logo_creativity.png" alt="logo_creativity" width="140" height="87" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Coach reaches out to the fashion community with the launch of The Poppy Project. The online art project/contest brings the brand's colorful Poppy-theme to bloggers' sites, while giving them a chance to cash in on some goods. </span>&nbsp;&ndash;&nbsp;<a href="http://creativity-online.com/work/coach-poppy-project/21015" class="source" target="_blank">creativity-online.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.adweek.com/aw/content_display/our-products/in-print/digital/e3i915ec0f14ba05d67c402d14d711c1a56">
+						<img src="images/logo_adweek.png" alt="logo_adweek" width="140" height="39" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">... Hundreds of blogs ... part of a network stitched together this month in a social media campaign from fashion brand Coach. </span>&nbsp;&ndash;&nbsp;<a href="http://www.adweek.com/aw/content_display/our-products/in-print/digital/e3i915ec0f14ba05d67c402d14d711c1a56" class="source" target="_blank">adweek.com</a></div>
+			</div>
+						
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://c2111772.cdn.cloudfiles.rackspacecloud.com/luxury2010digitaliq.pdf">
+						<img src="images/logo_l2.png" alt="logo_l2" width="140" height="66" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Buzz-worthy Poppy Project was the most recent of many blogger collaborations; from shopping-oriented social media to top-notch e-commerce, brand delivers on every platform </span>&nbsp;&ndash;&nbsp;<a href="http://c2111772.cdn.cloudfiles.rackspacecloud.com/luxury2010digitaliq.pdf" class="source" target="_blank">L2ThinkTank.com</a></div>
+			</div>
+
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_housewifebliss.png" alt="profile_housewifebliss" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@housewifebliss</strong><br />which one of my readers just won the Coach handbag? #CoachPoppy #nesting www.coach.com/poppyproject -- I just won a $100 gift card, thanks!!</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_rosebud.png" alt="profile_rosebud" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@Rosebud</strong><br />New blog post: I Won! I love Coach! http://alittlelestalk.net/2010/08/i-won-i-love-coach/ @coach #coachpoppy #rosebud</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_bystutton.png" alt="profile_bystutton" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@bySutton</strong><br />I love having the #CoachPoppy project on #bysutton ~ so pretty!!! www.coach.com/poppyproject</div>
+			</div>
+
+			<div class="press two-thirds column alpha">
+				<div class="one column offset-by-one omega"><img src="images/profile_abbyg12.png" alt="profile_abbyg12" width="60" height="60" /></div>
+				<div class="seven columns offset-by-one omega"><strong>@abbyg12</strong><br />Very curious to see how this evolves, great way to share/discover content. Grow, Poppy! Grow! #CoachPoppy www.coach.com/poppyproject<br /></div>
+			</div>
+
+			
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">100</span> early invitations to bloggers linked <span class="orange">781</span> sites in the Poppy Trail which generated <br /><span class="orange">47,000</span> tweets and <span class="orange">20,000,000</span> earned impressions in <br/><span class="orange">30</span> days as fans hunted for <span class="orange">50</span> gift cards and blogs raced toward the <span class="orange">$2,500</span> grand prize.
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+					
+    
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>
