@@ -505,6 +505,17 @@
 		top: -6px;
 		left: -7px;
 	}
+	
+	#nav{
+		position: absolute;
+	 	right:194px;
+	 	top:-100px;
+		display: none;
+	    z-index: 3;
+	    height:58px;
+		}
+		
+	 #popout{display: none;}
 
 
 
@@ -1002,6 +1013,17 @@
 			top: -6px;
 			left: -7px;
 		}
+		
+		#nav{
+			position: absolute;
+	 		right:144px;
+		 	top:-100px;
+	 		display: none;
+		    z-index: 3;
+	        height:58px;
+		}
+		
+		#popout{display: none;}
 		
     }
 
@@ -1507,6 +1529,48 @@
 		#mainImageCoachSK {
 			height: 1000px; !important;
 		}
+		
+		ul.dropdown li.dir {display: none;}
+
+		#popout { position: relative; 
+				  height: 20px; 
+				  width: 100px; 
+				  background: #252525; 
+				  color: white; 
+				  top:0px; 
+				  left:0px; 
+				  display: block;
+				  opacity: .7;
+				   }
+				  
+		#toggle { position: relative; 
+				  top:3px;
+				  left:10px; 
+				  width:100px;;
+				  text-align: left;
+				  background-color: #252525;
+				  border-bottom-right-radius: 5px;
+			      border-bottom-left-radius: 5px;}
+				  
+		#multiple{position: relative;
+				  text-decoration: none;
+				  text-align: center;
+				  z-index: 0;
+				  list-style: none;
+				  position: relative;
+				  left:70px;
+				  top:-10px;
+				  }
+				  
+		#multiple li{float: left;
+					 margin-right:25px; 
+					 text-align: center;
+					 text-decoration: none;
+					 }
+		
+		#multiple li:hover{text-decoration: none;
+						   }
+		
     }
 
 
@@ -1994,6 +2058,47 @@
 		#mainImageCoachSK {
 			height: 900px; !important;
 		}
+		
+		ul.dropdown li.dir {display: none;}
+		
+		#popout { position: relative; 
+				  height: 20px; 
+				  width: 100%; 
+				  background: #252525; 
+				  color: white; 
+				  top:0px; 
+				  left:0px; 
+				  display: block;
+				  opacity: .7;
+				   }
+				  
+		#toggle { position: relative; 
+				  top:3px;
+				  left:10px; 
+				  width:100px;
+				  text-align: left;
+				  background-color: #252525;
+				  border-bottom-right-radius: 5px;
+			      border-bottom-left-radius: 5px;
+				  }
+				  
+		#multiple{position: relative;
+				  text-decoration: none;
+				  text-align: center;
+				  z-index: 0;
+				  list-style: none;
+				  position: relative;
+				  left:115px;
+				  top:-10px;}
+				  
+		
+				  
+		#multiple li{float: left;
+					 margin-right:100px; 
+					 text-align: center;
+					 text-decoration: none;
+
+					 }
 
 
     }
