@@ -43,10 +43,6 @@
   <script src="../js/libs/modernizr-1.6.min.js"></script>
   
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script>
-		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
-	</script>
-	<script src="javascripts/tabs.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
@@ -114,27 +110,28 @@
 			});	
 				
 		//Line in dropdown
+
 		$("#nav").hover(function(){
 					$("#line").css('display', 'block');
 					}, function(){
 					$("#line").css('display', 'none');
 					});
 		
-		//Mobile Dropdown			
-        $('#toggle').toggle( 
-        function() {
-            $('#popout').animate({ height: 40 }, 'slow', function() {
-            $('#toggle').html('Close')
-            $('#multiple').fadeIn(100);
-        });
-        }, 
-        function() {
-			$('#multiple').fadeOut(100)
-			$('#popout').animate({ height: 20 }, 'slow', function() {
-            $('#toggle').html('other campaigns');
-        });
-        });
+		//Campaign Tab
+ 		$('#closer').click(function() {
+            $('ul.dropdown ul').css('display','none');
+       		}, function(){
+			$('ul.dropdown ul').css('display','block');
+			});
 
+     
+     $('ul.dropdown li.dir').hover(function() {
+            $('ul.dropdown ul').css('display','block');
+        }, function(){
+			$('ul.dropdown ul').css('display','none');
+			});
+
+      
 
 	$(function() {
 
@@ -187,11 +184,12 @@
 
 
 <ul id="nav" class="dropdown dropdown-horizontal" >
-	<li class="dir"><span class="noshow">+</span><span class="show">some other stuff we did for the Body Shop</span>
+	<li class="dir"><span class="noshow">+</span><span class="show">some other stuff we've done for Body Shop</span>
 	<div id="line"></div>
 		<ul>
 			<li><a href="./">Keep it or Pass it</a></li>
 			<li><a id="bottombutton" href="./" >Shake (Shops)</a></li>
+			<li id="closer">Close</li>
 		</ul>
 	</li>
 	</li>
@@ -199,16 +197,7 @@
 
 
 
-<div id="popout">
-    <div id="toggle">other campaigns</div>
-    <br style="clear: both" />
-    <ul id="multiple" style="display:none", "list-style:none"lm>
-			<li><a href="./">Keep it or Pass it</a></li>
-			<li><a href="./" >Shake (Shops)</a></li>
-	</ul>
 
-
-</div>
 
 
 	<header>

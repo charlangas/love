@@ -515,8 +515,9 @@
 	    height:58px;
 		}
 		
-	 #popout{display: none;}
-
+	li #closer{display: none;}
+		
+	#bottombutton{border-bottom-right-radius: 4px;}
 
 
 
@@ -1023,8 +1024,9 @@
 	        height:58px;
 		}
 		
-		#popout{display: none;}
+		li #closer{display: none;}
 		
+		#bottombutton{border-bottom-right-radius: 4px;}
     }
 
 
@@ -1530,42 +1532,18 @@
 			height: 1000px; !important;
 		}
 		
-		ul.dropdown li.dir {display: none;}
+		#nav{
+			position: absolute;
+	 		right:15px;
+		 	top:-100px;
+	 		display: none;
+		    z-index: 3;
+	        height:58px;
+		}
 
-		#popout { position: relative; 
-				  height: 20px; 
-				  width: 100px; 
-				  background: #252525; 
-				  color: white; 
-				  top:0px; 
-				  left:0px; 
-				  display: block;
-				  opacity: .7;
-				   }
-				  
-		#toggle { position: relative; 
-				  top:3px;
-				  left:10px; 
-				  width:100px;;
-				  text-align: left;
-				  background-color: #252525;
-				  border-bottom-right-radius: 5px;
-			      border-bottom-left-radius: 5px;}
-				  
-		#multiple{position: relative;
-				  text-decoration: none;
-				  text-align: center;
-				  z-index: 0;
-				  list-style: none;
-				  top:-10px;
-				  width:480px;
-				  }
-				  
-		#multiple li{display: inline;
-					 margin-right:25px; 
-					 text-align: center;
-					 text-decoration: none;
-					 }
+		li #closer{display:block;}
+		
+		#bottombutton{border-bottom-right-radius: 0px;}
 		
 		
     }
@@ -2056,46 +2034,18 @@
 			height: 900px; !important;
 		}
 		
-		ul.dropdown li.dir {display: none;}
+		#nav{
+			position: absolute;
+	 		right:13px;
+		 	top:-100px;
+	 		display: none;
+		    z-index: 3;
+	        height:58px;
+		}
 		
-		#popout { position: relative; 
-				  height: 20px; 
-				  width: 100%; 
-				  background: #252525; 
-				  color: white; 
-				  top:0px; 
-				  left:0px; 
-				  display: block;
-				  opacity: .7;
-				   }
-				  
-		#toggle { position: relative; 
-				  top:3px;
-				  left:10px; 
-				  width:100px;
-				  text-align: left;
-				  background-color: #252525;
-				  border-bottom-right-radius: 5px;
-			      border-bottom-left-radius: 5px;
-				  }
-				  
-		#multiple{position: relative;
-				  text-decoration: none;
-				  text-align: center;
-				  z-index: 0;
-				  list-style: none;
-				  top:-10px;
-				  width:590px;}
-				  
+		li #closer{display:block;}
 		
-				  
-		#multiple li{display: inline;
-					 margin-right:100px; 
-					 text-align: center;
-					 text-decoration: none;
-
-					 }
-
+		#bottombutton{border-bottom-right-radius: 0px;}
 
     }
 
