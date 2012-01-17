@@ -1557,19 +1557,16 @@
 				  text-align: center;
 				  z-index: 0;
 				  list-style: none;
-				  position: relative;
-				  left:70px;
 				  top:-10px;
+				  width:480px;
 				  }
 				  
-		#multiple li{float: left;
+		#multiple li{display: inline;
 					 margin-right:25px; 
 					 text-align: center;
 					 text-decoration: none;
 					 }
 		
-		#multiple li:hover{text-decoration: none;
-						   }
 		
     }
 
@@ -2087,13 +2084,12 @@
 				  text-align: center;
 				  z-index: 0;
 				  list-style: none;
-				  position: relative;
-				  left:115px;
-				  top:-10px;}
+				  top:-10px;
+				  width:590px;}
 				  
 		
 				  
-		#multiple li{float: left;
+		#multiple li{display: inline;
 					 margin-right:100px; 
 					 text-align: center;
 					 text-decoration: none;
