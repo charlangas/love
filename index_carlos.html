@@ -71,24 +71,19 @@
 
 
 
-			$("#amex").click(function () {
-				$("#amexhiddenlinks").toggle();
-				$("#bshiddenlinks").hide();
-				$("#owhiddenlinks").hide();
-
-			});
-
-			$("#bodyshop").click(function () {
-				$("#bshiddenlinks").toggle();
-				$("#amexhiddenlinks").hide();
-				$("#owhiddenlinks").hide();
-			});
-
-			$("#orangewireless").click(function () {
-				$("#owhiddenlinks").toggle();
-				$("#amexhiddenlinks").hide();
-				$("#bshiddenlinks").hide();
-			});
+			$(".expand").click(function () {
+            
+                var div = $(this).children("div");
+                
+                if (div.is(":hidden")) {
+                    $('#clients').find('.projectlist:visible').slideUp();
+                    div.slideDown();
+                    $("#clients").children().animate({marginRight: '+=20'},500);
+                } else {
+                    div.slideUp();
+                    $("#clients").children().animate({marginRight: '-=20'},500);
+                }
+            });    
 
 		});
 		
@@ -185,7 +180,7 @@ div#clients a{color:grey;
 			<a href="http://pokenewyork.com/love/benefit/" target="_blank" class="brand">Benefit Cosmetics</a><br />
 		</div>
 		<div id="bodyshop" class="expand">
-			<a href="#" onclick="toggle_visibility('bshiddenlinks');" class="brand"><span class="plus">+</span>  The Body Shop</a><br />
+			<a href="#" class="brand"><span class="plus">+</span>  The Body Shop</a><br />
 				<div id="bshiddenlinks" style="display:none" class="projectlist">
 					<a href="/"target="_blank" class="business project" style="color:#f36523">Keep It or Pass It</a><br />
 					<a href="/"target="_blank" class="business project" style="color:#f36523">Shake (shops)</a><br />
@@ -231,7 +226,7 @@ div#clients a{color:grey;
 			<a href="http://pokenewyork.com/love/lebron" target="_blank" class="invention">NY&lt;3LeBron</a><br />
 		</div>
 		<div id="orangewireless" class="expand">
-			<a href="#" onclick="toggle_visibility('owhiddenlinks');" class="brand"><span class="plus">+</span>  Orange Wireless</a><br />
+			<a href="#" class="brand"><span class="plus">+</span>  Orange Wireless</a><br />
 				<div id="owhiddenlinks" style="display:none" class="projectlist">
 					<a href="/"target="_blank" class="business" style="color:#f36523">People Projects</a><br />
 					<a href="/"target="_blank" class="business" style="color:#f36523">Balloonacy</a><br />
