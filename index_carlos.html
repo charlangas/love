@@ -78,10 +78,10 @@
                 if (div.is(":hidden")) {
                     $('#clients').find('.projectlist:visible').slideUp();
                     div.slideDown();
-                    $("#clients").children().animate({marginRight: '+=20'},500);
+                    $(".expand").siblings("div").animate({marginRight: '+=20'},500);
                 } else {
                     div.slideUp();
-                    $("#clients").children().animate({marginRight: '-=20'},500);
+                    $(".expand").siblings("div").animate({marginRight: '-=20'},500);
                 }
             });    
 

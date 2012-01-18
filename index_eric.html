@@ -55,7 +55,10 @@
    				var vis = $sibs.filter(':visible').length == 0; // check visibility
     			var opacity = vis ? 0.5 : 1.0;                 // required opacity
     			var marginRight = vis ? 20 : 0;                // required margin
-    			
+   				
+   				$(this).css({'opacity': 1, 'marginRight': 0}).animate({
+                'opacity': 1, 'marginRight': marginRight
+                });  
 				$(this).parent().css({'opacity': 1, 'marginRight': 0}).siblings().animate({
     		    'opacity': opacity, 'marginRight': marginRight
     			});   				
@@ -66,8 +69,9 @@
 				} else {
 					$sibs.hide();
 					$(this).css({'opacity': 1, 'marginRight': 0}).animate({
-    		    'opacity': 1, 'marginRight': 0
-    			}); 
+					'opacity': 1, 'marginRight': 0
+				}); 
+
 				}
 				
 			});
