@@ -148,7 +148,8 @@ a{text-decoration: none;}
 
 span.noshow{font-size: 20px;}
 
-#bottombutton{border-bottom-left-radius: 4px;
+#bottombutton{border-bottom-right-radius: 4px;
+			  border-bottom-left-radius: 4px;
 			  box-shadow: 0px 7px 8px 0px #888;
 			 -moz-box-shadow: 0px 7px 8px 0px #888;
 			 -webkit-box-shadow: 0px 7px 8px 0px #888;
@@ -173,14 +174,18 @@ display:none;
 #nav:hover span.show {
 display:inline;}
 
-li #closer{position: relative;
-		left: 238px;
-		color:#f36523;
-		background-color: #252525;
-		width:40px;
-		height:20px;
-		border-bottom-left-radius: 6px;
-		border-bottom-right-radius: 6px;
-		text-align: center;
-		padding-top: 10px;}
+li #closer{float:right;
+position: relative;
+top: -8px;
+color: #F36523;
+background-color: #252525;
+width: 40px;
+height: 20px;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+text-align: center;
+padding-top: 17px;
+box-shadow: 0px 7px 8px 0px #888;
+-moz-box-shadow: 0px 7px 8px 0px #888;
+-webkit-box-shadow: 0px 7px 8px 0px}
 
