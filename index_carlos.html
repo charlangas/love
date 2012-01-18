@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>POKE</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Javascript Links
+	================================================= -->
+	<link media="screen" rel="stylesheet" href="css/colorbox.css" />
+
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$(".launchit").colorbox({width:"530px", height:"485px", iframe:true, transition:"none", opacity:"0.25"}); //launches contact box
+
+			//highlights clients by type
+			$("#brand").hover(function(){
+					$(".brand").css('color', '#f36523');
+			}, function(){
+				$(".brand").css('color', '#848484');
+			});
+			$("#business").hover(function(){
+					$(".business").css('color', '#f36523');
+			}, function(){
+				$(".business").css('color', '#848484');
+			});
+			$("#invention").hover(function(){
+					$(".invention").css('color', '#f36523');
+			}, function(){
+				$(".invention").css('color', '#848484');
+			});
+		
+		
+			$(".expand").hover(function(){
+					$(this).find("a").css('color', '#f36523');
+			}, function(){
+				$(this).find("a").css('color', 'grey');
+			});
+
+
+
+			$("#amex").click(function () {
+				$("#amexhiddenlinks").toggle();
+				$("#bshiddenlinks").hide();
+				$("#owhiddenlinks").hide();
+
+			});
+
+			$("#bodyshop").click(function () {
+				$("#bshiddenlinks").toggle();
+				$("#amexhiddenlinks").hide();
+				$("#owhiddenlinks").hide();
+			});
+
+			$("#orangewireless").click(function () {
+				$("#owhiddenlinks").toggle();
+				$("#amexhiddenlinks").hide();
+				$("#bshiddenlinks").hide();
+			});
+
+		});
+		
+		
+
+	</script>
+	
+	<style type="text/css">
+a {text-decoration:none;}
+
+div#clients a{color:grey;
+			  }	
+			  
+#clients a:hover{color: #f36523;}
+		
+#clients{position:relative;
+		     left:0px;
+		     top:0px;
+		     line-height: 18px; font-family:arial;
+			 font-size: 12px;
+			 }
+			 
+#clients expand{position:relative;
+		     left:0px;
+		     top:0px;
+		     line-height: 18px; font-family:arial;
+			 font-size: 12px;
+			 color: #f36523;
+			 opacity: .9;
+			 }
+
+
+.hiddenlinks{display: none;
+			 text-align: right;
+			 position: relative;
+			 left:0px;
+			 width: inherit;
+			 color: #f36523;
+			 }
+
+.plus{opacity:.6;}
+
+</style>
+
+
+
+</head>
+<body>
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+<div class="container"></div>
+
+	<div id="main" class="twelve columns alpha">
+		<a href="http://outspokenintense.com" id="brand">Brand</a> &amp;
+		<br /><a href="http://pokenewyork.com/love/dream" id="business">Business</a>
+		<br />Collaboration<br/>&amp; <a href="http://pokenewyork.com/love/bakertweet/" id="invention">Invention.</a><br/>
+	
+		<a href="/"><img src="images/poke.png" width="113" height="107" vspace="20" border="0" id="heart"/></a>
+
+	</div>
+
+
+	<div id="clients" class="four columns omega">
+		
+
+		<div id="acwis">
+			<a href="/"target="_blank" class="business">ACWIS</a>
+		</div>
+		<div id="alphamom">
+			<a href="/"target="_blank" class="invention">Alphamom</a>
+		</div>
+		<div id="amex" class="expand">
+			<a href="#" onclick="toggle_visibility('amexhiddenlinks');"class="business" ><span class="plus">+</span>  American Express</a>
+			
+				<div id="amexhiddenlinks" style="display:none" class="projectlist">
+					<a href="/"target="_blank" class="business project" style="color:#f36523">Serve</a><br />
+					<a href="/"target="_blank" class="business project" style="color:#f36523">Red Card</a><br />
+					<a href="/"target="_blank" class="business project" style="color:#f36523">Communities</a>
+				</div>
+		</div>
+		<div id="avon">
+			<a href="/"target="_blank" class="invention">Avon</a>
+		</div>
+		<div id="bakertweet">
+			<a href="/"target="_blank" class="invention">BakerTweet</a>
+		</div>		
+		<div id="bbc">
+			<a href="http://pokenewyork.com/love/bbc" target="_blank" class="brand">BBC Worldwide</a><br />
+		</div>
+		<div id="benefitcosmetics">
+			<a href="http://pokenewyork.com/love/benefit/" target="_blank" class="brand">Benefit Cosmetics</a><br />
+		</div>
+		<div id="bodyshop" class="expand">
+			<a href="#" onclick="toggle_visibility('bshiddenlinks');" class="brand"><span class="plus">+</span>  The Body Shop</a><br />
+				<div id="bshiddenlinks" style="display:none" class="projectlist">
+					<a href="/"target="_blank" class="business project" style="color:#f36523">Keep It or Pass It</a><br />
+					<a href="/"target="_blank" class="business project" style="color:#f36523">Shake (shops)</a><br />
+				</div>
+		</div>
+		<div id="coach">
+			<a href="http://pokenewyork.com/love/coach" target="_blank" class="brand">Coach</a><br/>
+		</div>
+		<div id="cynthiarowley">
+			<a href="http://work.pokenewyork.com/cynthia" target="_blank" class="brand business">Cynthia Rowley</a><br />
+		</div>
+		<div id="dyson">
+			<a href="http://pokenewyork.com/love/dyson/" target="_blank" class="brand">Dyson</a><br />
+		</div>
+		<div id="fcuk">
+			<a href="http://pokenewyork.com/love/fcuk/" target="_blank" class="brand">fcuk</a><br />
+		</div>
+		<div id="gettyimages">
+			<a href="http://pokenewyork.com/love/thinkstock" target="_blank" class="business">Getty Images</a><br />
+		</div>
+		<div id="generalmills">
+			<a href="http://pokenewyork.com/love/ideapantry/" target="_blank" class="business brand invention">General Mills / Progresso</a><br />
+		</div>
+		<div id="historychannel">
+			<a href="http://work.pokenewyork.com/lifeafterpeople" target="_blank" class="brand">History Channel</a><br />
+		</div>
+		<div id="ky">
+			<a href="http://work.pokenewyork.com/ky" target="_blank" class="brand">K-Y</a><br />
+		</div>
+		<div id="kideoplayer">
+			<a href="http://www.kideoplayer.com/" target="_blank" class="invention">KideoPlayer</a><br/>
+		</div>
+		<div id="lonelyplanet">
+			<a href="http://work.pokenewyork.com/lonelyplanet" target="_blank" class="brand">Lonely Planet</a><br />
+		</div>
+		<div id="moma">
+			<a href="http://pokenewyork.com/love/moma/" target="_blank" class="brand invention">MoMA</a><br />
+		</div>
+		<div id="19ent">
+			<a href="http://pokenewyork.com/love/dream" target="_blank" class="business brand invention">19 Entertainment</a><br />
+		</div>
+		<div id="nylebron">
+			<a href="http://pokenewyork.com/love/lebron" target="_blank" class="invention">NY&lt;3LeBron</a><br />
+		</div>
+		<div id="orangewireless" class="expand">
+			<a href="#" onclick="toggle_visibility('owhiddenlinks');" class="brand"><span class="plus">+</span>  Orange Wireless</a><br />
+				<div id="owhiddenlinks" style="display:none" class="projectlist">
+					<a href="/"target="_blank" class="business" style="color:#f36523">People Projects</a><br />
+					<a href="/"target="_blank" class="business" style="color:#f36523">Balloonacy</a><br />
+					<a href="/"target="_blank" class="business" style="color:#f36523">Never Ending Page</a>
+				</div>
+		</div>
+		<div id="performa">
+			<a href="http://www.performa-arts.org" target="_blank" class="brand invention">Performa</a><br />
+		</div>
+		<div id="sephora">
+			<a href="http://pokenewyork.com/love/sephora" target="_blank" class="brand">Sephora</a><br />
+		</div>
+		<div id="skype">
+			<a href="http://pokenewyork.com/love/skype/" target="_blank" class="brand">Skype</a><br />
+		</div>
+		<div id="stella">
+			<a href="http://pokenewyork.com/love/stella" target="_blank" class="brand">Stella Artois/Anheuser-Busch</a><br />
+		</div>
+		<div id="tegu">
+			<a href="http://pokenewyork.com/love/tegu" target="_blank" class="business invention">Tegu</a><br />
+		</div>
+		<div id="topshop">
+			<a href="http://work.pokenewyork.com/topshop" target="_blank" class="business">TopShop</a><br />
+		</div>
+		<div id="upl8">
+			<a href="http://upl8.tv" target="_blank" class="invention">UPL8.TV</a><br /><br />
+		</div>
+		
+	
+		<div id="contact">
+			<a class="launchit" href="contact.html">Contact Us</a>
+		</div>
+	  </div>
+	</div>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
