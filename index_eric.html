@@ -44,45 +44,51 @@
 	<script>
 		$(document).ready(function(){
 			$(".launchit").colorbox({width:"530px", height:"485px", iframe:true, transition:"none", opacity:"0.25"});
-		});
 		
-		$(document).ready(function() { 
 			$('#clients .expand > a').on('click', function() {
-
-   				//var $sibs = $(this).siblings('div').toggle();
    				
    				var $sibs = $(this).siblings('div');
    				var vis = $sibs.filter(':visible').length == 0; // check visibility
     			var opacity = vis ? 0.5 : 1.0;                 // required opacity
+<<<<<<< HEAD
     			var marginRight = vis ? 20 : 0;                // required margin
    				
 				$(this).parent().css({'opacity': 1, 'marginRight': 0}).siblings().animate({
+=======
+    			var marginRight = vis ? 50 : 0;                // required margin
+    			
+				$(this).parent().css({'opacity': 1, 'marginRight': 0, }).siblings().animate({
+>>>>>>> Drawer nav works
     		    'opacity': opacity, 'marginRight': marginRight
-    			});   				
-
+    			});   
+    			
    				if ($sibs.is(":hidden")) {
 					$('#clients').find('.projectlist:visible').hide();
 					$sibs.show();
 				} else {
 					$sibs.hide();
+<<<<<<< HEAD
+=======
+					$(this).css({'opacity': 1, 'marginRight': 0}).animate({
+		    		    'opacity': 1, 'marginRight': 0
+	    			}); 
+>>>>>>> Drawer nav works
 				}
 				
 			});
-		});
-		
 
-
-		$(document).ready(function(){
 			$("#brand").hover(function(){
 					$(".brand").css('color', '#f36523');
 			}, function(){
 				$(".brand").css('color', '#848484');
 			});
+			
 			$("#business").hover(function(){
 					$(".business").css('color', '#f36523');
 			}, function(){
 				$(".business").css('color', '#848484');
 			});
+			
 			$("#invention").hover(function(){
 					$(".invention").css('color', '#f36523');
 			}, function(){
@@ -135,8 +141,21 @@ div#clients a{color:grey;
 			 color: #f36523;
 			 }
 
-.plus{opacity:.6;}
+.plus {
+	opacity:.6;	
+	width:5px;
+	margin-left: 5px;
+	}
+	
+	
+.expand.hover .plus {
+	text-decoration: none;
+}
 
+.moveten {
+	position: relative;
+	right: -10px;
+}
 </style>
 
 
@@ -171,13 +190,13 @@ div#clients a{color:grey;
 			<a href="/"target="_blank" class="invention" class="single">Alphamom</a>
 		</div>
 		<div class="expand">
-			<a href="#" class="business" ><span class="plus">+</span>  American Express</a>
+			<a href="#" class="business moveten">American Express<span class="plus">+</span></a>
 			
-				<div class="projectlist" style="display:none">
-					<a href="/"target="_blank" class="business" style="color:#f36523">Serve</a><br />
-					<a href="/"target="_blank" class="business" style="color:#f36523">Red Card</a><br />
-					<a href="/"target="_blank" class="business" style="color:#f36523">Communities</a>
-				</div>
+			<div class="projectlist" style="display:none">
+				<a href="/"target="_blank" class="business" style="color:#f36523">Serve</a><br />
+				<a href="/"target="_blank" class="business" style="color:#f36523">Red Card</a><br />
+				<a href="/"target="_blank" class="business" style="color:#f36523">Communities</a>
+			</div>
 		</div>
 		<div>
 			<a href="/"target="_blank" class="invention" class="single">Avon</a>
@@ -192,7 +211,7 @@ div#clients a{color:grey;
 			<a href="http://pokenewyork.com/love/benefit/" target="_blank" class="brand" class="single">Benefit Cosmetics</a><br />
 		</div>
 		<div class="expand">
-			<a href="#" class="brand"><span class="plus">+</span>  The Body Shop</a><br />
+			<a href="#" class="brand moveten">The Body Shop<span class="plus">+</span></a><br />
 				<div class="projectlist" style="display:none">
 					<a href="/"target="_blank" class="business" style="color:#f36523">Keep It or Pass It</a><br />
 					<a href="/"target="_blank" class="business" style="color:#f36523">Shake (shops)</a><br />
@@ -238,7 +257,7 @@ div#clients a{color:grey;
 			<a href="http://pokenewyork.com/love/lebron" target="_blank" class="invention" class="single">NY&lt;3LeBron</a><br />
 		</div>
 		<div class="expand">
-			<a href="#" class="brand"><span class="plus">+</span>  Orange Wireless</a><br />
+			<a href="#" class="brand moveten">Orange Wireless<span class="plus">+</span></a><br />
 				<div class="projectlist" style="display:none">
 					<a href="/"target="_blank" class="business" style="color:#f36523">People Projects</a><br />
 					<a href="/"target="_blank" class="business" style="color:#f36523">Balloonacy</a><br />
