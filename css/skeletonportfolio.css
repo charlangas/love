@@ -1541,7 +1541,7 @@
 		
 		#nav{
 			position: absolute;
-	 		right:15px;
+	 		right:1px;
 		 	top:-100px;
 	 		display: none;
 		    z-index: 3;
