@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="../css/layout.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/webbys.css">
+	<link rel="stylesheet" href="../css/dropdown.css">
 	
 	
 
@@ -107,7 +108,39 @@
 			});
 			
 			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
-			
+	
+				 //fade in
+		$(window).load(function() {
+				$('#nav').fadeIn(1).delay(2000).animate({ "top": "+=77px" }, 1000);
+			});	
+				
+		//Line in dropdown
+
+		$("#nav").hover(function(){
+					$("#line").css('display', 'block');
+					$('ul.dropdown li.dir').css('width', '291px');
+					}, function(){
+					$("#line").css('display', 'none');
+					$('ul.dropdown li.dir').css('width', 'inherit');
+					});
+		
+		//Campaign Tab
+ 		$('#closer').click(function() {
+            $('ul.dropdown ul').css('display','none');
+       		}, function(){
+			$('ul.dropdown ul').css('display','block');
+			});
+
+     
+     $('ul.dropdown li.dir').hover(function() {
+            $('ul.dropdown ul').css('display','block');
+        }, function(){
+			$('ul.dropdown ul').css('display','none');
+			});
+
+
+      
+		
 			
 			
 	$(function() {
@@ -159,6 +192,19 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
+<ul id="nav" class="dropdown dropdown-horizontal" >
+	<li class="dir"><span class="noshow">+</span><span class="show">More projects for The Body Shop</span>
+	<div id="line"></div>
+		<ul>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/">CanIGetMyOrderForFreeAtTheBodyShopYet.com</a></li>
+			<span id="closer">Close</span>
+		</ul>
+	</li>
+	</li>
+</ul>
+
+
+
 	<header>
 		<div id="mainImageJoy2011SK">
 			<div id="topLinkLowSK"><a href="http://www.canigetmyorderforfreeatthebodyshopyet.com/" target="_blank">See it live ></a></div>	
@@ -183,7 +229,7 @@
 		
 			<div class="one-third column omega">
 				<div class="frameLargeSK gallery">
-					<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
+					<img src="images/medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
 					<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
 				</div>
 			</div>
