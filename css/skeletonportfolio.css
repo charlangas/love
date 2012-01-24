@@ -559,12 +559,12 @@
 		position: absolute;
 	 	right:194px;
 	 	top:-100px;
-		display: none;
 	    z-index: 3;
 	    height:58px;
 		}
-		
-	li #closer{display: none;}
+	
+	ul.dropdown li.dir{display: block;}
+
 		
 	
 
@@ -1075,13 +1075,12 @@
 			position: absolute;
 	 		right:144px;
 		 	top:-100px;
-	 		display: none;
 		    z-index: 3;
 	        height:58px;
 		}
 		
-		li #closer{display: block;}
-		
+		ul.dropdown li.dir{display: block;}
+
 		
     }
 
@@ -1597,15 +1596,13 @@
 		
 		#nav{
 			position: absolute;
-	 		right:1px;
+			right:65px;
 		 	top:-100px;
-	 		display: none;
 		    z-index: 3;
 	        height:58px;
 		}
 
-		li #closer{display:block;}
-		
+		ul.dropdown li.dir{display: none;}
 		
 		
 		
@@ -2106,15 +2103,13 @@
 		
 		#nav{
 			position: absolute;
-	 		right:13px;
+	 		right:123px;
 		 	top:-100px;
-	 		display: none;
 		    z-index: 3;
 	        height:58px;
 		}
 		
-		li #closer{display:block;}
-		
+		ul.dropdown li.dir{display: none;}
 		
 
     }

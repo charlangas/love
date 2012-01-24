@@ -109,28 +109,22 @@
 				$('#nav').fadeIn(1).delay(2000).animate({ "top": "+=77px" }, 1000);
 			});	
 				
-		//Line in dropdown
-
-		$("#nav").hover(function(){
-					$("#line").css('display', 'block');
-					}, function(){
-					$("#line").css('display', 'none');
-					});
-		
-		//Campaign Tab
- 		$('#closer').click(function() {
-            $('ul.dropdown ul').css('display','none');
+			//Campaign Tab
+ 		$('#nav').hover(function() {
+            $('ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('#plussign').css('display','none');
        		}, function(){
-			$('ul.dropdown ul').css('display','block');
-			});
+		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			}); 
 
-     
-     $('ul.dropdown li.dir').hover(function() {
-            $('ul.dropdown ul').css('display','block');
-        }, function(){
-			$('ul.dropdown ul').css('display','none');
-			});
-
+ 		$('#nav').toggle(function() {
+            $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('#plussign').css('display','none');
+       		}, function(){
+		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			}); 
       
 
 	$(function() {
@@ -182,13 +176,15 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 0);">
 
-
 <ul id="nav" class="dropdown dropdown-horizontal" >
-	<li class="dir"><span class="noshow">+</span><span class="show">More Projects for The Body Shop</span>
+	<div id="newtab">
+	<img src="../bodyshop/images/minussign.png" id="minussign" />
+	<img src="../bodyshop/images/plussign.png" id="plussign" />
+	</div>
+	<li class="dir"><span class="more">More Projects for The Body Shop</span>
 	<div id="line"></div>
 		<ul>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bshopjoy2011/">Holiday Joy 2011</a></li>
-			<span id="closer">Close</span>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bshopjoy2011/"><span class="campaign">Holiday Joy 2011</span></a></li>
 		</ul>
 	</li>
 	</li>
