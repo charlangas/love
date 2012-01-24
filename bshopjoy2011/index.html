@@ -118,31 +118,35 @@
 
 		$("#nav").hover(function(){
 					$("#line").css('display', 'block');
-<<<<<<< HEAD
 					$('ul.dropdown li.dir').css('width', '290px');
-=======
-					$('ul.dropdown li.dir').css('width', '291px');
->>>>>>> 746657e9359a5782125b7cc275a3bb22f8fb96cd
 					}, function(){
 					$("#line").css('display', 'none');
 					$('ul.dropdown li.dir').css('width', 'inherit');
 					});
 		
+
 		//Campaign Tab
- 		$('#closer').click(function() {
-            $('ul.dropdown ul').css('display','none');
+ 		$('#nav').hover(function() {
+            $('ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('#plussign').css('display','none');
+            $('ul.dropdown li.dir').css('width', '290px');
        		}, function(){
-			$('ul.dropdown ul').css('display','block');
-			});
+		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			$('ul.dropdown li.dir').css('width', 'inherit');
+			}); 
+
+ 		$('#nav').toggle(function() {
+            $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('#plussign').css('display','none');
+            $('ul.dropdown li.dir').css('width', '290px');
+       		}, function(){
+		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			$('ul.dropdown li.dir').css('width', 'inherit');
+			}); 
 
      
-     $('ul.dropdown li.dir').hover(function() {
-            $('ul.dropdown ul').css('display','block');
-        }, function(){
-			$('ul.dropdown ul').css('display','none');
-			});
-
-
       
 		
 			
@@ -196,16 +200,22 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
+
 <ul id="nav" class="dropdown dropdown-horizontal" >
-	<li class="dir"><span class="noshow">+</span><span class="show">More projects for The Body Shop</span>
+	<div id="newtab">
+	<img src="../bodyshop/images/minussign.png" id="minussign" />
+	<img src="../bodyshop/images/plussign.png" id="plussign" />
+	</div>
+	<li class="dir"><span class="more">More Projects for The Body Shop</span>
 	<div id="line"></div>
 		<ul>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/">CanIGetMyOrderForFreeAtTheBodyShopYet.com</a></li>
-			<span id="closer">Close</span>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/"><span class="campaign">CanIGetMyOrderForFreeAtTheBodyShopYet.com</span></a></li>
 		</ul>
 	</li>
 	</li>
 </ul>
+
+
 
 
 
