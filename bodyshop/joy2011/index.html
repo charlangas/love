@@ -21,36 +21,23 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/webbys.css">
-	<link rel="stylesheet" href="../css/dropdown.css">
-	
-	
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-
+	<link rel="stylesheet" href="../../css/skeletonportfolio.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/webbys.css">
+	<link rel="stylesheet" href="../../css/dropdown.css">
 
 	<!-- Javascript
 	=================================================== -->
-
-  <script src="js/libs/modernizr-1.6.min.js"></script>
   
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
 		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
 	</script>
 	<script src="javascripts/tabs.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript" src="../../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
  	<script type="text/javascript">
 		$(document).ready(function() {
 			
@@ -115,30 +102,24 @@
 			});	
 
 
-		//Campaign Tab
+			//Campaign Tab
  		$('#nav').hover(function() {
-            $('ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('ul.dropdown ul a , #minussign, #line, ul.dropdown li.dir').css('display','block');
             $('#plussign').css('display','none');
-            $('ul.dropdown li.dir').css('width', '290px');
        		}, function(){
 		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
-			$('ul.dropdown li.dir').css('width', 'inherit');
 			}); 
 
- 		$('#nav').toggle(function() {
+ 		$('#newtab').toggle(function() {
             $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
             $('#plussign').css('display','none');
-            $('ul.dropdown li.dir').css('width', '290px');
        		}, function(){
 		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
-			$('ul.dropdown li.dir').css('width', 'inherit');
 			}); 
-
-      
-		
 			
+
 			
 	$(function() {
 
@@ -193,13 +174,16 @@
 
 <ul id="nav" class="dropdown dropdown-horizontal" >
 	<div id="newtab">
-	<img src="../bodyshop/images/minussign.png" id="minussign" />
-	<img src="../bodyshop/images/plussign.png" id="plussign" />
+	<img src="images/minussign.png" id="minussign" />
+	<img src="images/plussign.png" id="plussign" />
 	</div>
 	<li class="dir"><span class="more">More Projects for The Body Shop</span>
 	<div id="line"></div>
 		<ul>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/"><span class="campaign">CanIGetMyOrderForFreeAtTheBodyShopYet.com</span></a></li>
+			<li><a href="http://pokenewyork.com/love/bodyshop/keepitorpassit"><span class="campaign">Keep It or Pass It</span></a>
+			</li>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2010"><span class="campaign">Joy 2010</span></a>
+			</li>
 
 		</ul>
 	</li>
@@ -224,14 +208,14 @@
 			<div class="one-third column alpha">
 				<div class="frameLargeSK gallery">
 					<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK"/>
-					<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+					<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>	
 				</div>
 			</div>
 		
 			<div class="one-third column omega">
 				<div class="frameLargeSK gallery">
 					<img src="images/medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
-					<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+					<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>
 				</div>
 			</div>
 		</div>
@@ -239,8 +223,8 @@
 		
 		<div class="one-third column omega">
 			<div class="frameLargeSK gallery">
-				<img src="../images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
-				<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
+				<a rel="gallery" title="The Body Shop Holiday Joy Campaign 2011" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>
 			</div>
 
 			<!-- brad's design (replace last div with this div) Note it does not scale yet, so it looks shittier than it would if I'd coded the scaling already
@@ -250,7 +234,7 @@
 			-->
 
 			<!-- hidden gallery of extra images -->
-			<a rel="gallery" href="../images/large/gallery4.jpg" style="display:none;" /></a>
+			<a rel="gallery" href="../../images/large/gallery4.jpg" style="display:none;" /></a>
 
 			<p class="tucked"><br /><strong>About the idea</strong><br />For the second year in a row, we worked with The Body Shop to create their Holiday Joy campaign, which gave fans the chance to win a free order (up to $100) just by visiting this fantastically fun URL: <a href="http://www.canigetmyorderforfreeatthebodyshopyet.com/">CanIGetMyOrderForFree<br />AtTheBodyShopYet.com</a>. Once a day at a pre-determined time, one lucky winner could refresh the page to see a bold "YES" in the snow globe in place of the usual "NO", and five times a day, a fan could win a free body butter.</p>
 
@@ -261,8 +245,8 @@
     
     
     <footer>
-   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
-		<div class="three columns offset-by-thirteen"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
+   		<div class="sixteen columns alpha omega"><img src="../../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen"><img src="../../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></div> 
     </footer> 
   </div> <!-- end #main -->   
   </div> <!--! end of #container --> 

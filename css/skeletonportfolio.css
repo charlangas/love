@@ -96,7 +96,7 @@
 	}    
 
 	#mainImageBodyShopSK {
-		background: #fff url(../bodyshop/images/mainImage.png) top center;
+		background: #fff url(../bodyshop/joy2010/images/mainImage.png) top center;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 541px;
@@ -139,14 +139,14 @@
 	}    
 
 	#mainImageJoy2011SK {
-		background: #fff url(../bshopjoy2011/images/mainImage.jpg) top center;
+		background: #fff url(../bodyshop/joy2011/images/mainImage.jpg) top center;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 670px;
 	}    
 
 	#mainImageKeepItSK {
-		background: #fff url(../keepitorpassit/images/mainImage.jpg) top center;
+		background: #fff url(../bodyshop/keepitorpassit/images/mainImage.jpg) top center;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 590px;
@@ -653,7 +653,7 @@
 		}    
 
 		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/images/mainImage2.jpg) top center;
+			background: #fff url(../bodyshop/joy2010/images/mainImage2.jpg) top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 430px;
@@ -695,7 +695,7 @@
 		}    
 
 		#mainImageJoy2011SK {
-			background: #fff url('../bshopjoy2011/images/mainImage2.jpg') top center;
+			background: #fff url('../bodyshop/joy2011/images/mainImage2.jpg') top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 533px;
@@ -1162,7 +1162,7 @@
 		}    
 
 		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/images/mainImage4.jpg) top center;
+			background: #fff url(../bodyshop/joy2010/images/mainImage4.jpg) top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 180px;
@@ -1204,7 +1204,7 @@
 		}
 
 		#mainImageJoy2011SK {
-			background: #fff url('../bshopjoy2011/images/mainImage4.jpg') top center;
+			background: #fff url('../bodyshop/joy2011/images/mainImage4.jpg') top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 223px;
@@ -1669,7 +1669,7 @@
 		}    
 
 		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/images/mainImage3.jpg) top center;
+			background: #fff url(../bodyshop/joy2010/images/mainImage3.jpg) top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 270px;
@@ -1711,7 +1711,7 @@
 		}    
 
 		#mainImageJoy2011SK {
-			background: #fff url('../bshopjoy2011/images/mainImage3.jpg') top center;
+			background: #fff url('../bodyshop/joy2011/images/mainImage3.jpg') top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 335px;
