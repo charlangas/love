@@ -67,40 +67,6 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
     
-    div#clients {
-		margin-top: 97px;
-		font-size: 68%;
-		text-align: right;
-		font-family: Arial;
-		font-weight: 500;
-		float: right;
-		color: #ccc;
-		line-height: 18px;
-		letter-spacing: 1px;
-		}
-
-	#main {
-		margin-top: 80px;
-		font-family: Arial;
-		font-size: 700%;
-		font-weight: bold;
-		color: #ccc;
-		line-height: 90%;
-		letter-spacing: -5px;
-		width: 75%;
-		}
-
-	div#contact {
-		font-size: 20px;
-		margin-top: 30px;
-		font-weight: normal;
-		font-family: Arial;
-		position: relative;
-		bottom: 20px;
-		}
-
-
-
 /* #Tablet (Portrait)
 ================================================== */
 
@@ -149,39 +115,6 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
-
-    div#clients {
-		margin-top: 77px;
-		font-size: 68%;
-		text-align: right;
-		font-family: Arial;
-		font-weight: 500;
-		float: right;
-		color: #ccc;
-		line-height: 18px;
-		letter-spacing: 1px;
-		}
-
-	#main {
-		margin-top: 100px;
-		font-family: Arial;
-		font-size: 600%;
-		font-weight: bold;
-		color: #ccc;
-		line-height: 90%;
-		letter-spacing: -5px;
-		width: 75%;
-		}
-
-	div#contact {
-		font-size: 20px;
-		margin-top: 30px;
-		font-weight: normal;
-		font-family: Arial;
-		position: absolute;
-		bottom: 20px;
-		}
-
     }
 
 
@@ -229,42 +162,6 @@
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
-
-    div#clients {
-		margin-top: -60px;
-		margin-bottom: 40px;
-		font-size: 80%;
-		text-align: right;
-		font-family: Arial;
-		font-weight: 500;
-		float: right;
-		color: #ccc;
-		line-height: 18px;
-		letter-spacing: 1px;
-		}
-
-	#main {
-		margin-top: 20px;
-		font-family: Arial;
-		font-size: 225%;
-		font-weight: bold;
-		color: #ccc;
-		line-height: 90%;
-		letter-spacing: -1px;
-		width: 75%;
-		}
-		
-	#heart{
-		width: 1em;
-		height: 1em;
-		}
-
-	div#contact {
-		font-size: 120%;
-		font-weight: normal;
-		font-family: Arial;
-		}
-
     }
 
 
@@ -296,40 +193,7 @@
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
 
-    div#clients {
-		margin-top: 0px;
-		margin-bottom: 40px;
-		font-size: 80%;
-		text-align: right;
-		font-family: Arial;
-		font-weight: 500;
-		float: right;
-		color: #ccc;
-		line-height: 18px;
-		letter-spacing: 1px;
-		}
-
-	#main {
-		margin-top: 20px;
-		font-family: Arial;
-		font-size: 330%;
-		font-weight: bold;
-		color: #ccc;
-		line-height: 90%;
-		letter-spacing: -1px;
-		width: 75%;
-		}
-
-	#heart{
-		width: 1em;
-		height: 1em;
-		}
-
-	div#contact {
-		font-size: 120%;
-		font-weight: normal;
-		font-family: Arial;
-		}
+    
 
     }
 
