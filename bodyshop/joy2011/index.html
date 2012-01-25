@@ -102,30 +102,24 @@
 			});	
 
 
-		//Campaign Tab
+			//Campaign Tab
  		$('#nav').hover(function() {
-            $('ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('ul.dropdown ul a , #minussign, #line, ul.dropdown li.dir').css('display','block');
             $('#plussign').css('display','none');
-            $('ul.dropdown li.dir').css('width', '290px');
        		}, function(){
 		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
-			$('ul.dropdown li.dir').css('width', 'inherit');
 			}); 
 
- 		$('#nav').toggle(function() {
+ 		$('#newtab').toggle(function() {
             $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
             $('#plussign').css('display','none');
-            $('ul.dropdown li.dir').css('width', '290px');
        		}, function(){
 		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
-			$('ul.dropdown li.dir').css('width', 'inherit');
 			}); 
-
-      
-		
 			
+
 			
 	$(function() {
 
@@ -180,13 +174,16 @@
 
 <ul id="nav" class="dropdown dropdown-horizontal" >
 	<div id="newtab">
-	<img src="../../bodyshop/images/minussign.png" id="minussign" />
-	<img src="../../bodyshop/images/plussign.png" id="plussign" />
+	<img src="images/minussign.png" id="minussign" />
+	<img src="images/plussign.png" id="plussign" />
 	</div>
 	<li class="dir"><span class="more">More Projects for The Body Shop</span>
 	<div id="line"></div>
 		<ul>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/"><span class="campaign">CanIGetMyOrderForFreeAtTheBodyShopYet.com</span></a></li>
+			<li><a href="http://pokenewyork.com/love/bodyshop/keepitorpassit"><span class="campaign">Keep It or Pass It</span></a>
+			</li>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2010"><span class="campaign">Joy 2010</span></a>
+			</li>
 
 		</ul>
 	</li>

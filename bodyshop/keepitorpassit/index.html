@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="../../css/layout.css">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/webbys.css">
+	<link rel="stylesheet" href="../../css/dropdown.css">
 
 	<!-- Javascript
 	=================================================== -->
@@ -96,7 +97,32 @@
 			
 			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
 			
+		//fade in
+		$(window).load(function() {
+				$('#nav').fadeIn(1).delay(2000).animate({ "top": "+=77px" }, 1000);
+			});	
+
+
+		//Campaign Tab
+ 		$('#nav').hover(function() {
+            $('ul.dropdown ul a , #minussign, #line, ul.dropdown li.dir').css('display','block');
+            $('#plussign').css('display','none');
+       		}, function(){
+		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			}); 
+		
+		
+		//mobile
+ 		$('#newtab').toggle(function() {
+            $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('#plussign').css('display','none');
+       		}, function(){
+		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
+			$('#plussign').css('display','block');
+			}); 
 			
+      
 			
 	$(function() {
 
@@ -146,6 +172,24 @@
 
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+<ul id="nav" class="dropdown dropdown-horizontal" >
+	<div id="newtab">
+	<img src="images/minussign.png" id="minussign" />
+	<img src="images/plussign.png" id="plussign" />
+	</div>
+	<li class="dir"><span class="more">More Projects for The Body Shop</span>
+	<div id="line"></div>
+		<ul>
+			<li><a href="http://pokenewyork.com/love/bodyshop/joy2011"><span class="campaign">Joy 2011</span></a>
+			</li>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2010"><span class="campaign">Joy 2010</span></a>
+			</li>
+
+		</ul>
+	</li>
+	</li>
+</ul>
 
 	<header>
 		<div id="mainImageKeepItSK">

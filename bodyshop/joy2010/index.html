@@ -99,21 +99,21 @@
 				
 			//Campaign Tab
  		$('#nav').hover(function() {
-            $('ul.dropdown ul a , #minussign, #line').css('display','block');
+            $('ul.dropdown ul a , #minussign, #line, ul.dropdown li.dir').css('display','block');
             $('#plussign').css('display','none');
        		}, function(){
 		    $('ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
 			}); 
 
- 		$('#nav').toggle(function() {
+ 		$('#newtab').toggle(function() {
             $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','block');
             $('#plussign').css('display','none');
        		}, function(){
 		    $('ul.dropdown li.dir, ul.dropdown ul a , #minussign, #line').css('display','none');
 			$('#plussign').css('display','block');
 			}); 
-      
+			
 
 	$(function() {
 
@@ -166,13 +166,15 @@
 
 <ul id="nav" class="dropdown dropdown-horizontal" >
 	<div id="newtab">
-	<img src="../bodyshop/joy2010/images/minussign.png" id="minussign" />
-	<img src="../bodyshop/joy2010/images/plussign.png" id="plussign" />
+	<img src="images/minussign.png" id="minussign" />
+	<img src="images/plussign.png" id="plussign" />
 	</div>
 	<li class="dir"><span class="more">More Projects for The Body Shop</span>
 	<div id="line"></div>
 		<ul>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bshopjoy2011/"><span class="campaign">Holiday Joy 2011</span></a></li>
+			<li><a href="http://pokenewyork.com/love/bodyshop/keepitorpassit"><span class="campaign">Keep It of Pass It</span></a>
+			</li>
+			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2011"><span class="campaign">Holiday Joy 2011</span></a></li>
 		</ul>
 	</li>
 	</li>
