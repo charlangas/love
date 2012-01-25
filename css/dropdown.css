@@ -95,7 +95,6 @@ ul.dropdown ul a {
 	padding-left:15px;
 	padding-top: 9px;
 	opacity:1;
-	border-top-style:solid;
 	border-color:#252525;
 	height:15px;
 	color:#cccccc;
@@ -169,14 +168,14 @@ span.more{
 	      
 #minussign{
 	position: relative;
-	top: 30px;
+	top: 32px;
 	left: 12.5px;
 	display: none;
 	}
 		   
 #plussign{
 	position: relative;
-	top: 26px;
+	top: 28px;
 	left: 11.5px;
 	display: block;
 	}
