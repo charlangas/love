@@ -21,31 +21,76 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/love.css">
+
+<style>
+
+	#mainImageBBCSK {
+		background: #fff url('../bbc/images/mainImage.jpg') top center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 786px;
+	}   
+
+		#containerBBCSK {
+		position: relative;
+		top: -164px;
+	}
+
 	
-	
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#mainImageBBCSK {
+		background: #fff url('../bbc/images/mainImage2.jpg') top center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 625px;
+	}
+	#containerBBCSK {
+		position: relative;
+		top: -164px;
+	}
+	}
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	@media only screen and (max-width: 767px) {
+		#mainImageBBCSK {
+			background: #fff url('../bbc/images/mainImage4.jpg') top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 262px;
+		}  
 
+		#containerBBCSK {
+			position: relative;
+			top: -54px;
+		}
+		
+	}
 
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#mainImageBBCSK {
+			background: #fff url(../bbc/images/mainImage3.jpg) top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 393px;
+		}  
+
+		#containerBBCSK {
+			position: relative;
+			top: -84px;
+		}
+	}
+
+</style>	
 
 	<!-- Javascript
 	=================================================== -->
-
-  <script src="js/libs/modernizr-1.6.min.js"></script>
   
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
 		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
 	</script>
-	<script src="javascripts/tabs.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
  	<script type="text/javascript">
@@ -58,23 +103,6 @@
 			}
 		 
 			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
 			$("#video").click(function() {
 				$.fancybox({
 					'padding'		: 0,

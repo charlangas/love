@@ -440,7 +440,7 @@ ul.dropdown li.dir{
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	.vimeoSK {
+		.vimeoSK {
 			max-width: 392px;
 			overflow: hidden;
 			margin: 4px 0 0 4px;
@@ -449,7 +449,7 @@ ul.dropdown li.dir{
 			left: -7px;
 		}
 
-#topLinkSK {
+		#topLinkSK {
 			font-weight: bold;
 			position: absolute;
 			right: 5px;
@@ -512,7 +512,7 @@ ul.dropdown li.dir{
 			width: 410px;
 		}
 		
-	#nav{
+		#nav{
 			position: absolute;
 	 		right:123px;
 		 	top:-100px;
