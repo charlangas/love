@@ -8,12 +8,7 @@
 		height: 541px;
 	}         
 
-	#mainImageBodyShopSK {
-		background: #fff url(../bodyshop/joy2010/images/mainImage.png) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+   
 
 	#mainImageCoachSK {
 		background: #fff url(../coach/images/mainImage.png) top center;
@@ -50,19 +45,9 @@
 		height: 541px;
 	}    
 
-	#mainImageJoy2011SK {
-		background: #fff url(../bodyshop/joy2011/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 670px;
-	}    
 
-	#mainImageKeepItSK {
-		background: #fff url(../bodyshop/keepitorpassit/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 590px;
-	}    
+
+    
 
 	#mainImageKYSK {
 		background: #fff url(../ky/images/mainImage.jpg) top center;
@@ -382,12 +367,6 @@
 			height: 430px;
 		}      
 
-		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/joy2010/images/mainImage2.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
 
 		#mainImageCoachSK {
 			background: #fff url('../coach/images/mainImage2.jpg') top center;
@@ -423,20 +402,9 @@
 			width: 100%;
 			height: 430px;
 		}    
+ 
 
-		#mainImageJoy2011SK {
-			background: #fff url('../bodyshop/joy2011/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 533px;
-		}    
-
-		#mainImageKeepItSK {
-			background: #fff url(../bodyshop/keepitorpassit/images/mainImage2.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 469px;
-		}    
+  
 
 		#mainImageKYSK {
 			background: #fff url(../ky/images/mainImage2.jpg) top center;
@@ -739,12 +707,7 @@
 
  
 
-		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/joy2010/images/mainImage4.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
+   
 
 		#mainImageCoachSK {
 			background: #fff url('../coach/images/mainImage4.jpg') top center;
@@ -781,19 +744,9 @@
 			height: 180px;
 		}
 
-		#mainImageJoy2011SK {
-			background: #fff url('../bodyshop/joy2011/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 223px;
-		}    
+
 		
-		#mainImageKeepItSK {
-			background: #fff url(../bodyshop/keepitorpassit/images/mainImage4.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 196px;
-		}    
+  
 
 		#mainImageKYSK {
 			background: #fff url(../ky/images/mainImage4.jpg) top center;
@@ -1104,16 +1057,6 @@
 			height: 270px;
 		}    
 
-  
-
-		   
-
-		#mainImageBodyShopSK {
-			background: #fff url(../bodyshop/joy2010/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
 
 		#mainImageCoachSK {
 			background: #fff url(../coach/images/mainImage3.jpg) top center;
@@ -1150,19 +1093,9 @@
 			height: 270px;
 		}    
 
-		#mainImageJoy2011SK {
-			background: #fff url('../bodyshop/joy2011/images/mainImage3.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 335px;
-		}    
 
-		#mainImageKeepItSK {
-			background: #fff url(../bodyshop/keepitorpassit/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 294px;
-		}    
+
+  
 
 		#mainImageKYSK {
 			background: #fff url(../ky/images/mainImage3.jpg) top center;

@@ -6,48 +6,131 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>POKE</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<meta charset="utf-8">
+<title>POKE New York - The Body Shop</title>
+<meta name="description" content="">
+<meta name="author" content="POKE New York">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/skeleton.css">
-	<link rel="stylesheet" href="bodyshop.css">
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link rel="stylesheet" href="../css/love.css">
+
+<style>
+	.projectList {
+		color: #f36523;
+		text-align: right;
+		font-weight: bold;
+		float: right;
+		margin-top: 180px;
+	}
+
+	.project a {
+		text-align: right;
+		font-weight: bold;
+		float: right;
+		font-size: 400%;
+		line-height: 55%;
+		letter-spacing: -5px;
+		width: 75%;
+		margin-bottom: 28px;
+	}
+
+	.project a:hover {
+		color: #f36523;
+		text-decoration: underline;
+	}
 	
+	@media only screen and (max-width: 959px) {
+	
+		.projectList {
+			margin-top: 180px;
+		}
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		.project a {
+			font-size: 300%;
+			line-height: 50%;
+			letter-spacing: -4px;
+			width: 75%;
+			margin-bottom: 28px;
+		}
 
-	<!-- Javascript Links
-	================================================= -->
-	<link media="screen" rel="stylesheet" href="css/colorbox.css" />
+	
+	}
 
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="js/tabs.js"></script>
-	<script src="js/jquery.colorbox-min.js"></script>
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+		.projectList {
+			margin-top: 120px;
+		}
+
+		.project a {
+			font-size: 300%;
+			line-height: 50%;
+			letter-spacing: -2px;
+			width: 75%;
+			margin-bottom: 25px;
+		}
+	}	    	
+	
+   
+	@media only screen and (max-width: 767px) {
+		
+		.projectList {
+			margin-top: 120px;
+		}
+
+		.project a {
+			font-size: 300%;
+			line-height: 50%;
+			letter-spacing: -2px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.projectList {
+			margin-top: 120px;
+		}
+
+		.project a {
+			font-size: 250%;
+			line-height: 50%;
+			letter-spacing: -2px;
+			width: 75%;
+			margin-bottom: 20px;
+
+		}
+	}
+
+	@media only screen and (max-width: 479px) {
+
+		.projectList {
+			margin-top: 80px;
+		}
+
+		.project a {
+			font-size: 150%;
+			line-height: 25%;
+			letter-spacing: -2px;
+			width: 75%;
+			margin-bottom: 0px;			
+		}
+	
+	
+	}
+</style>
 
 
 </head>
+
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-
-
-	<!-- Primary Page Layout
-	================================================== -->
 
 <div class="container">
 
@@ -72,8 +155,6 @@
 		</footer>
 	</div>
 </div>
-
-
 
 <script type="text/javascript">
 

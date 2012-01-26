@@ -5,33 +5,64 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>POKE New York - The Body Shop</title>
 	<meta name="description" content="">
 	<meta name="author" content="POKE New York">
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/skeleton.css">
+	<link rel="stylesheet" href="../../css/love.css">
 	<link rel="stylesheet" href="../../css/dropdown.css">
-	
-	<!-- Javascript
-	=================================================== -->
-  
-  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="../../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
+	<style>
+
+		#mainImageBodyShopSK {
+			background: #fff url(images/mainImage.png) top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 541px;
+		} 
+
+		@media only screen and (min-width: 768px) and (max-width: 959px) {
+			#mainImageBodyShopSK {
+				background: #fff url(images/mainImage2.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 430px;
+			}    
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+
+			#mainImageBodyShopSK {
+				background: #fff url(images/mainImage4.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 180px;
+			} 
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			#mainImageBodyShopSK {
+				background: #fff url(images/mainImage3.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 270px;
+			}    
+		}
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="../../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+
  	<script type="text/javascript">
 		$(document).ready(function() {
 			
@@ -42,23 +73,6 @@
 			}
 		 
 			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
 			$("#video").click(function() {
 				$.fancybox({
 					'padding'		: 0,
@@ -162,21 +176,21 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 0);">
 
-<ul id="nav" class="dropdown dropdown-horizontal" >
-	<div id="newtab">
-	<img src="images/minussign.png" id="minussign" />
-	<img src="images/plussign.png" id="plussign" />
-	</div>
-	<li class="dir"><span class="more">More Projects for The Body Shop</span>
-	<div id="line"></div>
-		<ul>
-			<li><a href="http://pokenewyork.com/love/bodyshop/keepitorpassit"><span class="campaign">Keep It or Pass It</span></a>
-			</li>
-			<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2011"><span class="campaign">Holiday Joy 2011</span></a></li>
-		</ul>
-	</li>
-	</li>
-</ul>
+	<ul id="nav" class="dropdown dropdown-horizontal" >
+		<div id="newtab">
+		<img src="images/minussign.png" id="minussign" />
+		<img src="images/plussign.png" id="plussign" />
+		</div>
+		<li class="dir"><span class="more">More Projects for The Body Shop</span>
+		<div id="line"></div>
+			<ul>
+				<li><a href="http://pokenewyork.com/love/bodyshop/keepitorpassit"><span class="campaign">Keep It or Pass It</span></a>
+				</li>
+				<li><a id="bottombutton" href="http://pokenewyork.com/love/bodyshop/joy2011"><span class="campaign">Holiday Joy 2011</span></a></li>
+			</ul>
+		</li>
+		</li>
+	</ul>
 
 	<header>
 		<div id="mainImageBodyShopSK">
