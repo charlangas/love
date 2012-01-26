@@ -309,6 +309,15 @@ ul.dropdown li.dir{
 			width: 758px;
 		}
 		
+		#topLinLowkSK {
+			font-family: arial, sans-serif;
+			font-weight: bold;
+			position: absolute;
+			text-align: right;
+			right: 5px;
+			padding: 10px 10px 0 0;
+			z-index: 2;
+		}
 
 		#nav{
 	 		right:144px;
@@ -330,6 +339,12 @@ ul.dropdown li.dir{
 			font-size: 80%;
 		}
 
+		#topLinkLowSK {
+			font-weight: bold;
+			position: absolute;
+			text-align: right;
+			right: 5px;
+		}
 
 		#titleSKtbs {
 			font-size: 50%;
@@ -390,6 +405,14 @@ ul.dropdown li.dir{
 			font-size: 100%;
 		}
 
+		#topLinkLowSK {
+			position: absolute;
+			text-align: right;
+			right: 2px;
+			top: 200px;
+			font-size: 80%;
+		}
+
 		#titleSKtbs {
 			font-size: 70%;
 		}
@@ -440,3 +463,10 @@ ul.dropdown li.dir{
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
+
+			#topLinkLowSK {
+			text-align: right;
+			right: 5px;
+			top: 295px;
+			font-size: 100%;
+		}
