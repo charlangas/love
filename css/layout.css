@@ -7,13 +7,6 @@
 * 8/17/2011
 */
 
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
-
 /* #Site Styles
 ================================================== */
 
@@ -22,6 +15,233 @@ body {
 	background-color: #252525;
 	font-family: Arial, sans-serif;
 }
+
+a:link {
+	text-decoration: none;
+	color: #f06924;
+}
+
+a:visited {
+	color: #f06924;
+}
+
+a:hover {
+	color: #b8501c;
+	text-decoration: underline;
+}
+
+h1 {
+	color: #f06924;
+	font-size: 2em;
+	margin: 15px 0 15px 0;	
+}
+
+h3 {
+	color: #f06924;
+	margin: 15px 0 20px 0;	
+}
+
+strong {
+	color: #fff;
+}
+
+.quote {
+	font-family: georgia, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.source {
+	font-size: .75em;
+	color: #fff;
+	font-weight: bold;
+}
+
+a.source, a.source:visited {
+	color: #f06924;
+	text-decoration: none;
+}
+
+a.source:hover {
+	text-decoration: underline;
+}
+
+.divider, .press {
+	margin: 15px 0 15px 0;	
+}
+
+.hugeAndRagged {
+	font-family: arial, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 1em;
+}
+
+.orange {
+	color: #f06924;
+	text-decoration: none;
+}
+
+
+.tucked {
+	margin: 0 10px 10px 10px;
+}
+
+.tuckedSpace {
+	margin: 10px 10px 0 10px;
+}
+
+.pdf {
+	background: url(../images/icon-pdf.png) no-repeat 0% 0%;
+	height: 18px;
+	padding-left: 23px;
+	padding-top: 6px;
+}
+
+#topLink {
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	text-align: right;
+	right: 5px;
+	padding: 10px 10px 0 0;
+	z-index: 2;
+}
+
+#topLink a, #topLink a:visited {
+	color: #f06924;
+	text-decoration: none;
+}
+
+#topLink a:hover {
+	color: #f06924;
+	text-decoration: underline;
+}
+
+
+.frame {
+	border: solid 3px #464646;
+	position: relative;
+	height:93px;
+}
+
+.frameLarge {
+	border: solid 7px #464646;
+	position: relative;
+	height: 194px;
+}
+
+.contentFrame {
+	border: solid 6px #464646;
+	position: relative;
+	height:200px;
+	margin-bottom: 15px;
+}
+
+.mainFrame {
+	border-style: solid;
+	border-width: 7px;
+	border-color: #464646;
+	position: relative;
+	height:390px;
+}
+
+.mainFramed {
+	margin: 3px 0 0 3px;
+}
+
+.framed {
+	margin: 3px 0 0 2px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.framedLarge {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.content {
+	margin-bottom:15px;
+}
+
+.contentFramed {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.frame-overlay {
+	margin: 3px 0 0 2px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+.largeFrameOverlay {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+.space {
+	margin-bottom: 10px;
+}
+
+.bigBorder {
+	background:url(../images/bigBorder.png) top center;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 407px;
+	margin-bottom: 10px;
+}
+
+.bigBordered {
+	margin: 13px 0 0 14px;
+}
+
+.firstPress {
+	margin-top: 0;
+}
+
+p.tucked strong {
+	color: #f06924;
+}
+
+#noteworthy a, #noteworthy a:visited {
+	text-decoration: none;
+	font-family: georgia, serif;
+	font-size: 1.2em;
+}
+
+.noteworthySpan {
+	font-weight: bold;
+	color: #ccc;
+}
+
+
+#gallery, #micAndShadow, #clothetags {
+	position: relative;
+}
+
+#iicdLinks {
+	list-style-type:none;
+	margin-left: 10px;
+}
+
+
+
+
+
+/* ---------------------------------*/
 
 #main a {
 	color: #f36523;
