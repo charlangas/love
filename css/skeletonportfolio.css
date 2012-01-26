@@ -17,12 +17,7 @@
 
 
 
-	#mainImageLebronSK {
-		background: #fff url(../lebron/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+   
 
    
 	
@@ -217,19 +212,6 @@
 			height: 437px;
 		}    
 
-
-
- 
-
-		#mainImageLebronSK {
-			background: #fff url('../lebron/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
-
-
-
 		#mainImageMoMASK {
 			background: #fff url(../moma/images/mainImage2.jpg) top center;
 			background-repeat: no-repeat;
@@ -394,15 +376,6 @@
 		}    
 
 
-		#mainImageLebronSK {
-			background: #fff url('../lebron/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
-
- 
-
 		#mainImageMoMASK {
 			background: #fff url(../moma/images/mainImage4.jpg) top center;
 			background-repeat: no-repeat;
@@ -565,17 +538,6 @@
 			width: 100%;
 			height: 274px;
 		}    
-
-
-
-		#mainImageLebronSK {
-			background: #fff url(../lebron/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
-
- 
 
 		#mainImageMoMASK {
 			background: #fff url(../moma/images/mainImage3.jpg) top center;
