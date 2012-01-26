@@ -19,12 +19,7 @@
 		height: 550px;
 	}    
 
-	#mainImageDreamSK {
-		background: #fff url(../dream/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 783px;
-	}    
+   
 
 	#mainImageDysonSK {
 		background: #fff url(../dyson/images/mainImage.jpg) top center;
@@ -152,10 +147,7 @@
 		top: 188px;
 	}
 	
-	#containerIICDSK {
-		position: relative;
-		top: -240px;
-	}
+
 
 	#containerJoy2011SK {
 		position: relative;
@@ -372,12 +364,7 @@
 			height: 437px;
 		}    
 
-		#mainImageDreamSK {
-			background: #fff url('../dream/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 621px;
-		}    
+ 
 
 		#mainImageDysonSK {
 			background: #fff url(../dyson/images/mainImage2.jpg) top center;
@@ -491,10 +478,6 @@
 			top: 150px;
 		}
 
-		#containerIICDSK {
-			position: relative;
-			top: -191px;
-		}
 
 		#containerJoy2011SK {
 			position: relative;
@@ -708,12 +691,7 @@
 			height: 183px;
 		}    
 
-		#mainImageDreamSK {
-			background: #fff url('../dream/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 260px;
-		}    
+ 
 
 		#mainImageDysonSK {
 			background: #fff url(../dyson/images/mainImage4.jpg) top center;
@@ -827,10 +805,7 @@
 			top: 63px;
 		}
 
-		#containerIICDSK {
-			position: relative;
-			top: -120px;
-		}
+
 		
 		#containerJoy2011SK {
 			position: relative;
@@ -1045,12 +1020,7 @@
 			height: 274px;
 		}    
 
-		#mainImageDreamSK {
-			background: #252525 url(../dream/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 390px;
-		}    
+ 
 
 		#mainImageDysonSK {
 			background: #fff url(../dyson/images/mainImage3.jpg) top center;
@@ -1164,10 +1134,7 @@
 			top: 95px;
 		}
 
-		#containerIICDSK {
-			position: relative;
-			top: -141px;
-		}
+
 		
 		#containerJoy2011SK {
 			position: relative;
