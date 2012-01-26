@@ -5,8 +5,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>POKE New York - FCUK YouTique!</title>
 	<meta name="description" content="">
@@ -15,37 +13,111 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
-	
-	
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/love.css">
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+ 	<style>
 
+		#mainImageFCUKSK {
+			background: #fff url(../fcuk/images/mainImage.jpg) top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 541px;
+		}    
 
 
-	<!-- Javascript
-	=================================================== -->
+		#tagjacketSK {
+			position: absolute;
+			top: -275px;
+			left: 565px;
+			display: none;
+			z-index: 3;
+		}
 
-  <script src="js/libs/modernizr-1.6.min.js"></script>
-  
+		#tagshirtSK {
+			position: absolute;
+			top: -160px;
+			left: 770px;
+			display: none;
+			z-index: 3;
+
+		}
+
+	    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	    	
+			#mainImageFCUKSK {
+				background: #fff url(../fcuk/images/mainImage2.jpg) top center;
+				height: 430px;
+			}  
+
+			#tagjacketSK {
+				width: 142px;
+				height: 24px;
+				top: -219px;
+				left: 450px;
+			}
+
+			#tagshirtSK {
+				width: 142px;
+				height: 24px;
+				top: -126px;
+				left: 608px;
+			}
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+			
+			#mainImageFCUKSK {
+				background: #fff url(../fcuk/images/mainImage4.jpg) top center;
+				height: 180px;
+			}
+
+			#tagjacketSK {
+				width: 90px;
+				height: 15px;
+				top: -94px;
+				left: 164px;
+			}
+
+			#tagshirtSK {
+				width: 90px;
+				height: 15px;
+				top: -55px;
+				left: 217px;
+			}
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			#mainImageFCUKSK {
+				background: #fff url(../fcuk/images/mainImage3.jpg) top center;
+				height: 270px;
+			}    
+
+			#tagjacketSK {
+				width: 90px;
+				height: 15px;
+				top: -137px;
+				left: 257px;
+			}
+
+			#tagshirtSK {
+				width: 90px;
+				height: 15px;
+				top: -80px;
+				left: 358px;
+			}
+		}
+
+	</style>
+
+
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
 		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
 	</script>
-	<script src="javascripts/tabs.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
  	<script type="text/javascript">
@@ -57,24 +129,7 @@
 				$('a[rel=gallery]').removeAttr('rel');
 			}
 		 
-			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
+			//jQuery calls for Fancybox		
 			$("#video").click(function() {
 				$.fancybox({
 					'padding'		: 0,
@@ -112,49 +167,49 @@
 			});			
 
 
-	$(function() {
+			$(function() {
 
-        // Find all YouTube videos
-        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+		        // Find all YouTube videos
+		        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
 
-            // The element that is fluid width
-            $fluidEl = $("#fluidVideo");
+		            // The element that is fluid width
+		            $fluidEl = $("#fluidVideo");
 
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function() {
+		        // Figure out and save aspect ratio for each video
+		        $allVideos.each(function() {
 
-                $(this)
-                        .data('aspectRatio', this.height / this.width)
+		                $(this)
+		                        .data('aspectRatio', this.height / this.width)
 
-                        // and remove the hard coded width/height
-                        .removeAttr('height')
-                        .removeAttr('width');
+		                        // and remove the hard coded width/height
+		                        .removeAttr('height')
+		                        .removeAttr('width');
 
-        });
+		        });
 
-        // When the window is resized
-        // (You'll probably want to debounce this)
-        $(window).resize(function() {
+		        // When the window is resized
+		        // (You'll probably want to debounce this)
+		        $(window).resize(function() {
 
-                var newWidth = $fluidEl.width();
+		                var newWidth = $fluidEl.width();
 
-                // Resize all videos according to their own aspect ratio
-                $allVideos.each(function() {
+		                // Resize all videos according to their own aspect ratio
+		                $allVideos.each(function() {
 
-                        var $el = $(this);
-                        $el
-                                .width(newWidth)
-                                .height(newWidth * $el.data('aspectRatio'));
+		                        var $el = $(this);
+		                        $el
+		                                .width(newWidth)
+		                                .height(newWidth * $el.data('aspectRatio'));
 
-                });
+		                });
 
-        // Kick off one resize to fix all videos on page load
-        }).resize();
+		        // Kick off one resize to fix all videos on page load
+		        }).resize();
 
-	});
-});
-		
-			</script>
+			});
+		});
+			
+	</script>
 
 </head>
 

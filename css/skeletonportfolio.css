@@ -8,31 +8,12 @@
 		height: 541px;
 	}         
 
-   
-
-
-
 	#mainImageCulturiousSK {
 		background: #fff url(../tauck/images/mainImage.jpg) top center;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 550px;
 	}    
-
-   
-
-
-
-	#mainImageFCUKSK {
-		background: #fff url(../fcuk/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
-
-
-
-    
 
 	#mainImageKYSK {
 		background: #fff url(../ky/images/mainImage.jpg) top center;
@@ -308,22 +289,7 @@
 		z-index: 4;
 	}
 
-	#tagjacketSK {
-		position: absolute;
-		top: -275px;
-		left: 565px;
-		display: none;
-		z-index: 3;
-	}
 
-	#tagshirtSK {
-		position: absolute;
-		top: -160px;
-		left: 770px;
-		display: none;
-		z-index: 3;
-
-	}
 	
 
 	
@@ -352,17 +318,7 @@
 			height: 437px;
 		}    
 
-   
 
-		#mainImageFCUKSK {
-			background: #fff url(../fcuk/images/mainImage2.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
- 
-
-  
 
 		#mainImageKYSK {
 			background: #fff url(../ky/images/mainImage2.jpg) top center;
@@ -595,25 +551,7 @@
 			z-index: 4;
 		}
 
-		#tagjacketSK {
-			width: 142px;
-			height: 24px;
-			position: absolute;
-			top: -219px;
-			left: 450px;
-			display: none;
-			z-index: 3;
-		}
 
-		#tagshirtSK {
-			width: 142px;
-			height: 24px;
-			position: absolute;
-			top: -126px;
-			left: 608px;
-			display: none;
-			z-index: 3;
-		}
 	
 		
 
@@ -664,19 +602,6 @@
 		}    
 
  
-
-
-
-		#mainImageFCUKSK {
-			background: #fff url(../fcuk/images/mainImage4.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}
-
-
-		
-  
 
 		#mainImageKYSK {
 			background: #fff url(../ky/images/mainImage4.jpg) top center;
@@ -914,25 +839,7 @@
 			z-index: 4;
 		}
 
-		#tagjacketSK {
-			width: 90px;
-			height: 15px;
-			position: absolute;
-			top: -94px;
-			left: 164px;
-			display: none;
-			z-index: 3;
-		}
 
-		#tagshirtSK {
-			width: 90px;
-			height: 15px;
-			position: absolute;
-			top: -55px;
-			left: 217px;
-			display: none;
-			z-index: 3;
-		}
 
 
 	
@@ -977,18 +884,6 @@
 			width: 100%;
 			height: 274px;
 		}    
-
- 
-
-
-
-		#mainImageFCUKSK {
-			background: #fff url(../fcuk/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
-
 
 
   
@@ -1231,25 +1126,7 @@
 			z-index: 4;
 		}
 
-		#tagjacketSK {
-			width: 90px;
-			height: 15px;
-			position: absolute;
-			top: -137px;
-			left: 257px;
-			display: none;
-			z-index: 3;
-		}
 
-		#tagshirtSK {
-			width: 90px;
-			height: 15px;
-			position: absolute;
-			top: -80px;
-			left: 358px;
-			display: none;
-			z-index: 3;
-		}
 
 		#topLinkLowSK {
 			font-family: arial, sans-serif;
