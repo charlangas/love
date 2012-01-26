@@ -190,8 +190,8 @@ ul.dropdown li.dir{
 	overflow: hidden;
 	margin: 4px 0 0 4px;
 	position: absolute;
-	top: -6px;
-	left: -7px;
+	top: 3px;
+	left: 2px;
 }
 
 #titleSK {
@@ -275,55 +275,28 @@ ul.dropdown li.dir{
 
 		.vimeoSK {
 			max-width: 464px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
-		}
 
-		#topLinkSK {
-			font-weight: bold;
-			position: absolute;
-			right: 5px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
 		}
 
 		#titleSKtbs {
 			font-size: 90%;
-			margin-top: 0px;
 		}
 
 		.hugeAndRaggedSK {
 			font-size: 2.5em;
-			font-weight: bold;
-			letter-spacing: -2px;
-			line-height: 1em;
 		}
 
 		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 317px;
-			margin-bottom: 10px;
 		}
 
 		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
 			width: 214px;
 			height: 143px;
-			display:none;
 		}
 
 		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 152px;
-			margin-bottom: 10px;
 		}
 
 		.imageSK {
@@ -338,11 +311,7 @@ ul.dropdown li.dir{
 		
 
 		#nav{
-			position: absolute;
 	 		right:144px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
 		}
 		
 		ul.dropdown li.dir{display: block;}		
@@ -353,27 +322,17 @@ ul.dropdown li.dir{
 
 	.vimeoSK {
 			max-width: 272px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
 		}
 
 	#topLinkSK {
-			font-weight: bold;
-			position: absolute;
 			right: 2px;
 			top: 178px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
 			font-size: 80%;
 		}
 
 
 		#titleSKtbs {
 			font-size: 50%;
-			margin-top: 0px;
 		}
 
 		#titleSK {
@@ -384,31 +343,14 @@ ul.dropdown li.dir{
 
 		.hugeAndRaggedSK {
 			font-size: 1.5em;
-			font-weight: bold;
 			letter-spacing: 0px;
-			line-height: 1em;
 		}
 
 		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 196px;
-			margin-bottom: 10px;
-		}
-
-		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
-			width: 278px;
-			height: 186px;
-			display:none;
 		}
 
 		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 194px;
 			margin-bottom: 0px;
 			margin-top: 15px;
@@ -427,12 +369,8 @@ ul.dropdown li.dir{
 		
 
 		#nav{
-			position: absolute;
 			right:65px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
-		}
+			}
 
 		ul.dropdown li.dir{display: none;}
 	} /* @media only screen and (max-width: 767px) */
@@ -442,17 +380,10 @@ ul.dropdown li.dir{
 
 		.vimeoSK {
 			max-width: 392px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
+
 		}
 
 		#topLinkSK {
-			font-weight: bold;
-			position: absolute;
-			right: 5px;
 			top: 280px;
 			padding: 10px 10px 0 0;
 			z-index: 2;
@@ -461,7 +392,6 @@ ul.dropdown li.dir{
 
 		#titleSKtbs {
 			font-size: 70%;
-			margin-top: 0px;
 		}
 
 		#titleSK {
@@ -472,31 +402,19 @@ ul.dropdown li.dir{
 
 		.hugeAndRaggedSK {
 			font-size: 2em;
-			font-weight: bold;
 			letter-spacing: -1px;
-			line-height: 1em;
 		}
 
 		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 272px;
-			margin-bottom: 10px;
 		}
 
 		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
 			width: 398px;
 			height: 267px;
-			display:none;
 		}
 
 		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
 			height: 275px;
 			margin-bottom: 15px;
 			margin-top: 15px;
@@ -513,12 +431,8 @@ ul.dropdown li.dir{
 		}
 		
 		#nav{
-			position: absolute;
 	 		right:123px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
-		}
+	 		}
 		
 		ul.dropdown li.dir{display: none;}
 
