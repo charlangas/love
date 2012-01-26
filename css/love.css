@@ -1,0 +1,528 @@
+/* #Site Styles
+================================================== */
+body {
+	background-color: #252525;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: normal;
+	color: #ccc;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #f06924;
+}
+
+a:hover {
+	color: #b8501c;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	color: #f06924;
+	font-size: 2em;
+	margin: 15px 0;	
+}
+
+h3 {
+	color: #f06924;
+	margin: 15px 0 20px 0;	
+}
+
+strong {
+	font-weight: bold;
+}
+
+.quote {
+	font-family: georgia, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.source {
+	font-size: .75em;
+	color: #fff;
+	font-weight: bold;
+}
+
+.divider, .press {
+	margin: 15px 0 15px 0;	
+}
+
+.hugeAndRagged {
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 1em;
+}
+
+.orange {
+	color: #f06924;
+	text-decoration: none;
+}
+
+.tucked {
+	margin: 0 10px 10px 10px;
+}
+
+.tuckedSpace {
+	margin: 10px 10px 0 10px;
+}
+
+.pdf {
+	background: url(../images/icon-pdf.png) no-repeat 0% 0%;
+	height: 18px;
+	padding-left: 23px;
+	padding-top: 6px;
+}
+
+#topLink {
+	font-weight: bold;
+	position: absolute;
+	right: 5px;
+	padding: 10px 10px 0 0;
+	z-index: 2;
+}
+
+.frame {
+	border: solid 3px #464646;
+	position: relative;
+	height:93px;
+}
+
+.frameLarge {
+	border: solid 7px #464646;
+	position: relative;
+	height: 194px;
+}
+
+.contentFrame {
+	border: solid 6px #464646;
+	position: relative;
+	height:200px;
+	margin-bottom: 15px;
+}
+
+.framed {
+	margin: 3px 0 0 2px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.framedLarge {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.content {
+	margin-bottom:15px;
+}
+
+.largeFrameOverlay {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+.space {
+	margin-bottom: 10px;
+}
+
+.bigBorder {
+	background:url(../images/bigBorder.png) top center;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 407px;
+	margin-bottom: 10px;
+}
+
+.bigBordered {
+	margin: 13px 0 0 14px;
+}
+
+.firstPress {
+	margin-top: 0;
+}
+
+p.tucked strong {
+	color: #f06924;
+}
+/* put in coach 
+#noteworthy a, #noteworthy a:visited {
+	text-decoration: none;
+	font-family: georgia, serif;
+	font-size: 1.2em;
+}
+*/
+
+#gallery, #micAndShadow, #clothetags {
+	position: relative;
+}
+
+#iicdLinks {
+	list-style-type:none;
+	margin-left: 10px;
+}
+
+#nav{
+	position: absolute;
+ 	right:194px;
+ 	top:-100px;
+    z-index: 3;
+    height:58px;
+	}
+
+ul.dropdown li.dir{
+	display: block;
+}
+
+.vimeoSK {
+	max-width: 592px;
+	overflow: hidden;
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top: -6px;
+	left: -7px;
+}
+
+#titleSK {
+	margin-top: 0px;
+}
+
+#titleSKtbs {
+	font-size: 100%;
+	margin-top: 0px;
+}
+
+#topLinkSK {
+	font-weight: bold;
+	position: absolute;
+	right: 5px;
+	padding: 10px 10px 0 0;
+	z-index: 2;
+}
+
+#topLinkLowSK {
+	font-weight: bold;
+	position: absolute;
+	right: 5px;
+	padding: 10px 10px 0 0;
+	z-index: 2;
+}
+
+.dividerSK {
+	margin: 40px 0px 15px 0px;
+	width: 950px;
+}
+
+.imageSK {
+	width: 278px;
+	height: 186px;
+}
+
+.frameLargeSK {
+	border: solid 7px #464646;
+	position: relative;
+	height: 194px;
+	margin-bottom: 10px;
+}
+
+.largeFrameOverlaySK {
+	margin: 4px 0 0 4px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 278px;
+	height: 186px;
+	display:none;
+}
+
+.bigBorderSK {
+	border: solid 7px #464646;
+	position: relative;
+	height: 399px;
+	margin-bottom: 10px;
+}
+
+.hugeAndRaggedSK {
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 1em;
+}
+
+#titleSK {
+	margin-top: 0px;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		.vimeoSK {
+			max-width: 464px;
+			overflow: hidden;
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top: -6px;
+			left: -7px;
+		}
+
+		#topLinkSK {
+			font-weight: bold;
+			position: absolute;
+			right: 5px;
+			padding: 10px 10px 0 0;
+			z-index: 2;
+		}
+
+		#titleSKtbs {
+			font-size: 90%;
+			margin-top: 0px;
+		}
+
+		.hugeAndRaggedSK {
+			font-size: 2.5em;
+			font-weight: bold;
+			letter-spacing: -2px;
+			line-height: 1em;
+		}
+
+		.bigBorderSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 317px;
+			margin-bottom: 10px;
+		}
+
+		.largeFrameOverlaySK {
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top:0px;
+			left:0px;
+			width: 214px;
+			height: 143px;
+			display:none;
+		}
+
+		.frameLargeSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 152px;
+			margin-bottom: 10px;
+		}
+
+		.imageSK {
+			width: 214px;
+			height: 143px;
+		}
+	
+		.dividerSK {
+			margin: 15px 0 15px 0;
+			width: 758px;
+		}
+		
+
+		#nav{
+			position: absolute;
+	 		right:144px;
+		 	top:-100px;
+		    z-index: 3;
+	        height:58px;
+		}
+		
+		ul.dropdown li.dir{display: block;}		
+	} /* end media only screen and (min-width: 768px) and (max-width: 959px) { */
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+	.vimeoSK {
+			max-width: 272px;
+			overflow: hidden;
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top: -6px;
+			left: -7px;
+		}
+
+	#topLinkSK {
+			font-weight: bold;
+			position: absolute;
+			right: 2px;
+			top: 178px;
+			padding: 10px 10px 0 0;
+			z-index: 2;
+			font-size: 80%;
+		}
+
+
+		#titleSKtbs {
+			font-size: 50%;
+			margin-top: 0px;
+		}
+
+		#titleSK {
+			font-size: 85%;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		.hugeAndRaggedSK {
+			font-size: 1.5em;
+			font-weight: bold;
+			letter-spacing: 0px;
+			line-height: 1em;
+		}
+
+		.bigBorderSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 196px;
+			margin-bottom: 10px;
+		}
+
+		.largeFrameOverlaySK {
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top:0px;
+			left:0px;
+			width: 278px;
+			height: 186px;
+			display:none;
+		}
+
+		.frameLargeSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 194px;
+			margin-bottom: 0px;
+			margin-top: 15px;
+
+		}
+
+		.imageSK {
+			width: 278px;
+			height: 186px;
+		}
+		.dividerSK {
+			margin: 15px 0 15px 0;
+			width: 295px;
+		}
+
+		
+
+		#nav{
+			position: absolute;
+			right:65px;
+		 	top:-100px;
+		    z-index: 3;
+	        height:58px;
+		}
+
+		ul.dropdown li.dir{display: none;}
+	} /* @media only screen and (max-width: 767px) */
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.vimeoSK {
+			max-width: 392px;
+			overflow: hidden;
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top: -6px;
+			left: -7px;
+		}
+
+#topLinkSK {
+			font-weight: bold;
+			position: absolute;
+			right: 5px;
+			top: 280px;
+			padding: 10px 10px 0 0;
+			z-index: 2;
+			font-size: 100%;
+		}
+
+		#titleSKtbs {
+			font-size: 70%;
+			margin-top: 0px;
+		}
+
+		#titleSK {
+			font-size: 100%;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+
+		.hugeAndRaggedSK {
+			font-size: 2em;
+			font-weight: bold;
+			letter-spacing: -1px;
+			line-height: 1em;
+		}
+
+		.bigBorderSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 272px;
+			margin-bottom: 10px;
+		}
+
+		.largeFrameOverlaySK {
+			margin: 4px 0 0 4px;
+			position: absolute;
+			top:0px;
+			left:0px;
+			width: 398px;
+			height: 267px;
+			display:none;
+		}
+
+		.frameLargeSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 275px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+
+		.imageSK {
+			width: 398px;
+			height: 267px;
+		}
+
+		.dividerSK {
+			margin: 15px 0 15px 0;
+			width: 410px;
+		}
+		
+	#nav{
+			position: absolute;
+	 		right:123px;
+		 	top:-100px;
+		    z-index: 3;
+	        height:58px;
+		}
+		
+		ul.dropdown li.dir{display: none;}
+
+	} /* end min-width 480 & max-width 767
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}

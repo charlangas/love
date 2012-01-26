@@ -1,22 +1,3 @@
-/*
-* Skeleton V1.1
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 8/17/2011
-*/
-
-
-/* Table of Contents
-==================================================
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-
-
-
 /* #Base 960 Grid
 ================================================== */
 
@@ -25,14 +6,7 @@
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 541px;
-	}    
-    
-	#mainImageBakerTweetSK {
-		background: #fff url('../bakertweet/images/mainImage.png') top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+	}        
 
 	#mainImageBBCSK {
 		background: #fff url('../bbc/images/mainImage.jpg') top center;
@@ -318,21 +292,6 @@
 		z-index: 4;
 	}
 
-	#iPhoneSK {
-		size: 100%;
-	}
-
-	.imageSK {
-		width: 278px;
-		height: 186px;
-	}
-
-	.frameLargeSK {
-		border: solid 7px #464646;
-		position: relative;
-		height: 194px;
-		margin-bottom: 10px;
-	}
 
 	.frameLargeMoodBoardSK {
 		border: solid 7px #464646;
@@ -351,16 +310,6 @@
 		margin-bottom: 10px;
 	}
 
-	.largeFrameOverlaySK {
-		margin: 4px 0 0 4px;
-		position: absolute;
-		top:0px;
-		left:0px;
-		width: 278px;
-		height: 186px;
-		display:none;
-	}
-
 	.moodBoardOverlaySK {
 		margin: 0;
 		position: absolute;
@@ -371,26 +320,6 @@
 		display: none;
 	}
 	
-	.bigBorderSK {
-		border: solid 7px #464646;
-		position: relative;
-		height: 399px;
-		margin-bottom: 10px;
-	}
-
-	.hugeAndRaggedSK {
-		font-family: arial, sans-serif;
-		font-size: 3em;
-		font-weight: bold;
-		letter-spacing: -2px;
-		line-height: 1em;
-	}
-	
-	.dividerSK {
-		margin: 40px 0px 15px 0px;
-		width: 950px;
-	}
-
 	#containerBBCSK {
 		position: relative;
 		top: -164px;
@@ -474,59 +403,9 @@
 		z-index: 3;
 
 	}
-
-	#titleSK {
-		margin-top: 0px;
-	}
-
-	#titleSKtbs {
-		font-size: 100%;
-		margin-top: 0px;
-	}
-
-	#topLinkSK {
-		font-family: arial, sans-serif;
-		font-weight: bold;
-		position: absolute;
-		text-align: right;
-		right: 5px;
-		padding: 10px 10px 0 0;
-		z-index: 2;
-	}
-	
-	#topLinkLowSK {
-		font-family: arial, sans-serif;
-		font-weight: bold;
-		position: absolute;
-		text-align: right;
-		right: 5px;
-		padding: 10px 10px 0 0;
-		z-index: 2;
-	}
-	
-	.vimeoSK {
-		max-width: 592px;
-		overflow: hidden;
-		margin: 4px 0 0 4px;
-		position: absolute;
-		top: -6px;
-		left: -7px;
-	}
-	
-	#nav{
-		position: absolute;
-	 	right:194px;
-	 	top:-100px;
-	    z-index: 3;
-	    height:58px;
-		}
-	
-	ul.dropdown li.dir{display: block;}
-
-		
 	
 
-
+	
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -540,14 +419,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 430px;
-		}    
-
-		#mainImageBakerTweetSK {
-			background: #fff url('../bakertweet/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
+		}      
 
 		#mainImageBBCSK {
 			background: #fff url('../bbc/images/mainImage2.jpg') top center;
@@ -813,59 +685,6 @@
 			z-index: 4;
 		}
 
-		#iPhoneSK {
-			width: 236px;
-			height: 471px;
-		}
-
-		.imageSK {
-			width: 214px;
-			height: 143px;
-		}
-
-		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 152px;
-			margin-bottom: 10px;
-		}
-
-		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 152px;
-			margin-bottom: 10px;
-		}
-		
-		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
-			width: 214px;
-			height: 143px;
-			display:none;
-		}
-
-		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 317px;
-			margin-bottom: 10px;
-		}
-
-		.hugeAndRaggedSK {
-			font-family: arial, sans-serif;
-			font-size: 2.5em;
-			font-weight: bold;
-			letter-spacing: -2px;
-			line-height: 1em;
-		}
-
-		.dividerSK {
-			margin: 15px 0 15px 0;
-			width: 758px;
-		}
 		
 		#containerBBCSK {
 			position: relative;
@@ -955,25 +774,9 @@
 			display: none;
 			z-index: 3;
 		}
+	
 		
-		#titleSK {
-			margin-top: 0px;
-		}
 
-		#titleSKtbs {
-			font-size: 90%;
-			margin-top: 0px;
-		}
-		
-		#topLinkSK {
-			font-family: arial, sans-serif;
-			font-weight: bold;
-			position: absolute;
-			text-align: right;
-			right: 5px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
-		}
 
 		#topLinLowkSK {
 			font-family: arial, sans-serif;
@@ -985,24 +788,8 @@
 			z-index: 2;
 		}
 
-		.vimeoSK {
-			max-width: 464px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
-		}
 		
-		#nav{
-			position: absolute;
-	 		right:144px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
-		}
 		
-		ul.dropdown li.dir{display: block;}		
     }
 
 
@@ -1016,13 +803,6 @@
 
 		#mainImageAvonSK {
 			background: #fff url('../avon/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
-
-		#mainImageBakerTweetSK {
-			background: #fff url('../bakertweet/images/mainImage4.jpg') top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 180px;
@@ -1293,55 +1073,12 @@
 			display:none;
 			z-index: 4;
 		}
-
-		#iPhoneSK {
-			size: 100%;
-			padding-top: 25px;
-		}
-
-		.imageSK {
-			width: 278px;
-			height: 186px;
-		}
-
-		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 194px;
-			margin-bottom: 0px;
-			margin-top: 15px;
-
-		}
 		
-		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
-			width: 278px;
-			height: 186px;
-			display:none;
-		}
 
-		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 196px;
-			margin-bottom: 10px;
-		}
 
-		.hugeAndRaggedSK {
-			font-family: arial, sans-serif;
-			font-size: 1.5em;
-			font-weight: bold;
-			letter-spacing: 0px;
-			line-height: 1em;
-		}
 
-		.dividerSK {
-			margin: 15px 0 15px 0;
-			width: 295px;
-		}
+
+
 
 		#containerBBCSK {
 			position: relative;
@@ -1432,29 +1169,8 @@
 			z-index: 3;
 		}
 
-		#titleSK {
-			font-size: 85%;
-			margin-top: 30px;
-			margin-bottom: 10px;
-		}
 
-		#titleSKtbs {
-			font-size: 50%;
-			margin-top: 0px;
-		}
-
-		#topLinkSK {
-			font-family: arial, sans-serif;
-			font-weight: bold;
-			position: absolute;
-			text-align: right;
-			right: 2px;
-			top: 178px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
-			font-size: 80%;
-		}
-
+	
 		#topLinkLowSK {
 			font-family: arial, sans-serif;
 			font-weight: bold;
@@ -1467,14 +1183,7 @@
 			font-size: 80%;
 		}
 		
-		.vimeoSK {
-			max-width: 272px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
-		}
+		
 
 		#coachPoppyProject_poppy {
 			/*top: 246px !important;*/
@@ -1484,18 +1193,6 @@
 		#mainImageCoachSK {
 			height: 1000px; !important;
 		}
-		
-		#nav{
-			position: absolute;
-			right:65px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
-		}
-
-		ul.dropdown li.dir{display: none;}
-		
-		
 		
     }
 
@@ -1510,13 +1207,6 @@
 
 		#mainImageAvonSK {
 			background: #fff url(../avon/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
-
-		#mainImageBakerTweetSK {
-			background: #fff url('../bakertweet/images/mainImage3.jpg') top center;
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 270px;
@@ -1787,54 +1477,7 @@
 			display:none;
 			z-index: 4;
 		}
-
-		#iPhoneSK {
-			size: 100%;
-			padding-left: 58px;
-		}
-
-		.imageSK {
-			width: 398px;
-			height: 267px;
-		}
-
-		.frameLargeSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 275px;
-			margin-bottom: 15px;
-			margin-top: 15px;
-		}
-
-		.largeFrameOverlaySK {
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top:0px;
-			left:0px;
-			width: 398px;
-			height: 267px;
-			display:none;
-		}
-
-		.bigBorderSK {
-			border: solid 7px #464646;
-			position: relative;
-			height: 272px;
-			margin-bottom: 10px;
-		}
-
-		.hugeAndRaggedSK {
-			font-family: arial, sans-serif;
-			font-size: 2em;
-			font-weight: bold;
-			letter-spacing: -1px;
-			line-height: 1em;
-		}
-		
-		.dividerSK {
-			margin: 15px 0 15px 0;
-			width: 410px;
-		}
+	
 
 		#containerBBCSK {
 			position: relative;
@@ -1924,29 +1567,6 @@
 			display: none;
 			z-index: 3;
 		}
-		
-		#titleSK {
-			font-size: 100%;
-			margin-top: 0px;
-			margin-bottom: 20px;
-		}
-
-		#titleSKtbs {
-			font-size: 70%;
-			margin-top: 0px;
-		}
-		
-		#topLinkSK {
-			font-family: arial, sans-serif;
-			font-weight: bold;
-			position: absolute;
-			text-align: right;
-			right: 5px;
-			top: 280px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
-			font-size: 100%;
-		}
 
 		#topLinkLowSK {
 			font-family: arial, sans-serif;
@@ -1960,29 +1580,11 @@
 			font-size: 100%;
 		}
 
-
-		.vimeoSK {
-			max-width: 392px;
-			overflow: hidden;
-			margin: 4px 0 0 4px;
-			position: absolute;
-			top: -6px;
-			left: -7px;
-		}
 		
 		#mainImageCoachSK {
 			height: 900px; !important;
 		}
 		
-		#nav{
-			position: absolute;
-	 		right:123px;
-		 	top:-100px;
-		    z-index: 3;
-	        height:58px;
-		}
-		
-		ul.dropdown li.dir{display: none;}
 		
 
     }

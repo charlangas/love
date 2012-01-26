@@ -8,17 +8,185 @@
 <meta charset="utf-8">
 <title>POKE New York</title>
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="POKE New York">
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/skeleton.css">
-<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/love.css">
 
 <link media="screen" rel="stylesheet" href="css/colorbox.css" />
+
+<style>
+
+	#main a {
+		color: #f36523;
+		text-decoration: none;
+	}
+
+	#main a:hover {
+		color: #f36523;
+		text-decoration: underline;
+	}
+
+	#clients {
+		text-align: right;
+		float: right;
+		color: #ccc;
+	}
+
+	ul#clients a {
+		color: #848484;
+		text-decoration: none;
+	}
+
+	ul#clients a:hover {
+		color: #f36523;
+		text-decoration: underline;
+	}
+
+	.plus {
+		width: 7px;
+		margin-left: 5px;
+		color: #f36523;
+		}
+		
+	.minus {
+		width: 7px;
+		margin-left: 5px;
+		}
+		
+	.expand.hover .plus {
+		text-decoration: none;
+	}
+
+	.moveten {
+		position: relative;
+		right: -12px;
+	}
+
+	.expand a {
+		cursor: pointer;
+	}
+
+	ul .projectlist a {
+		color: #848484 !important;
+	}
+
+	ul .projectlist a:hover {
+		color: #f36523 !important;
+	}
+
+	#clients {
+	margin-top: 97px;
+	font-size: 68%;
+	float: right;
+	line-height: 18px;
+	letter-spacing: 1px;
+	}
+
+#main {
+	margin-top: 80px;
+	font-size: 700%;
+	font-weight: bold;
+	color: #ccc;
+	line-height: 90%;
+	letter-spacing: -5px;
+	/*width: 75%;*/
+	}
+
+#contact {
+	font-size: 20px;
+	margin-top: 30px;
+	font-weight: normal;
+	position: relative;
+	bottom: 20px;
+	}
+
+ul#clients li {
+	list-style: none;
+}
+
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+ 	#clients {
+			margin-top: 77px;
+			font-size: 68%;
+			}
+
+		#main {
+			margin-top: 100px;
+			font-size: 600%;
+			font-weight: bold;
+			width: 75%;
+			}
+
+		#contact {
+			font-size: 20px;
+			margin-top: 30px;
+			font-weight: normal;
+			position: relative;
+			bottom: 20px;
+			}
+		
+    }
+   
+	@media only screen and (max-width: 767px) {	
+		#clients {
+			margin-top: -60px;
+			margin-bottom: 40px;
+			font-size: 80%;
+			}
+
+		#main {
+			margin-top: 20px;
+			font-size: 225%;
+			letter-spacing: -1px;
+			width: 75%;
+			}
+			
+		#heart{
+			width: 1em;
+			height: 1em;
+			}
+
+		#contact {
+			font-size: 120%;
+			font-weight: normal;
+			}
+		
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#clients {
+			margin-top: 0px;
+			margin-bottom: 40px;
+			font-size: 80%;
+			}
+
+		#main {
+			font-size: 330%;
+			letter-spacing: -1px;
+			width: 75%;
+			}
+
+		#heart{
+			width: 1em;
+			height: 1em;
+			}
+
+		#contact {
+			font-size: 120%;
+			font-weight: normal;
+			}
+		
+	}
+
+</style>
 
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
