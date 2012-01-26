@@ -15,18 +15,6 @@
 		width: 100%;
 		height: 541px;
 	}    
-	
-
-	#containerJoy2011SK {
-		position: relative;
-		top: -55px;
-	}
-
-	#containerKeepItSK {
-		position: relative;
-		top: -45px;
-	}
-
 
 	.frameLargeMoodBoardSK {
 		border: solid 7px #464646;
@@ -61,14 +49,7 @@
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-		#mainImageAvonSK {
-			background: #fff url('../avon/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}      
+    @media only screen and (min-width: 768px) and (max-width: 959px) {   
 
 		#mainImageSynchstepSK {
 			background: #fff url('../synchstep/images/mainImage2.jpg') top center;
@@ -76,12 +57,6 @@
 			width: 100%;
 			height: 430px;
 		}    
-
-		#containerJoy2011SK {
-			position: relative;
-			top: -44px;
-		}	
-
 
 		#topLinLowkSK {
 			font-family: arial, sans-serif;
@@ -113,10 +88,7 @@
 			height: 180px;
 		}    
 
-		#containerJoy2011SK {
-			position: relative;
-			top: -33px;
-		}			
+			
 
 		#topLinkLowSK {
 			font-family: arial, sans-serif;
@@ -148,12 +120,6 @@
 			width: 100%;
 			height: 270px;
 		}    
-
-
-		#containerJoy2011SK {
-			position: relative;
-			top: -31px;
-		}	
 
 		#topLinkLowSK {
 			font-family: arial, sans-serif;
