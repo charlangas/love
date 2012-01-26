@@ -10,12 +10,7 @@
 
    
 
-	#mainImageCoachSK {
-		background: #fff url(../coach/images/mainImage.png) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+
 
 	#mainImageCulturiousSK {
 		background: #fff url(../tauck/images/mainImage.jpg) top center;
@@ -368,12 +363,7 @@
 		}      
 
 
-		#mainImageCoachSK {
-			background: #fff url('../coach/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
+  
 
 		#mainImageCulturiousSK {
 			background: #fff url('../tauck/images/mainImage2.jpg') top center;
@@ -709,12 +699,7 @@
 
    
 
-		#mainImageCoachSK {
-			background: #fff url('../coach/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 1000px;
-		}    
+ 
 
 		#mainImageCulturiousSK {
 			background: #fff url('../tauck/images/mainImage4.jpg') top center;
@@ -1030,14 +1015,7 @@
 			font-size: 80%;
 		}
 
-		#coachPoppyProject_poppy {
-			/*top: 246px !important;*/
-			/*top: 3750px !important;*/
-		}
-		
-		#mainImageCoachSK {
-			height: 1000px; !important;
-		}
+
 		
     }
 
@@ -1058,12 +1036,7 @@
 		}    
 
 
-		#mainImageCoachSK {
-			background: #fff url(../coach/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 900px;
-		}    
+   
 
 		#mainImageCulturiousSK {
 			background: #fff url('../tauck/images/mainImage3.jpg') top center;
@@ -1380,9 +1353,7 @@
 		}
 
 		
-		#mainImageCoachSK {
-			height: 900px; !important;
-		}
+
 		
 		
 
