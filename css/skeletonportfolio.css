@@ -8,13 +8,6 @@
 		height: 541px;
 	}         
 
-	#mainImageBenefitSK {
-		background: #fff url('../benefit/images/mainImage.png') top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
-
 	#mainImageBodyShopSK {
 		background: #fff url(../bodyshop/joy2010/images/mainImage.png) top center;
 		background-repeat: no-repeat;
@@ -30,7 +23,6 @@
 	}    
 
 	#mainImageCulturiousSK {
-
 		background: #fff url(../tauck/images/mainImage.jpg) top center;
 		background-repeat: no-repeat;
 		width: 100%;
@@ -179,11 +171,7 @@
 		width: 940px;
 		top: 188px;
 	}
-
-	.keyFactsBenefit {
-		margin-top: -220px;
-	}
-
+	
 	#containerIICDSK {
 		position: relative;
 		top: -240px;
@@ -312,24 +300,8 @@
 		height: 80px;
 		display: none;
 	}
-	
 
-	#detectorSK {
-		height: 111px;
-		width: 419px;
-		margin-left: -10px;
-		z-index: 2;
-	}
-		
-	#cordBenefit {
-		background: url(../benefit/images/cord1.png);
-		width: 78px;
-		height: 621px;
-		position: relative;
-		margin-left: -59px;
-	}
-
-	#DysonAnchorSK, #cordAnchorSK {
+	#DysonAnchorSK {
 		position:absolute;
 	}
 
@@ -409,15 +381,6 @@
 			width: 100%;
 			height: 430px;
 		}      
-
-		    
-
-		#mainImageBenefitSK {
-			background: #fff url('../benefit/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
 
 		#mainImageBodyShopSK {
 			background: #fff url(../bodyshop/joy2010/images/mainImage2.jpg) top center;
@@ -670,24 +633,7 @@
 		}
 
 		
-		
-
-		#detectorSK {
-			height: 111px;
-			width: 419px;
-			margin-left: -7px;
-			z-index: 2;
-		}
-		
-		#cordBenefit {
-			background: url(../benefit/images/cord1.png);
-			width: 78px;
-			height: 621px;
-			position: relative;
-			margin-left: -55px;
-		}
-
-		#DysonAnchorSK, #cordAnchorSK {
+		#DysonAnchorSK {
 			position:absolute;
 		}
 
@@ -791,12 +737,7 @@
 
   
 
-		#mainImageBenefitSK {
-			background: #fff url('../benefit/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
+ 
 
 		#mainImageBodyShopSK {
 			background: #fff url(../bodyshop/joy2010/images/mainImage4.jpg) top center;
@@ -1051,22 +992,9 @@
 		}
 		
 
-		#detectorSK {
-			height: 78px;
-			width: 295px;
-			margin-left: 0px;
-			z-index: 2;
-		}
 		
-		#cordBenefit {
-			background: url(../benefit/images/cord3.png);
-			width: 65px;
-			height: 1110px;
-			position: relative;
-			margin-left: -42px;
-		}
 
-		#DysonAnchorSK, #cordAnchorSK {
+		#DysonAnchorSK {
 			position:absolute;
 		}
 
@@ -1148,8 +1076,6 @@
 			z-index: 2;
 			font-size: 80%;
 		}
-		
-		
 
 		#coachPoppyProject_poppy {
 			/*top: 246px !important;*/
@@ -1180,12 +1106,7 @@
 
   
 
-		#mainImageBenefitSK {
-			background: #fff url(../benefit/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
+		   
 
 		#mainImageBodyShopSK {
 			background: #fff url(../bodyshop/joy2010/images/mainImage3.jpg) top center;
@@ -1442,22 +1363,9 @@
 
 
 		
-		#detectorSK {
-			height: 78px;
-			width: 295px;
-			margin-left: 0px;
-			z-index: 2;
-		}
 		
-		#cordBenefit {
-			background: url(../benefit/images/cord4.png);
-			width: 68px;
-			height: 1186px;
-			position: relative;
-			margin-left: -67px;
-		}
 
-		#DysonAnchorSK, #cordAnchorSK {
+		#DysonAnchorSK {
 			position:absolute;
 		}
 
