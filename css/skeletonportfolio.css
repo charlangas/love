@@ -15,35 +15,8 @@
 		height: 550px;
 	}    
 
-	#mainImageKYSK {
-		background: #fff url(../ky/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
 
-	#mainImageLebronSK {
-		background: #fff url(../lebron/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
-
-   
-	
-	#mainImageMoMASK {
-		background: #fff url(../moma/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;	
-	}
-
-	#mainImageSephoraSK {
-		background: #fff url(../sephora/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+ 
 
 	#mainImageServeSK {
 		background: #fff url(../amex_serve/images/mainImage.jpg) top center;
@@ -93,32 +66,6 @@
 		width: 100%;
 		height: 541px;
 	}     
-
-    #kyHeaderSK {
-		margin:0 auto; 
-		width: 940px;
-    }
-
-    .kyBlurbSK {
-    	font-family: Arial;
-    	font-size: 58pt;
-    	font-weight: bold;
-    	color: #f06924;
-    	letter-spacing: -5px;
-    	line-height: 95%;
-    	top: 188px;
-    	position: absolute;
-    	width: 100%;
-    	margin-left: 250px;
-	}
-
-	#KYslideshow {
-		position: absolute;
-		width: 940px;
-		top: 188px;
-	}
-	
-
 
 	#containerJoy2011SK {
 		position: relative;
@@ -181,13 +128,7 @@
 
 
 	
-	#momaHand {
-		overflow: hidden;
-		position: absolute;
-		right: 0px;
-		top: 49px;
-		z-index: 3;
-	}
+
 	
 	#stellaTitle {
 		position: relative;
@@ -250,36 +191,7 @@
 
 
 
-		#mainImageKYSK {
-			background: #fff url(../ky/images/mainImage2.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
-
-		#mainImageLebronSK {
-			background: #fff url('../lebron/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
-
-
-
-		#mainImageMoMASK {
-			background: #fff url(../moma/images/mainImage2.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;	
-		}
-
-
-		#mainImageSephoraSK {
-			background: #fff url('../sephora/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
+  
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage2.jpg) top center;
@@ -316,29 +228,7 @@
 			height: 430px;
 		}    
 
-	    #kyHeaderSK {
-			margin:0 auto; 
-			width: 700px;
-	    }
-	
-	    .kyBlurbSK {
-	    	font-family: Arial;
-	    	font-size: 46pt;
-	    	font-weight: bold;
-	    	color: #f06924;
-	    	letter-spacing: -3px;
-	    	line-height: 95%;
-	    	top: 150px;
-	    	position: absolute;
-	    	width: 100%;
-	    	margin-left: 185px;
-		}
-	
-		#KYslideshow {
-			position: absolute;
-			width: 560px;
-			top: 150px;
-		}
+
 
 
 		#containerJoy2011SK {
@@ -370,9 +260,7 @@
 		
 
 
-		#momaHand {
-			display: none;
-		}
+
 
 		#stellaTitle {
 			position: relative;
@@ -443,13 +331,6 @@
 			height: 180px;
 		}    
 
-  
-
- 
-
-   
-
- 
 
 		#mainImageCulturiousSK {
 			background: #fff url('../tauck/images/mainImage4.jpg') top center;
@@ -458,37 +339,10 @@
 			height: 183px;
 		}    
 
- 
 
-		#mainImageKYSK {
-			background: #fff url(../ky/images/mainImage4.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
 
-		#mainImageLebronSK {
-			background: #fff url('../lebron/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
 
- 
 
-		#mainImageMoMASK {
-			background: #fff url(../moma/images/mainImage4.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;	
-		}
-
-		#mainImageSephoraSK {
-			background: #fff url('../sephora/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage4.jpg) top center;
@@ -525,29 +379,7 @@
 			height: 180px;
 		}    
 
-	    #kyHeaderSK {
-			margin:0 auto; 
-			width: 215px;
-	    }
-	
-	    .kyBlurbSK {
-	    	font-family: Arial;
-	    	font-size: 19pt;
-	    	font-weight: bold;
-	    	color: #f06924;
-	    	letter-spacing: -1px;
-	    	line-height: 95%;
-	    	top: 63px;
-	    	position: absolute;
-	    	width: 100%;
-	    	margin-left: 55px;
-		}
-	
-		#KYslideshow {
-			position: absolute;
-			width: 205px;
-			top: 63px;
-		}
+
 
 
 		
@@ -579,9 +411,7 @@
 		
 
 	
-		#momaHand {
-			display: none;
-		}
+
 
 		#stellaTitle {
 			position: relative;
@@ -654,8 +484,6 @@
 		}    
 
 
-   
-
 		#mainImageCulturiousSK {
 			background: #fff url('../tauck/images/mainImage3.jpg') top center;
 			background-repeat: no-repeat;
@@ -664,37 +492,8 @@
 		}    
 
 
-  
 
-		#mainImageKYSK {
-			background: #fff url(../ky/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
-
-		#mainImageLebronSK {
-			background: #fff url(../lebron/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
-
- 
-
-		#mainImageMoMASK {
-			background: #fff url(../moma/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;	
-		}
-
-		#mainImageSephoraSK {
-			background: #fff url(../sephora/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
+   
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage3.jpg) top center;
@@ -731,49 +530,11 @@
 			height: 270px;
 		}    
 
-	    #kyHeaderSK {
-			margin:0 auto; 
-			width: 350px;
-	    }
-	
-	    .kyBlurbSK {
-	    	font-family: Arial;
-	    	font-size: 29pt;
-	    	font-weight: bold;
-	    	color: #f06924;
-	    	letter-spacing: -1px;
-	    	line-height: 90%;
-	    	top: 95px;
-	    	position: absolute;
-	    	width: 100%;
-	    	margin-left: 80px;
-		}
-	
-		#KYslideshow {
-			position: absolute;
-			width: 330px;
-			top: 95px;
-		}
 
-
-		
 		#containerJoy2011SK {
 			position: relative;
 			top: -31px;
 		}	
-
-		
-	
-
-
-		
-		
-
-
-
-		#momaHand {
-			display: none;
-		}
 
 		#stellaTitle {
 			position: relative;
