@@ -5,8 +5,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>POKE New York - Stella Artois, the Perfect Pour!</title>
 	<meta name="description" content="">
@@ -15,30 +13,139 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/love.css">
 	
+	<style>
+
+		#mainImageStellaSK {
+			background: #f1f2f7 url(../stella/images/mainImage.jpg) top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 541px;
+		}
+			
+		#stellaTitle {
+			position: relative;
+		}
+		
+		#embrace {
+			position: absolute;
+			top: -325px;
+			left: 45px;
+			display: none;
+			z-index: 4;
+		}
+
+		#perfection {
+			position: absolute;
+			top: -325px;
+			left: 545px;
+			display: none;
+			z-index: 4;
+		}
+
+		#pokeHeartSK {
+			position: absolute;
+			top: -240px;
+			left: 820px;
+			height: 70px;
+			width: 70px;
+			display: none;
+			z-index: 4;
+		}
+
+	    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	    	
+			#mainImageStellaSK {
+				background: #f1f2f7 url(../stella/images/mainImage2.jpg) top center;
+				height: 430px;
+			}
+
 	
+			#embrace {
+				top: -260px;
+				left: 30px;
+				height: 72px;
+				width: 247px;
+			}
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+			#perfection {
+				top: -260px;
+				left: 435px;
+				height: 72px;
+				width: 280px;
+			}
+		
+			#pokeHeartSK {
+				top: -195px;
+				left: 660px;
+				height: 57px;
+				width: 57px;
+			}
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+			
+			#mainImageStellaSK {
+				background: #f1f2f7 url(../stella/images/mainImage4.jpg) top center;
+				height: 180px;
+			}
 
+			#embrace {
+				top: -115px;
+				left: 5px;
+				height: 31px;
+				width: 104px;
+			}
 
+			#perfection {
+				top: -115px;
+				left: 175px;
+				height: 31px;
+				width: 119px;
+			}
+		
+			#pokeHeartSK {
+				top: -87px;
+				left: 265px;
+				height: 25px;
+				width: 25px;
+			}
+		}
 
-	<!-- Javascript
-	=================================================== -->
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			#mainImageStellaSK {
+				background: #f1f2f7 url(../stella/images/mainImage3.jpg) top center;
+				height: 270px;
+			}
 
-  <script src="js/libs/modernizr-1.6.min.js"></script>
+			#embrace {
+				top: -160px;
+				left: 10px;
+				height: 46px;
+				width: 156px;
+			}
+
+			#perfection {
+				top: -160px;
+				left: 260px;
+				height: 46px;
+				width: 177px;
+			}
+		
+			#pokeHeartSK {
+				top: -120px;
+				left: 397px;
+				height: 36px;
+				width: 36px;
+			}
+		}
+
+	</style>
   
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
@@ -48,6 +155,7 @@
 	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
  	<script type="text/javascript">
 		$(document).ready(function() {
 			
@@ -57,24 +165,7 @@
 				$('a[rel=gallery]').removeAttr('rel');
 			}
 		 
-			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
+			//jQuery calls for Fancybox	
 			$("#video").click(function() {
 				$.fancybox({
 					'padding'		: 0,
