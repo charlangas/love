@@ -16,18 +16,7 @@
 	}    
 
 
-
-   
-
-   
-	
-
-	#mainImageSephoraSK {
-		background: #fff url(../sephora/images/mainImage.jpg) top center;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 541px;
-	}    
+ 
 
 	#mainImageServeSK {
 		background: #fff url(../amex_serve/images/mainImage.jpg) top center;
@@ -202,13 +191,7 @@
 
 
 
-
-		#mainImageSephoraSK {
-			background: #fff url('../sephora/images/mainImage2.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 430px;
-		}    
+  
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage2.jpg) top center;
@@ -359,12 +342,7 @@
 
 
 
-		#mainImageSephoraSK {
-			background: #fff url('../sephora/images/mainImage4.jpg') top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 180px;
-		}    
+
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage4.jpg) top center;
@@ -515,12 +493,7 @@
 
 
 
-		#mainImageSephoraSK {
-			background: #fff url(../sephora/images/mainImage3.jpg) top center;
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 270px;
-		}    
+   
 
 		#mainImageSkypeSK {
 			background: #fff url(../skype/images/mainImage3.jpg) top center;
@@ -562,9 +535,6 @@
 			position: relative;
 			top: -31px;
 		}	
-
-
-
 
 		#stellaTitle {
 			position: relative;
