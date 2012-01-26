@@ -6,8 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>POKE New York - K-Y Keep Life Sexy!</title>
 	<meta name="description" content="">
@@ -16,37 +14,151 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/love.css">
+
+	<style>
+
+		#mainImageKYSK {
+			background: #fff url(../ky/images/mainImage.jpg) top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 541px;
+		}    
+
+		#KYslideshow {
+			position: absolute;
+			width: 940px;
+			top: 188px;
+		}
+
+	    #kyHeaderSK {
+			margin:0 auto; 
+			width: 940px;
+	    }
+
+	    .kyBlurbSK {
+	    	font-family: Arial;
+	    	font-size: 58pt;
+	    	font-weight: bold;
+	    	color: #f06924;
+	    	letter-spacing: -5px;
+	    	line-height: 95%;
+	    	top: 188px;
+	    	position: absolute;
+	    	width: 100%;
+	    	margin-left: 250px;
+		}
+
+	    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	    	
+			#mainImageKYSK {
+				background: #fff url(../ky/images/mainImage2.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 430px;
+			}   
+	    #kyHeaderSK {
+			margin:0 auto; 
+			width: 700px;
+	    }
 	
+	    .kyBlurbSK {
+	    	font-family: Arial;
+	    	font-size: 46pt;
+	    	font-weight: bold;
+	    	color: #f06924;
+	    	letter-spacing: -3px;
+	    	line-height: 95%;
+	    	top: 150px;
+	    	position: absolute;
+	    	width: 100%;
+	    	margin-left: 185px;
+		}
 	
+		#KYslideshow {
+			position: absolute;
+			width: 560px;
+			top: 150px;
+		}
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+			
+			#mainImageKYSK {
+				background: #fff url(../ky/images/mainImage4.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 180px;
+			}
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+				    #kyHeaderSK {
+			margin:0 auto; 
+			width: 215px;
+	    }
+	
+	    .kyBlurbSK {
+	    	font-family: Arial;
+	    	font-size: 19pt;
+	    	font-weight: bold;
+	    	color: #f06924;
+	    	letter-spacing: -1px;
+	    	line-height: 95%;
+	    	top: 63px;
+	    	position: absolute;
+	    	width: 100%;
+	    	margin-left: 55px;
+		}
+	
+		#KYslideshow {
+			position: absolute;
+			width: 205px;
+			top: 63px;
+		}
+		}
 
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			#mainImageKYSK {
+				background: #fff url(../ky/images/mainImage3.jpg) top center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 270px;
+			} 
 
+				    #kyHeaderSK {
+			margin:0 auto; 
+			width: 350px;
+	    }
+	
+	    .kyBlurbSK {
+	    	font-family: Arial;
+	    	font-size: 29pt;
+	    	font-weight: bold;
+	    	color: #f06924;
+	    	letter-spacing: -1px;
+	    	line-height: 90%;
+	    	top: 95px;
+	    	position: absolute;
+	    	width: 100%;
+	    	margin-left: 80px;
+		}
+	
+		#KYslideshow {
+			position: absolute;
+			width: 330px;
+			top: 95px;
+		}
+		}
 
-	<!-- Javascript
-	=================================================== -->
-
-  <script src="js/libs/modernizr-1.6.min.js"></script>
-  
+	</style>
+	 
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
 		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
 	</script>
-	<script src="javascripts/tabs.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 	<script type="text/javascript" src="../js/cycle.js"></script>
@@ -60,23 +172,6 @@
 			}
 		 
 			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
 			$("#video").click(function() {
 				$.fancybox({
 					'padding'		: 0,
