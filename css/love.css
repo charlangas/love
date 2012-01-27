@@ -214,6 +214,7 @@ ul.dropdown li.dir{
 #topLinkLowSK {
 	font-weight: bold;
 	position: absolute;
+	text-align: right;
 	right: 5px;
 	padding: 10px 10px 0 0;
 	z-index: 2;
@@ -309,15 +310,7 @@ ul.dropdown li.dir{
 			width: 758px;
 		}
 		
-		#topLinLowkSK {
-			font-family: arial, sans-serif;
-			font-weight: bold;
-			position: absolute;
-			text-align: right;
-			right: 5px;
-			padding: 10px 10px 0 0;
-			z-index: 2;
-		}
+
 
 		#nav{
 	 		right:144px;
@@ -329,21 +322,20 @@ ul.dropdown li.dir{
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 
-	.vimeoSK {
+		.vimeoSK {
 			max-width: 272px;
 		}
 
-	#topLinkSK {
+		#topLinkSK {
 			right: 2px;
 			top: 178px;
 			font-size: 80%;
 		}
 
 		#topLinkLowSK {
-			font-weight: bold;
-			position: absolute;
-			text-align: right;
-			right: 5px;
+			right: 2px;
+			top: 200px;
+			font-size: 80%;
 		}
 
 		#titleSKtbs {
@@ -406,11 +398,9 @@ ul.dropdown li.dir{
 		}
 
 		#topLinkLowSK {
-			position: absolute;
-			text-align: right;
-			right: 2px;
-			top: 200px;
-			font-size: 80%;
+			right: 5px;
+			top: 295px;
+			font-size: 100%;
 		}
 
 		#titleSKtbs {
@@ -463,3 +453,5 @@ ul.dropdown li.dir{
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
+
+
