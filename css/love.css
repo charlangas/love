@@ -463,10 +463,3 @@ ul.dropdown li.dir{
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
-
-			#topLinkLowSK {
-			text-align: right;
-			right: 5px;
-			top: 295px;
-			font-size: 100%;
-		}
