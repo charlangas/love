@@ -5,8 +5,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>POKE New York - Play Money Mover!</title>
 	<meta name="description" content="">
@@ -15,47 +13,92 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="../css/skeletonportfolio.css">
-	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/skeleton.css">
+	<link rel="stylesheet" href="../../css/love.css">
 	
 	<style>
+	
 		#mainImageServeSK {
-			background: #fff url(../amex_serve/images/mainImage.jpg) top center;
+			background: #000000 url(images/mainImage.jpg) top center;
 			background-repeat: no-repeat;
 			width: 100%;
-			height: 590px;
-		}     
+			height: 640px;
+		}
+
+		#containerServe {
+			position: relative;
+			top: -30px;
+		}
+
+		.bigBorderServeSK {
+			border: solid 7px #464646;
+			position: relative;
+			height: 487px;
+			margin-bottom: 10px;
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 959px) {
+	    	
+			#mainImageServeSK {
+				background: #000000 url(images/mainImage2.jpg) top center;
+				height: 452px;
+			}
+
+			#containerServe {
+				position: relative;
+				top: -5px;
+			}
+
+			.bigBorderServeSK {
+				height: 386px;
+			}
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+			
+			#mainImageServeSK {
+				background: #000000 url(images/mainImage4.jpg) top center;
+				height: 189px;
+			}
+
+			#containerServe {
+				position: relative;
+				top: -20px;
+			}
+
+			.bigBorderServeSK {
+				height: 237px;
+			}
+
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			#mainImageServeSK {
+				background: #000000 url(images/mainImage3.jpg) top center;
+				height: 284px;
+			}
+
+			#containerServe {
+				position: relative;
+				top: 0px;
+			}
+
+			.bigBorderServeSK {
+				height: 331px;
+			}
+
+		}
 	</style>
-	
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-
-
-	<!-- Javascript
-	=================================================== -->
-
-  <script src="js/libs/modernizr-1.6.min.js"></script>
-  
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>
 		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
 	</script>
-	<script src="javascripts/tabs.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript" src="../../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
  	<script type="text/javascript">
 		$(document).ready(function() {
 			
@@ -66,42 +109,7 @@
 			}
 		 
 			//jQuery calls for Fancybox
-			
-			$("a#left").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
- 							
-			$("a#middle").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-							
-			$("a#right").fancybox({
-				'overlayColor'  : '#000000',
-	            'opacity'		: '0.5'
-			});
-				
-			$("#video").click(function() {
-				$.fancybox({
-					'padding'		: 0,
-					'overlayColor'  : '#000000',
-		            'opacity'		: '0.5',
-					'autoScale'		: false,
-					'transitionIn'	: 'none',
-					'transitionOut'	: 'none',
-					'title'			: this.title,
-					'width'			: 780,
-					'height'		: 497,
-					'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
-					'type'			: 'swf'
-				});
- 			
- 				return false;
-			});
-			
-			$("a[rel=gallery]").fancybox({
+				$("a[rel=gallery]").fancybox({
 				'overlayColor'  : '#000000',
 	            'opacity'		: '0.5',
 				'transitionIn'		: 'none',
@@ -169,26 +177,26 @@
 		<div id="mainImageServeSK"></div>
 	</header>
 
-  <div id="container" class="container">
+  <div id="containerServe" class="container">
   <div class="sixteen columns">
 	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>Play Money Mover</h1></div></div>
 	  	
 		<div class="two-thirds column alpha">
-			<div class="bigBorderSK content" id="fluidVideo">
-				<iframe src="http://player.vimeo.com/video/35283240?title=0&amp;byline=0&amp;portrait=0" width="592" height="377" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			<div class="bigBorderServeSK content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/36107981?byline=0&amp;portrait=0&amp;color=ea531c" width="592" height="461" frameborder="0" class="bigBordered vimeoSK"></iframe>
 			</div>
 									
 			<div class="one-third column alpha">
 				<div class="frameLargeSK gallery">
 					<img src="images/medium/contentImageRight.jpg" alt="contentImageRight" class="framedLarge imageSK"/>
-					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>	
 				</div>
 			</div>
 		
 			<div class="one-third column omega">
 				<div class="frameLargeSK gallery">
 					<img src="images//medium/contentImageMiddle.jpg" alt="contentImageMiddle" class="framedLarge imageSK" />
-					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery2.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>
 				</div>
 			</div>
 		</div>
@@ -196,7 +204,7 @@
 		<div class="one-third column omega">
 			<div class="frameLargeSK gallery">
 				<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK" />
-					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>
+					<a rel="gallery" title="Play Money Mover!" href="images/large/gallery3.jpg"><img class="largeFrameOverlaySK" src="../../images/overlayLargeSK.png"></a>
 			</div>
 
 			<p class="tucked"><br /><strong>Serving you since 2011</strong><br />In 2011 American Express launched Serve, a revolutionary online payment system which allowed customers to manage their money digitally in a way which no service until had offered. Our challenge was to demonstrate how easy and useful Serve was—in its native environment: the Internet.
@@ -209,13 +217,13 @@
 			</p>			
 		</div>	   
 				 
-    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+    	<div class="sixteen columns alpha omega"><img src="../../images/divider.png" alt="divider" class="dividerSK" /></div> 
 				
-		<div id="keyFacts" class="one-third column omega offset-by-eleven">
+		<div id="keyFacts" class="sixteen columns">
 			<h3>Key Facts</h3>
 
 			<p class="hugeAndRaggedSK">
-				<span class="orange">73</span> Daily Challenge questions asked, <span class="orange">2.4 million</span> page views, <span class="orange">272,000</span> email registrations. 
+				<span class="orange">3 million</span> landing page visits, <span class="orange">10 million</span> social media impressions generated by the <span class="orange">72</span> Daily Twitter Challenge questions, and a <span class="orange">17%</span> email conversion rate or <span class="orange">272,000</span> people who signed up for a Serve account to receive their <span class="orange">$10</span>. Pow.
 			</p>
 			
 			
@@ -225,9 +233,9 @@
     
     
     <footer>
-   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+   		<div class="sixteen columns alpha omega"><img src="../../images/divider.png" alt="divider" class="dividerSK" /></div>
 		<div class="three columns offset-by-thirteen">
-			<a href="http://pokenewyork.com/love"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></a>
+			<a href="http://pokenewyork.com/love"><img src="../../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></a>
 		</div> 
     </footer> 
   </div> <!-- end #main -->   
