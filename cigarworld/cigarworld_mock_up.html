@@ -338,10 +338,11 @@
 				
 				function rotate() {
 				$elie.delay(2000).css({ WebkitTransform: 'rotate(' + degree + 'deg)'}).animate({ "left": "+=800px" }, 2000).fadeOut(100);  
-				$elie.delay(2000).css({ '-moz-transform': 'rotate(' + degree + 'deg)'}).animate({ "left": "+=800px" }, 2000).fadeOut(100);                      
-				timer = setTimeout(function() {
-				++degree; rotate();
-				},0);
+				$elie.delay(2000).css({ '-moz-transform': 'rotate(' + degree + 'deg)'}).animate({ "left": "+=800px" }, 2000).fadeOut(100);   
+				                   
+						timer = setTimeout(function() {
+						++degree; rotate();
+						},0);
 				}
 				});
 				 
