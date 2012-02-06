@@ -333,8 +333,20 @@
 			$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
 			
 			$(window).load(function() {
-				$('#leaf1').delay(2000).animate({ "left": "+=800px" }, 2000).fadeOut(100);
-				});	
+				var $elie = $("#leaf1"), degree = 0, timer;
+				rotate();
+				
+				function rotate() {
+				$elie.delay(2000).css({ WebkitTransform: 'rotate(' + degree + 'deg)'}).animate({ "left": "+=800px" }, 2000);  
+				$elie.delay(2000).css({ '-moz-transform': 'rotate(' + degree + 'deg)'}).animate({ "left": "+=800px" }, 2000);                      
+				timer = setTimeout(function() {
+				++degree; rotate();
+				},0);
+				}
+				}); 
+				}); 
+			
+			
 			
 			
 	$(function() {
