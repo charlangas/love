@@ -21,7 +21,7 @@
 
 <link media="screen" rel="stylesheet" href="css/colorbox.css" />
 
-<style>
+<style type="text/css">
 
 	#main a {
 		color: #f36523;
@@ -113,6 +113,18 @@
     width: 220px;
 	}
 
+#workhere {
+	background-color:#252525;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+    height: 35px;
+    margin-top: 30px;
+    position: fixed;
+    left: 1px;
+    width: 220px;
+	}	
+
 ul#clients li {
 	list-style: none;
 }
@@ -124,9 +136,21 @@ ul#clients li {
 	font-size:20px;
     position: absolute;
     right: 20px;
-    bottom:5px;}
+    bottom:5px;
+    }
     
 .contact:hover{color: #f36523;}
+
+.workhere{
+	color:#848484;
+	font-size:20px;
+    position: absolute;
+   left: 20px;
+    bottom:5px;}
+    
+    
+.workhere:hover{color: #f36523;
+				text-decoration: none;}
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
  	#clients {
@@ -341,6 +365,9 @@ $(document).ready(function(){
 		<a class="launchit" href="contact.html"><span class="contact">Contact Us</span></a>
 		</div>
 
+	<div id="workhere">
+		<a href="//"><span class="workhere">Work Here</span></a>
+		</div>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
