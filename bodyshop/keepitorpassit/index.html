@@ -23,15 +23,23 @@
 	<style>
 
 		#mainImageKeepItSK {
-			background: #fff url(images/mainImage.jpg) top center;
+			background: #fff url(images/mainImagecut.jpg);
 			background-repeat: no-repeat;
+			width: 903px;
+			height: 590px;
+			position:relative;
+		}
+		
+		#mainImageKeepItRIGHT {
+			background: #fff url(images/rightside.jpg) top center;
+			background-repeat: repeat;
 			width: 100%;
 			height: 590px;
 		}
-
+		
 		#containerKeepItSK {
 			position: relative;
-			top: -45px;
+			top: -590px;
 		}
 
 		@media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -40,6 +48,8 @@
 				background: #fff url(images/mainImage2.jpg) top center;
 				height: 469px;
 			}    
+			
+			#mainImageKeepItRIGHT  {display:none;}
 	    }
 	   
 		@media only screen and (max-width: 767px) {
@@ -48,13 +58,15 @@
 				background: #fff url(images/mainImage4.jpg) top center;
 				height: 196px;
 			}    
+			#mainImageKeepItRIGHT  {display:none;}
 		}
 
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
 			#mainImageKeepItSK {
 				background: #fff url(images/mainImage3.jpg) top center;
 				height: 294px;
-			}       
+			}   
+			#mainImageKeepItRIGHT  {display:none;}    
 		}
 	</style>
 
@@ -140,7 +152,18 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
-<ul id="nav" class="dropdown dropdown-horizontal" >
+
+
+	<header>
+		<div id="mainImageKeepItRIGHT"></div>
+	</header>
+	
+	
+
+  <div id="containerKeepItSK" class="container">
+  <div class="sixteen columns">
+  <div id="mainImageKeepItSK">
+  <ul id="nav" class="dropdown dropdown-horizontal" >
 	<div id="newtab">
 	<img src="images/minussign.png" id="minussign" />
 	<img src="images/plussign.png" id="plussign" />
@@ -157,15 +180,9 @@
 	</li>
 	</li>
 </ul>
-
-	<header>
-		<div id="mainImageKeepItSK">
-			<div id="topLinkSK"><a href="http://keepitorpass.it/" target="_blank">See it live ></a></div>
-		</div>
-	</header>
-
-  <div id="containerKeepItSK" class="container">
-  <div class="sixteen columns">
+	<div id="topLinkSK"><a href="http://keepitorpass.it/" target="_blank">See it live ></a></div>
+	
+	</div>
 	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>Keep it or Pass it</h1></div></div>
 	
 		<div class="one-third column alpha">
