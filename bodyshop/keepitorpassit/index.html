@@ -20,27 +20,48 @@
 	<link rel="stylesheet" href="../../css/love.css">
 	<link rel="stylesheet" href="../../css/dropdown.css">
 
-	<style>
+	<style type="text/css">
+		#main {
+			margin-top: 102px;
+			margin-left:20px;
+			font-size: 579%;
+			font-weight: bold;
+			color: #CCC;
+			line-height: 90%;
+			letter-spacing: -5px;
+			position: relative;
+			top:-220px;
+			left:-20px;
+			}
+
 
 		#mainImageKeepItSK {
-			background: #fff url(images/mainImagecut.jpg);
-			background-repeat: no-repeat;
-			width: 903px;
+			background: #fff url(images/mainImageGrass.jpg);
+			background-repeat: repeat;
+			width: 100%;
 			height: 590px;
 			position:relative;
 		}
 		
-		#mainImageKeepItRIGHT {
-			background: #fff url(images/rightside.jpg) top center;
-			background-repeat: repeat;
-			width: 100%;
+		#mainImagePhone {
+			background: url(images/phone.png) top center;
+			background-repeat: no-repeat;
+			width:250px ;
 			height: 590px;
+			position:relative;
+			top: 480px;
+			left: 680px;
 		}
 		
 		#containerKeepItSK {
 			position: relative;
-			top: -590px;
+			top: -1030px;
+			height:1000px;
 		}
+				   
+		#pokeheart{position: relative;
+				   top:-200px;
+				   left:0px;}
 
 		@media only screen and (min-width: 768px) and (max-width: 959px) {
 
@@ -152,17 +173,6 @@
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
-
-
-	<header>
-		<div id="mainImageKeepItRIGHT"></div>
-	</header>
-	
-	
-
-  <div id="containerKeepItSK" class="container">
-  <div class="sixteen columns">
-  <div id="mainImageKeepItSK">
   <ul id="nav" class="dropdown dropdown-horizontal" >
 	<div id="newtab">
 	<img src="images/minussign.png" id="minussign" />
@@ -180,9 +190,27 @@
 	</li>
 	</li>
 </ul>
+
 	<div id="topLinkSK"><a href="http://keepitorpass.it/" target="_blank">See it live ></a></div>
-	
 	</div>
+
+
+	<header>
+		<div id="mainImageKeepItSK"></div>
+	</header>
+	
+	
+
+  <div id="containerKeepItSK" class="container">
+  <div class="sixteen columns">
+  
+		<div id="mainImagePhone"></div>
+		<div id="main">Never has being a</br>good friend been</br><span class="orange">so rewarding</span>.</div>
+		
+		<div id="pokeheart">
+			<img src="images/poke.png"/>
+		</div>
+		
 	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>Keep it or Pass it</h1></div></div>
 	
 		<div class="one-third column alpha">
