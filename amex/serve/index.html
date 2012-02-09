@@ -22,16 +22,25 @@
 	<style>
 	
 		#mainImageServeSK {
-			background: #000000 url(images/mainImage.jpg) top center;
 			background-repeat: no-repeat;
 			width: 100%;
-			height: 640px;
+			display: none;
 		}
 		
 		#mainImageExtension {
 			background: #000000 url(images/extension.jpg) top center;
 			background-repeat: repeat;
+			position: relative;
 			width: 100%;
+			height: 640px;
+		}
+
+		#mainImageStage {
+			position: absolute;
+			left: 50%;
+			margin-left: -900px;
+			background: url(images/mainImage.png) no-repeat;
+			width: 1800px;
 			height: 640px;
 		}
 
@@ -68,11 +77,20 @@
 			#mainImageServeSK {
 				background: #000000 url(images/mainImage2.jpg) top center;
 				height: 452px;
+				display: block;
+			}
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageStage {
+				display: none;
 			}
 
 			#containerServe {
 				position: relative;
-				top: -5px;
+				margin-top: -235px;
 			}
 
 			#headerServe {
@@ -97,22 +115,32 @@
 			#mainImageServeSK {
 				background: #000000 url(images/mainImage4.jpg) top center;
 				height: 189px;
+				display: block;
+			}
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageStage {
+				display: none;
 			}
 
 			#containerServe {
 				position: relative;
-				top: -20px;
+				margin-top: -110px;
 			}
 
 			#headerServe {
-				font-size: 25pt;
-				top: -135px;
-				left: 10px;
+				font-size: 15pt;
+				top: -172px;
+				left: 23px;
+				letter-spacing: 0px;
 			}
 			
 			.heartSK {
-				width: 37px;
-				height: 35px;
+				width: 23px;
+				height: 20px;
 				margin-top: 4px;
 			}
 
@@ -126,16 +154,25 @@
 			#mainImageServeSK {
 				background: #000000 url(images/mainImage3.jpg) top center;
 				height: 284px;
+				display: block;
+			}
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageStage {
+				display: none;
 			}
 
 			#containerServe {
 				position: relative;
-				top: 0px;
+				margin-top: -145px;
 			}
 			
-			#headerCW {
-				font-size: 30pt;
-				top: -300px;
+			#headerServe {
+				font-size: 26pt;
+				top: -250px;
 				left: 10px;
 				letter-spacing: -1px;
 			}
@@ -234,11 +271,19 @@
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
 	<header>
+	
 		<div id="mainImageServeSK"></div>
+	
+		<div id="mainImageExtension">
+			<div id="mainImageStage"></div>
+		</div>
+	
 	</header>
 
   <div id="container" class="container">
 
+
+		
 		<div id="headerServe">
 				<a href="#">Cash in</a> on your<br />
 				pop culture<br />
