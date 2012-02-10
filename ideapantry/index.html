@@ -26,6 +26,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 902px;
+			display: none;
 		} 
 
 		#millsVideoSK {
@@ -36,6 +37,23 @@
 			top: 7px;
 			margin-left: -23px;
 			margin-bottom: 25px;
+		}
+
+		#mainImageExtension {
+			background: #fff url(images/extension.jpg) top center;
+			background-repeat: repeat;
+			position: relative;
+			width: 100%;
+			height: 902px;
+		}
+
+		#mainImageCounter {
+			position: absolute;
+			left: 50%;
+			margin-left: -850px;
+			background: url(images/counter.png) no-repeat;
+			width: 1900px;
+			height: 902px;
 		}
 
 		.vimeoSKmills {
@@ -108,6 +126,7 @@
 				background: #fff url('../ideapantry/images/mainImage2.jpg') top center;
 				height: 717px;
 				width:104%;
+				display: block;
 			}    
 
 			#millsVideoSK {
@@ -115,6 +134,14 @@
 				width: 512px;
 				height: 360px;
 			}
+
+			#mainImageExtension {
+				display: none;
+			}
+	
+			#mainImageCounter {
+				display: none;
+			}			
 			
 			#millsHeaderSK {
 		 		font-size: 45pt;
@@ -158,6 +185,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 300px;
+			display: block;
 			}   
 
 		#millsVideoSK {
@@ -166,7 +194,15 @@
 			height: 211px;
 			margin-left: -3px;
 		}
-		
+
+		#mainImageExtension {
+			display: none;
+		}
+	
+		#mainImageCounter {
+			display: none;
+		}		
+
 		#millsHeaderSK {
 			font-size: 25pt;
 			top: -80px;
@@ -214,12 +250,21 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 450px;
+			display: block;
 		}   
 
 		#millsVideoSK {
 			background: url('../ideapantry/images/cardVideoBackground3.png') top center;
 			width: 420px;
 			height: 295px;
+		}
+		
+		#mainImageExtension {
+			display: none;
+		}
+	
+		#mainImageCounter {
+			display: none;
 		}
 
 		.vimeoSKmills {
@@ -379,17 +424,28 @@
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
 	<header>
+	
+		<div id="mainImageMillsSK"></div>
+	
+		<div id="mainImageExtension">
+			<div id="mainImageCounter"></div>
+		</div>
+	
+	</header>
+<!--
+	<header>
 		<div id="millsBlurbSK"></div>
 
 		<div id="mainImageMillsSK"></div>
 	</header>
-
+-->
  <div id="container" class="container">
 
     <div id="content" class="sixteen columns">
 		
     	<div id="aboutMillsSK" class="two-thirds column alpha">
-    				<div id="millsHeaderSK">
+    		
+    		<div id="millsHeaderSK">
 				<a href="http://ideapantry.com" target="_blank">Learn to cook</a><br />
 					without the<br />
 					book.<br />
