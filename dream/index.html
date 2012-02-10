@@ -23,7 +23,7 @@
 
 		#containerIICDSK {
 			position: relative;
-			top: -240px;
+			margin-top: -245px;
 		}
 
 		#mainImageDreamSK {
@@ -31,13 +31,47 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 783px;
-		} 
-	
+			display: none;
+		}
+
+		#mainImageExtension {
+			background: #fff url(images/extension.jpg) top center;
+			background-repeat: repeat;
+			position: relative;
+			width: 100%;
+			height: 783px;
+		}
+
+		#mainImageCity {
+			position: absolute;
+			left: 50%;
+			margin-left: -1249px;
+			background: url(images/city.png) no-repeat;
+			width: 2498px;
+			height: 783px;
+		}		 
+		
+		#headerDream {
+	    	margin:0 auto; 
+	    	width: 100%;
+			font-size: 55pt;
+			font-weight: bold;
+			color: #848484;
+			line-height: 95%;
+			letter-spacing: -2px;
+			position: relative;
+			top: -693px;
+		}
+
+		.heartSK {
+			margin-top: 18px;
+		}
+			
 	    @media only screen and (min-width: 768px) and (max-width: 959px) {
 	    	
 			#containerIICDSK {
 				position: relative;
-				top: -191px;
+				margin-top: -180px;
 			}
 
 			#mainImageDreamSK {
@@ -45,14 +79,35 @@
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 621px;
+				display: block;
 			}   
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageCity {
+				display: none;
+			}
+
+			#headerDream {
+		 		font-size: 39pt;
+				top: -550px;
+				left: 10px;
+			}
+		  
+			.heartSK {
+				width: 54px;
+				height: 51px;
+				margin-top: 11px;
+			}
 
 	    }
 	   
 		@media only screen and (max-width: 767px) {
 			#containerIICDSK {
 				position: relative;
-				top: -120px;
+				margin-top: -97px;
 			}
 
 			#mainImageDreamSK {
@@ -60,14 +115,35 @@
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 260px;
-			}   
+				display: block;
+			}
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageCity {
+				display: none;
+			}
+						   
+			#headerDream {
+				font-size: 18pt;
+				top: -230px;
+				left: 23px;
+				letter-spacing: 0px;
+			}
 			
+			.heartSK {
+				width: 23px;
+				height: 20px;
+				margin-top: 4px;
+			}			
 		}
 
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
 			#containerIICDSK {
 				position: relative;
-				top: -141px;
+				margin-top: -120px;
 			}	
 
 			#mainImageDreamSK {
@@ -75,7 +151,29 @@
 				background-repeat: no-repeat;
 				width: 100%;
 				height: 390px;
-			}   
+				display: block;
+			}
+		
+			#mainImageExtension {
+				display: none;
+			}
+		
+			#mainImageCity {
+				display: none;
+			}
+
+			#headerDream {
+				font-size: 26pt;
+				top: -345px;
+				left: 10px;
+				letter-spacing: -1px;
+			}
+
+			.heartSK {
+				width: 36px;
+				height: 34px;
+				margin-top: 8px;
+			}			   
 		}
 
 	</style>
@@ -259,13 +357,30 @@
 
 <!-- script in body hides address bar on page load on iPhone -->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-
+	
+	<header>
+	
+		<div id="mainImageDreamSK"></div>
+	
+		<div id="mainImageExtension">
+			<div id="mainImageCity"></div>
+		</div>
+	
+	</header>
+<!--
 	<header>
 		<div id="mainImageDreamSK"></div>
 	</header>
+-->
+  <div id="container" class="container">
 
-  <div id="containerIICDSK" class="container">
-  <div class="sixteen columns">
+		<div id="headerDream">
+				<a href="#">Re-inventing Hollywood</a>,<br />
+				internet-style.<br />
+				<img src="../images/pokeHeart_transparent.png" alt="pokeHeart_transparent" class="heartSK" />
+		</div>
+
+  <div class="sixteen columns" id="containerIICDSK">
 	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>If I Can Dream</h1></div></div>
 	  	
 		<div class="two-thirds column alpha">
