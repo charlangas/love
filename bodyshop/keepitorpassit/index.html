@@ -31,8 +31,9 @@
 			line-height: 95%;
 			letter-spacing: -2px;
 			position: relative;
-			top:-129px;
+			top:-209px;
 			left:0px;
+			display: block;
 			}
 
 
@@ -41,7 +42,6 @@
 			background-repeat: repeat;
 			width: 100%;
 			height: 590px;
-			position:relative;
 		}
 		
 		#mainImagePhone {
@@ -50,46 +50,96 @@
 			width:250px ;
 			height: 590px;
 			position:relative;
-			top: 450px;
+			top: 371px;
 			left: 680px;
+			display: block;
 		}
 		
 		#containerKeepItSK {
 			position: relative;
-			bottom: 1000px;
+			margin-top:-920px;
 		}
 				   
 		#pokeheart{position: relative;
-				   top:-110px;
-				   left:0px;}
+				   top:-180px;
+				   left:0px;
+				   display: block;}
 				   
 		#heart{height:70px;
-			   width:70px;}
+			   width:70px;
+			   display: block;}
+			   
 
 		@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;
+		}
 
-			#mainImageKeepItSK {
-				background: #fff url(images/mainImage2.jpg) top center;
-				height: 469px;
-			}    
-			
-	
-	    }
-	   
+		#mainImageKeepItSK {
+			background: #fff url(images/mainImage2.jpg) top center;
+			height: 469px;
+		} 
+		   
+		#main {display: none;}
+
+		#mainImagePhone {display: none;}
+
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;
+		}
+				   
+		#pokeheart{display: none;}
+
+		#heart{display: none;}
+		
+		}   
 		@media only screen and (max-width: 767px) {
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;
+		}
 
-			#mainImageKeepItSK {
-				background: #fff url(images/mainImage4.jpg) top center;
+		#mainImageKeepItSK {
+			background: #fff url(images/mainImage4.jpg) top center;
 				height: 196px;
 			}    
+		#main {display: none;}
+
+		#mainImagePhone {display: none;}
+
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;
+		}
+				   
+		#pokeheart{display: none;}
+
+		#heart{display: none;}
 		
 		}
 
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
-			#mainImageKeepItSK {
-				background: #fff url(images/mainImage3.jpg) top center;
-				height: 294px;
-			}   
+		#mainImageKeepItSK {
+			background: #fff url(images/mainImage3.jpg) top center;
+			height: 294px;}
+		
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;}
+		
+   		#main {display: none;}
+
+		#mainImagePhone {display: none;}
+
+		#containerKeepItSK {
+			position: relative;
+			margin-top:0px;}
+				   
+		#pokeheart{display: none;}
+
+		#heart{display: none;}
 		 
 		}
 	</style>
@@ -200,20 +250,19 @@
 
 	<header>
 		<div id="mainImageKeepItSK"></div>
-		  
-		<div id="mainImagePhone"></div>
-		<div id="main">Never has being a</br>good friend been</br><span class="orange">so rewarding</span>.</div>
-		
-		<div id="pokeheart">
-			<img src="images/poke.png" id="heart"/>
-		</div>
 	</header>
 	
 	
 
   <div id="containerKeepItSK" class="container">
   <div class="sixteen columns">
-
+  
+		<div id="mainImagePhone"></div>
+		<div id="main">Never has being a</br>good friend been</br><span class="orange">so rewarding</span>.</div>
+		
+		<div id="pokeheart">
+			<img src="images/poke.png" id="heart"/>
+		</div>
 		
 	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>Keep it or Pass it</h1></div></div>
 	
