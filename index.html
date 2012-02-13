@@ -21,7 +21,7 @@
 
 <link media="screen" rel="stylesheet" href="css/colorbox.css" />
 
-<style>
+<style type="text/css">
 
 	#main a {
 		color: #f36523;
@@ -37,13 +37,14 @@
 		text-align: right;
 		float: right;
 		color: #ccc;
-		margin-right:20px;
+		margin-right: 20px;
+		top: -250px;
 	}
 
 	ul#clients a {
 		color: #848484;
 		text-decoration: none;
-		font-size:11px;
+		font-size:120%;
 	}
 
 	ul#clients a:hover {
@@ -113,6 +114,10 @@
     width: 220px;
 	}
 
+
+
+	}	
+
 ul#clients li {
 	list-style: none;
 }
@@ -121,12 +126,32 @@ ul#clients li {
 
 .contact{
 	color:#848484;
-	font-size:20px;
+	font-size:14px;
     position: absolute;
     right: 20px;
+    bottom:5px;
+    }
+    
+.slash{
+	color:#848484;
+	font-size:14px;
+	position: absolute;
+	right: 99px;
+	bottom:5px;
+	}
+	
+.contact:hover{color: #f36523;}
+
+.workhere{
+	color:#848484;
+	font-size:14px;
+    position: absolute;
+   left: 40px;
     bottom:5px;}
     
-.contact:hover{color: #f36523;}
+    
+.workhere:hover{color: #f36523;
+				text-decoration: none;}
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
  	#clients {
@@ -138,7 +163,7 @@ ul#clients li {
 			margin-top: 100px;
 			font-size: 600%;
 			font-weight: bold;
-			width: 65%;
+			width: 90%;
 			}
 		
     }
@@ -147,16 +172,17 @@ ul#clients li {
 		#clients {
 			margin-top: 20px;
 			margin-bottom: 40px;
-			font-size: 80%;
-			width:30%;
+			font-size: 130%;
+			width:90%;
+			line-height: 130%;
 			}
 
 		#main {
 			margin-left:1px;
 			margin-top: 20px;
-			font-size: 180%;
+			font-size: 480%;
 			letter-spacing: -1px;
-			width: 38%;
+			width: 90%;
 			}
 			
 		#heart{
@@ -175,13 +201,14 @@ ul#clients li {
 		#clients {
 			margin-top: 20px;
 			margin-bottom: 40px;
-			font-size: 80%;
+			font-size: 130%;
+			line-height: 130%;
 			}
 
 		#main {
-			font-size: 330%;
+			font-size: 500%;
 			letter-spacing: -1px;
-			width: 55%;
+			width: 90%;
 			}
 
 		#heart{
@@ -289,14 +316,16 @@ $(document).ready(function(){
 
 </head>
 <body>
-	<div id="main" class="twelve columns alpha">
-		<a href="http://outspokenintense.com" id="brand" target="_blank">Brand</a>&nbsp;&amp;<br />
-		<a href="http://pokenewyork.com/love/dream" id="business" target="_blank">Business</a><br />
-		Collaboration<br />&amp; <a href="http://pokenewyork.com/love/bakertweet/" id="invention" target="_blank">Invention.</a><br />
-		<a href="/"><img src="images/poke.png" width="113" height="107" vspace="20" border="0" id="heart"/></a>
+	<div class="twelve columns alpha">
+		<div id="main">
+			<a href="http://outspokenintense.com" id="brand" target="_blank">Brand</a>&nbsp;&amp;<br />
+			<a href="http://pokenewyork.com/love/dream" id="business" target="_blank	">Business</a><br />
+			Collaboration<br />&amp; <a href="	http://pokenewyork.com/love/bakertweet/" id="invention" target="_blank">	Invention.</a><br />
+			<a href="/"><img src="images/poke.png" width="113" height="107" vspace="	20" border="0" id="heart"/></a>
+		</div>
 	</div>
 	
-	<ul id="clients">
+	<ul id="clients" class="clientlist">
 		<li><a href="http://pokenewyork.com/love/acwis" target="_blank" class="business">ACWIS</a></li>
 		<li><a href="http://work.pokenewyork.com/alphamom" target="_blank" class="invention">Alphamom</a></li>
 		<li><a href="http://pokenewyork.com/love/amex/serve" target="_blank" class="brand">American Express</a></li>
@@ -340,7 +369,6 @@ $(document).ready(function(){
 	<div id="contact">
 		<a class="launchit" href="contact.html"><span class="contact">Contact Us</span></a>
 		</div>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
