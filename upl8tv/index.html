@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<title>POKE New York - UPL8.tv</title>
+	<meta name="description" content="">
+	<meta name="author" content="POKE New York">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/love.css">
+
+	<style>
+
+		#mainImage {
+			background: #fff url('../upl8tv/images/mainImage.jpg') top center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 541px;
+		}
+
+		#containerUPL8 {
+			margin-top: -169px;
+		}
+
+		#headerUPL8 {
+	    	margin:0 auto; 
+	    	width: 100%;
+			font-size: 55pt;
+			font-weight: bold;
+			color: #848484;
+			line-height: 95%;
+			letter-spacing: -2px;
+			position: relative;
+			top: -460px;
+		}
+
+		.heartSK {
+			margin-top: 20px;
+		}
+
+		.bigBorderUPL8tv {
+			border: solid 7px #464646;
+			position: relative;
+			height: 416px;
+			margin-bottom: 10px;
+		}
+
+		#smallText {
+			font-size: 75%;
+		}
+
+	    @media only screen and (min-width: 768px) and (max-width: 959px) {
+	    	
+			#mainImage {
+				background: #fff url('../upl8tv/images/mainImage2.jpg') top center;
+				height: 430px;
+			}
+
+			#containerUPL8 {
+				margin-top: -136px;
+			}
+
+			#headerUPL8 {
+		 		font-size: 45pt;
+				top: -365px;
+				left: 10px;
+			}
+		  
+			.heartSK {
+				width: 68px;
+				height: 65px;
+				margin-top: 6px;
+			}
+
+			.bigBorderUPL8tv {
+				height: 331px;
+			}
+				
+	    }
+	   
+		@media only screen and (max-width: 767px) {
+			
+			#mainImage {
+				background: #fff url('../upl8tv/images/mainImage4.jpg') top center;
+				height: 180px;
+			}
+
+			#containerUPL8 {
+				margin-top: -67px;
+			}
+						
+			#headerUPL8 {
+				font-size: 20pt;
+				top: -160px;
+				left: 10px;
+			}
+			
+			.heartSK {
+				width: 37px;
+				height: 35px;
+				margin-top: 4px;
+			}
+		
+			.bigBorderUPL8tv {
+				height: 203px;
+			}	
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+			#mainImage {
+				background: #fff url('../upl8tv/images/mainImage3.jpg') top center;
+				height: 270px;
+			}
+			
+			#containerUPL8 {
+				margin-top: -84px;
+			}
+
+			#headerUPL8 {
+				font-size: 29pt;
+				top: -235px;
+				left: 10px;
+			}
+
+			.heartSK {
+				width: 40px;
+				height: 38px;
+				margin-top: 4px;
+			}
+		
+			.bigBorderUPL8tv {
+				height: 284px;
+			}
+		}
+
+	</style>
+  
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+ 	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		//disable fancybox on mobile
+		if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) { 
+			console.log($('a[rel=gallery]'));
+			$('a[rel=gallery]').removeAttr('rel');
+		}
+	 
+		//jQuery calls for Fancybox
+			
+		$("#video").click(function() {
+			$.fancybox({
+				'padding'		: 0,
+				'overlayColor'  : '#000000',
+	            'opacity'		: '0.5',
+				'autoScale'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',
+				'title'			: this.title,
+				'width'			: 780,
+				'height'		: 497,
+				'href'			: this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),
+				'type'			: 'swf'
+			});
+			
+				return false;
+		});
+		
+		$("a[rel=gallery]").fancybox({
+			'overlayColor'  : '#000000',
+            'opacity'		: '0.5',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+		    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+			}
+		});
+		
+		$(".gallery").hover(function(){ $('.largeFrameOverlaySK', this).fadeIn('fast');  },function(){ $('.largeFrameOverlaySK', this).fadeOut('fast'); })
+		
+		$(function() {
+
+	        // Find all YouTube videos
+	        var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+
+	            // The element that is fluid width
+	            $fluidEl = $("#fluidVideo");
+
+	        // Figure out and save aspect ratio for each video
+	        $allVideos.each(function() {
+
+	                $(this)
+	                        .data('aspectRatio', this.height / this.width)
+
+	                        // and remove the hard coded width/height
+	                        .removeAttr('height')
+	                        .removeAttr('width');
+
+	        });
+
+	        // When the window is resized
+	        // (You'll probably want to debounce this)
+	        $(window).resize(function() {
+
+	                var newWidth = $fluidEl.width();
+
+	                // Resize all videos according to their own aspect ratio
+	                $allVideos.each(function() {
+
+	                        var $el = $(this);
+	                        $el
+	                                .width(newWidth)
+	                                .height(newWidth * $el.data('aspectRatio'));
+
+	                });
+
+	        // Kick off one resize to fix all videos on page load
+	        }).resize();
+
+		});
+	});
+
+	</script>
+
+</head>
+
+<!-- script in body hides address bar on page load on iPhone -->
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+	<header>
+		<div id="mainImage">
+			<div id="topLinkSK"><a href="http://www.upl8.tv/" target="_blank">See it live ></a></div>
+		</div>
+	</header>
+
+  <div id="container" class="container">
+
+		<div id="headerUPL8">
+				Kill your <span class="orange">TV</span>.<br />
+				<img src="../images/pokeHeart_transparent.png" alt="pokeHeart_transparent" class="heartSK" />
+		</div>
+
+  <div class="sixteen columns" id="containerUPL8">
+	<div class="sixteen columns alpha omega"><div id="titleSK"><h1>UPL8.tv</h1></div></div>
+	  	
+		<div class="two-thirds column alpha">
+			<div class="bigBorderUPL8tv content" id="fluidVideo">
+				<iframe src="http://player.vimeo.com/video/36567471?byline=0&amp;portrait=0&amp;color=ea531c" width="592" height="393" frameborder="0" class="bigBordered vimeoSK"></iframe>
+			</div>
+		</div>
+				
+		<div class="one-third column omega">
+			<div class="frameLargeSK gallery">
+					<img src="images/medium/contentImageLeft.jpg" alt="contentImageLeft" class="framedLarge imageSK"/>
+					<a rel="gallery" title="UPL8.TV" href="images/large/gallery1.jpg"><img class="largeFrameOverlaySK" src="../images/overlayLargeSK.png"></a>	
+				</div>
+
+			<p class="tucked"><br /><strong>Bored?</strong><br />What ever happened to the days of sitting on the couch…at 3am…in your underwear…tapping the remote? Next.  Next.  Next. After midnight, television was the endless stream of filmic oddities seemingly there just to entertain YOU. Channel after channel. Matlock after Ron Popeil after B.A Baracus…<br /><br />
+
+			Meet <a href="http://www.upl8.tv">UPL8.tv</a>. Launched in June of 2008 to quench our desire for curious content, <a href="http://www.upl8.tv">UPL8.tv</a> is a place where we bookmark the weirdest time wasters we can find&#8212;and share them with the world.<br /><br />
+
+			Just hit the space bar! By pressing their spacebar, users can flip through an endless selection of YouTube weirdness. Just like your Dad did. Fuck.</p>
+		</div>	   
+
+    	<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div> 
+		
+		<div id="keyPress" class="two-thirds column alpha">
+			<h3>Key Press</h3>
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.notcot.org/post/13071" target="_blank">
+						<img src="images/logo_notcot.png" alt="logo_notcot" width="140" height="27" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Bored? Stoned? Insomniac? Try UPL8.tv!</span>&nbsp;&ndash;&nbsp;<a href="http://www.notcot.org/post/13071" class="source" target="_blank">notcot.org</a></div>
+			</div><br />
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.reelmotioninc.com/blog/how-to-waste-15-minutes/" target="_blank">
+						<img src="images/logo_reelmotion.png" alt="logo_reelmotion" width="140" height="16" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Up Late TV is a surprisingly addictive playback of random Youtube clips. And I do mean random. As in Ronald McDonald falling off a park bench set to a Japanese techno song. Or a segment on how they make crayolas. It will draw you in. It will waste your time. It will be worth it.</span>&nbsp;&ndash;&nbsp;<a href="http://www.reelmotioninc.com/blog/how-to-waste-15-minutes/" class="source" target="_blank">SourceName.com</a></div>
+			</div><br />
+
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://www.crackunit.com/2008/06/30/upl8tv-from-poke-ny/" target="_blank">
+						<img src="images/logo_crackunit.png" alt="logo_crackunit" width="140" height="18" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">The chaps at Poke NY have just spawned a new thing of total awesomeness. Basically it’s a YouTube viewer that allows you to browse YouTube clips using just the space bar.</span>&nbsp;&ndash;&nbsp;<a href="http://www.crackunit.com/2008/06/30/upl8tv-from-poke-ny/" class="source" target="_blank">crackunit.com</a></div>
+			</div><br />
+
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://barbariangroup.com/posts/666-bored_stoned_insomniac_upl8_tv" target="_blank">
+						<img src="images/logo_barbarian.png" alt="logo_barbarian" width="140" height="18" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">It’s a pretty simple idea: A whole bunch of oddly mesmerizing YouTube videos that play one after the other (you can skip to the next one at any time by pressing space). Watch out, though, because you’ll look up and realize it’s a half hour later.</span>&nbsp;&ndash;&nbsp;<a href="http://barbariangroup.com/posts/666-bored_stoned_insomniac_upl8_tv" class="source" target="_blank">barbariangroup.com</a></div>
+			</div><br />
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://singlefunction.com/upl8tv/" target="_blank">
+						<img src="images/logo_singlefunction.png" alt="logo_singlefunction" width="140" height="35" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Upl8.tv is a simple interface for viewing YouTube videos that hearkens back to the days of yore when you could sit on the sofa at 2am and channel surf through a mindless selection of content.</span>&nbsp;&ndash;&nbsp;<a href="http://singlefunction.com/upl8tv/" class="source" target="_blank">singlefunction.com</a></div>
+			</div><br />
+			
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://edopter.com/" target="_blank">
+						<img src="images/logo_edopter.png" alt="logo_edopter" width="140" height="44" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">UPL8.tv takes the now lost act of 'channel flipping' and applies it to Youtube snippets. Just slap the spacebar for another dose of internet awesome.</span>&nbsp;&ndash;&nbsp;<a href="http:/edopter.com/" class="source" target="_blank">edopter.com</a></div>
+			</div><br />
+		
+			<div class="press two-thirds column alpha firstPress">
+				<div class="three columns alpha">
+					<a href="http://adivertido.com/upl8-tv/" target="_blank">
+						<img src="images/logo_adivertido.png" alt="logo_adivertido" width="140" height="18" />
+					</a></div>
+				<div class="seven columns omega"><span class="quote">Upl8 TV talvez seja a plataforma mais inteligente que utiliza a mesma API do Youtube. </span>&nbsp;&ndash;&nbsp;<a href="http://adivertido.com/upl8-tv/" class="source" target="_blank">adivertido.com</a></div>
+			</div><br />
+			
+		</div> <!-- end #keyPress -->
+		
+		<div id="keyFacts" class="one-third column omega">
+		
+			<h3>Key Facts</h3>
+
+			<p class="hugeAndRaggedSK">
+				<span class="orange">250</span> videos in the pool, <span class="orange">1,000,000</span> videos watched, <span class="orange">5:00</span> average time, <span class="orange">6</span> videos viewed per visit, <span class="orange">90.37%</span> view percentage, before spacebar, the dramatic prairie dog received over <span class="orange">4,014</span> views.
+			</p>
+			
+		</div> <!-- end #keyFacts -->
+    
+    <footer>
+   		<div class="sixteen columns alpha omega"><img src="../images/divider.png" alt="divider" class="dividerSK" /></div>
+		<div class="three columns offset-by-thirteen">
+			<a href="http://pokenewyork.com/love"><img src="../images/lovePoke.png" alt="lovePoke" width="140" height="90" /></a>
+		</div> 
+    </footer> 
+  </div> <!-- end #main -->   
+  </div> <!--! end of #container --> 
+ 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1816293-7']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+</body>
+</html>
