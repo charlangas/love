@@ -22,6 +22,7 @@
 <link media="screen" rel="stylesheet" href="css/colorbox.css" />
 
 <style type="text/css">
+	body{overflow: hidden;}
 
 	#main a {
 		color: #f36523;
@@ -102,17 +103,6 @@
 	letter-spacing: -5px;
 	}
 
-#contact {
-	background-color:#252525;
-    bottom: 0;
-    font-size: 20px;
-    font-weight: normal;
-    height: 35px;
-    margin-top: 30px;
-    right: 1px;
-    width: 220px;
-	}
-
 ul#clients li {
 	list-style: none;
 }
@@ -122,9 +112,9 @@ ul#clients li {
 .contact{
 	color:#848484;
 	font-size:14px;
-    position: fixed;
-    right: 20px;
-    bottom:5px;
+    position: absolute;
+    left: 10px;
+    bottom:60px;
     }
     
 .slash{
@@ -135,46 +125,103 @@ ul#clients li {
 	bottom:5px;
 	}
 	
-.contact:hover{color: #f36523;}
-
 .workhere{
 	color:#848484;
 	font-size:14px;
     position: absolute;
-   right: 120px;
+    left: 10px;
     bottom:5px;}
     
     
-.workhere:hover{color: #f36523;
-				text-decoration: none;}
-				
-#bottom{
+#bottomdrawer{
 	position:absolute;
-	bottom:0px;
+	bottom:-152px;
 	height: 150px;
 	width:100%;
-	display: inline;
-	overflow: hidden;
+	background-color: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	}
-    
-#bottom_white{
-	position:absolute;
-	bottom:0px;
-	height: 150px;
-	width:100%;
-	opacity: .7;
-	background: white;
-	border-radius: 15px;
-		display: inline;
-	overflow: hidden;
+	
+.twitemail{
+	color:#848484;
+	font-size:14px;
+    position: absolute;
+    left: 10px;
+    bottom:-11px;
+    }
+
+#contacttab{
+	background-color: white;
+	position: relative;
+	top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	top: -45px;
+	width: 126px;
+	height: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	}
+	
+#partnerstab{
+	background-color: #252525;
+	position: absolute;
+	top:-10px;
+	right:100px;
+	width: 126px;
+	height: 40px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	}
+	
+.partners{position: relative;
+	 top:-5px; 
+	 left:10px;
+	 color:#f36523;}
+	
+.tab{position: relative;
+	 top:-1px; 
+	 left:12px;
+	 color:#f36523;}
+	 
+#tominfo{position: absolute;
+	 top:-10px;
+	 right:50px;}
 
-
-#bottom{
-	transition:height .25s ease;
-	-moz-transition:height .25s ease; /* Firefox 4 */
-	-webkit-transition:height .25s ease; /* Safari and Chrome */
-	-o-transition:height .25s ease; /* Opera */
+#michaelinfo{position: absolute;
+	 top:-10px;
+	 right:340px;}
+	
+#tom{position: relative;
+	 top:0px;
+	 left:0px;}
+	 
+#tomabout{
+	position: relative;
+	top:-17px;
+	left:0px;
+	width:220px;
+	font-size: 12px;
+	font-weight: 100;
+	color: #848484;
+	}
+	 
+#michael{
+	position: relative;
+	top:0px;
+	left:0px;
+	}
+	 
+#michaelabout{
+	position: relative;
+	top:-17px;
+	left:0px;
+	width:220px;
+	font-size: 12px;
+	font-weight: 100;
+	color:#848484;
 	}
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -253,7 +300,7 @@ ul#clients li {
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="js/jquery.colorbox-min.js"></script>
 
-<script>
+<script type="text/javascript">
 			
 $(document).ready(function(){
 	$(".launchit").colorbox({width:"530px", height:"485px", iframe:true, transition:"none", opacity:"0.25"});
@@ -334,7 +381,15 @@ $(document).ready(function(){
 	}, function(){
 		$(".invention").css('color', '#848484');
 	});
-
+		$('#bottomdrawer').hover( 
+		function() {
+		$(this).stop().animate({ bottom: 0 }, 'slow', function() {
+		});
+		}, 
+		function() {
+		$(this).stop().animate({ bottom: -152 }, 'slow', function() {
+		});
+		});
 
 });
 
@@ -342,6 +397,8 @@ $(document).ready(function(){
 
 </head>
 <body>
+
+
 	<div class="twelve columns alpha">
 		<div id="main">
 			<a href="http://outspokenintense.com" id="brand" target="_blank">Brand</a>&nbsp;&amp;<br />
@@ -349,6 +406,7 @@ $(document).ready(function(){
 			Collaboration<br />&amp; <a href="	http://pokenewyork.com/love/bakertweet/" id="invention" target="_blank">	Invention.</a><br />
 			<a href="/"><img src="images/poke.png" width="113" height="107" vspace="	20" border="0" id="heart"/></a>
 		</div>
+		
 	</div>
 	
 	<ul id="clients" class="clientlist">
@@ -391,14 +449,39 @@ $(document).ready(function(){
 		<li><a href="http://upl8.tv" target="_blank" class="invention" class="single">UPL8.TV</a><br /></li>
 
 	</ul> <!-- clients -->
-	
-	
-	<div id="contact">
-		<a class="launchit" href="contact.html"><span class="contact">Contact Us</span></a>
-		<span class="slash">/</span>
-		<a href="//"><span class="workhere">Work Here</span></a>
-	</div>
 
+<div id="bottomdrawer">
+
+		<h1 class="contact">
+			POKE</br>
+			11 Harrison Street</br>
+			New York, NY 10013</br>
+			212-254-8800
+		</h1>
+
+		<h1 class="twitemail">
+			Twitter: @pokenewyork</br>
+			whatup@pokenewyork.com
+		</h1>
+		
+		<div id="tominfo">
+		
+		
+		</div>
+		
+		<h1 class="workhere">
+			Want to work here? 
+		</h1>
+		
+		<div id="contacttab">
+			<h1 class="tab">Contact</h1>
+		</div>
+		
+		<div id="partnerstab">
+			<h1 class="partners">Partners</h1>
+		</div>
+		
+</div>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
