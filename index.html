@@ -117,6 +117,16 @@ ul#clients li {
     bottom:60px;
     }
     
+#partner{
+	position: relative;
+	 top:1px; 
+	 left:5px;
+	 color:#f36523;
+	 cursor: hand;
+	 font-size: 20px;
+	 font-weight: 100;
+    }
+    
 .slash{
 	color:#848484;
 	font-size:14px;
@@ -125,15 +135,17 @@ ul#clients li {
 	bottom:5px;
 	}
 	
-.workhere{
-	color:#848484;
-	font-size:14px;
-    position: absolute;
-    left: 290px;
-    bottom:5px;}
+#workhere{
+	position: relative;
+	 top:1px; 
+	 left:5px;
+	 color:#f36523;
+	 cursor: hand;
+	 font-size: 20px;
+	 font-weight: 100;}
     
     
-#bottomdrawer{
+#contactdrawer{
 	position:absolute;
 	bottom:-152px;
 	height: 150px;
@@ -141,6 +153,37 @@ ul#clients li {
 	background-color: #848484;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	z-index: 2000;
+	}
+	
+#workheredrawer{
+	position:absolute;
+	bottom:-152px;
+	height: 150px;
+	width:100%;
+	background-color: #848484;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	z-index: 2000;
+	}
+	
+#partnersdrawer{
+	position:absolute;
+	bottom:-152px;
+	height: 150px;
+	width:100%;
+	background-color: #848484;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	z-index: 2000;
+	}
+	
+#masterdrawer{
+	position:absolute;
+	bottom:-152px;
+	height: 150px;
+	width:100%;
+	z-index: 1000;
 	}
 	
 .twitemail{
@@ -159,7 +202,37 @@ ul#clients li {
 	display: block;
 	top: -40px;
 	right:0px;
-	width: 126px;
+	width: 86px;
+	height: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	cursor:pointer;
+	}
+	
+#workheretab{
+	background-color: #252525;
+	position: absolute;
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+	top: -40px;
+	right:211px;
+	width: 104px;
+	height: 40px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	cursor:pointer;
+	}
+	
+#partnerstab{
+	background-color: #252525;
+	position: absolute;
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+	top: -40px;
+	right:100px;
+	width: 86px;
 	height: 40px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -177,7 +250,7 @@ ul#clients li {
 	
 .tab{position: relative;
 	 top:1px; 
-	 left:35px;
+	 left:5px;
 	 color:#f36523;
 	 cursor: hand;
 	 font-size: 20px;
@@ -220,24 +293,6 @@ ul#clients li {
 	top:1px; 
 	right:6px;
 	}
-
-.partnerstext{color:#333;
-	border:0px solid red;
-	writing-mode:tb-rl;
-	-webkit-transform:rotate(270deg);
-	-moz-transform:rotate(270deg);
-	-o-transform: rotate(270deg);
-	white-space:nowrap;
-	display:block;
-	position: relative;
-	top:130px;
-	left:-30px;
-	width:20px;
-	height:20px;
-	font-size:24px;
-	font-weight:normal;
-	text-shadow: 0px 0px 1px #333;
-}
 
 .social{position: absolute;
 		left:6px;
@@ -470,14 +525,36 @@ $(document).ready(function(){
 	}, function(){
 		$(".invention").css('color', '#848484');
 	});
+	
+	
 		$('#contacttab').toggle( 
 		function() {
-		$('#bottomdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
-		});
+		$('#contactdrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		})
 		}, 
 		function() {
-		$('#bottomdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
+		$('#contactdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
+		})
 		});
+		
+		$('#workheretab').toggle( 
+		function() {
+		$('#workheredrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		})
+		}, 
+		function() {
+		$('#workheredrawer').stop().animate({ bottom: -152 }, 'slow', function() {
+		})
+		});
+		
+		$('#partnerstab').toggle( 
+		function() {
+		$('#partnersdrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		})
+		}, 
+		function() {
+		$('#partnersdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
+		})
 		});
 
 });
@@ -539,43 +616,72 @@ $(document).ready(function(){
 
 	</ul> <!-- clients -->
 
-<div id="bottomdrawer">
+<div id="masterdrawer">
+	
+	<div id="contacttab">
+		<h1 class="tab">Contact</h1>
+	</div>
+	
+	<div id="workheretab">
+				<h1 id="workhere">Work Here</h1>
+	</div>
+	
+	<div id="partnerstab">
+			<h1 id="partner">Partners</h1>
+	</div>
 
-		<h1 class="contact">
-			POKE</br>
-			11 Harrison Street</br>
-			New York, NY 10013</br>
-			212-254-8800
-		</h1>
-
-		<h1 class="twitemail">
-			Twitter: @pokenewyork</br>
-			whatup@pokenewyork.com
-		</h1>
-		
-		<div class="social">
-				<div class="facebook">
-					<a href="http://www.facebook.com/sharer.php?s=100
-					&p[url]=http://www.audiblecoffee.com/singles/m170
-					&p[images][0]=http://www.audiblecoffee.com/img/logo1.jpg
-					&p[title]=Jack Back, David Guetta, Nicky Romero - Wild One Two feat. Sia (Jaywalker Remix)
-					&p[summary]=Revolutionizing the way you discover and listen to electronic dance music." 
-					target="_blank">
-					<div class="fab_button"></div>
-					</a>
-				</div>
+	<div id="contactdrawer">
+	
+			<h1 class="contact">
+				POKE</br>
+				11 Harrison Street</br>
+				New York, NY 10013</br>
+				212-254-8800
+			</h1>
+	
+			<h1 class="twitemail">
+				Twitter: @pokenewyork</br>
+				whatup@pokenewyork.com
+			</h1>
 			
+			<div class="social">
+					<div class="facebook">
+						<a href="http://www.facebook.com/sharer.php?s=100
+						&p[url]=http://www.audiblecoffee.com/singles/m170
+						&p[images][0]=http://www.audiblecoffee.com/img/logo1.jpg
+						&p[title]=Jack Back, David Guetta, Nicky Romero - Wild One Two feat. Sia (Jaywalker Remix)
+						&p[summary]=Revolutionizing the way you discover and listen to electronic dance music." 
+						target="_blank">
+						<div class="fab_button"></div>
+						</a>
+					</div>
 				
-				<div class="twitter">
-					<a href="http://twitter.com/pokenewyork" 
-					target="_blank"><div class="twi_button"></div></a>
+					
+					<div class="twitter">
+						<a href="http://twitter.com/pokenewyork" 
+						target="_blank"><div class="twi_button"></div></a>
+					</div>
+					
+					<div class="vimeo">
+						<a href="http://vimeo.com/user1919457"><div class="vim_button"></div></a>
+					</div>
+					
 				</div>
-				
-				<div class="vimeo">
-					<a href="http://vimeo.com/user1919457"><div class="vim_button"></div></a>
-				</div>
-				
-			</div>
+	</div>
+	
+	<div id="workheredrawer">
+			<h1 class="workhereinfo">
+			The PUSH Program is a three-month internship opportunity for those who think they have the chops to work at an award-winning digital innovation (non) agency in New York City. During PUSH you’ll work on real-world projects from inception to completion along side some amazing people. You’ll have an opportunity to dive into everything we do at POKE: Brainstorming, concepting, strategizing, UXing, designing, coding, and Egg Party. 
+			
+			At the end of PUSH, if you like us, and we like you, we'll figure something out for the long term.
+	 
+			</h1>
+			
+	</div>
+	
+</div>
+
+<div id="partnersdrawer">
 		<div id="theimages">
 			<span class="partnerstext">Partners</span>
 			<img src="http://minerscooperative.com/img/partner_driver.png" id="pic1"/>
@@ -585,17 +691,8 @@ $(document).ready(function(){
 			<img src="http://minerscooperative.com/img/partner_bodega.png" id="pic5"/>
 			<img src="http://minerscooperative.com/img/logo.png" id="pic6"/>
 		</div>
-		
-		<h1 class="workhere">
-			Want to work here? 
-		</h1>
-		
-		<div id="contacttab">
-			<h1 class="tab">Contact</h1>
-		</div>
-		
-		
 </div>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
