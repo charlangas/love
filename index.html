@@ -145,7 +145,7 @@ ul#clients li {
 	 font-weight: 100;}
     
     
-#contactdrawer{
+.drawer{
 	position:absolute;
 	bottom:-152px;
 	height: 150px;
@@ -194,7 +194,7 @@ ul#clients li {
     bottom:-11px;
     }
 
-#contacttab{
+.tab{
 	background-color: #252525;
 	position: absolute;
 	margin-left: auto;
@@ -528,54 +528,17 @@ $(document).ready(function(){
 	
 	
 	// when user clicks on an expandable link
-	$('#clients .expand > a').on('click', function() {
-		var $This = $(this);
-		var $sibs = $This.siblings('ul');				// find siblings of type UL
-		var vis = $sibs.filter(':visible').length === 0; // check visibility.
-		opacity = vis ? 0.5 : 1.0;						// required opacity
-		marginRight = vis ? 30 : 0;						// required margin
-		
-		$('.expand > a').removeAttr('style');		// remove orange
-		
-		// if expanded area is closed when link is clicked
-		if (vis === true) {
-			$(".expand > a").find('.plus').show(); 		// show all plusses
-			$(".expand > a").find('.minus').hide();	// hide all arrows
-			//$(".expand > a").css('margin-right', '0');
-		} 
-			
-		// if the siblings are hidden when expand link is clicked, then
-		if ($sibs.is(":hidden")) {
-
-			// hide other projects 
-			animateList($This);
-			$('#clients').find('.projectlist:visible').slideUp(100);
-			
-			setTimeout(function(){
-				$sibs.slideDown(100);
-			}, 200);
-
-			setTimeout(function(){
-				animateList($This);
-			}, 400);
-
-			$This.find('.plus').hide();				// hide plus
-			$This.find('.minus').show();				// show arrow
-			//$This.css('margin-right','12px');
-			$This.css('color','#f36523');				// set clicked link to orange
-
-		} else {
-			$sibs.hide();
-			animateList($This);
-
-			$This.find('.plus').show();				// show plus
-			$This.find('.minus').hide();			// hide arrow
-			//$This.css('margin-right','0'); 
-			console.log('set link to grey');
-			$('.expand > a').removeAttr('style');		// remove orange
-		}
-		
-	});
+	$('#tabsystem .drawer > .tab').on('click', function() {
+		var $This = $(this);				
+		function() {
+		$(this).stop().animate({ bottom: 0 }, 'slow', function() {
+		})
+		}, 
+		function() {
+		$(this).stop().animate({ bottom: -152 }, 'slow', function() {
+		});
+		};
+	
 
 	
 		$('#contacttab').toggle( 
@@ -668,20 +631,19 @@ $(document).ready(function(){
 	</ul> <!-- clients -->
 
 
-<div class="tabsystem">
+<div id="tabsystem">
 
-	<div id="contactdrawer">
-	
+	<div class="drawer">
 			<h1 class="contact">
-				POKE</br>
-				11 Harrison Street</br>
-				New York, NY 10013</br>
-				212-254-8800
+			POKE</br>
+			11 Harrison Street</br>
+			New York, NY 10013</br>
+			212-254-8800
 			</h1>
-	
+			
 			<h1 class="twitemail">
-				Twitter: @pokenewyork</br>
-				whatup@pokenewyork.com
+			Twitter: @pokenewyork</br>
+			whatup@pokenewyork.com
 			</h1>
 			
 			<div class="social">
@@ -695,54 +657,54 @@ $(document).ready(function(){
 						<div class="fab_button"></div>
 						</a>
 					</div>
-				
 					
 					<div class="twitter">
 						<a href="http://twitter.com/pokenewyork" 
-						target="_blank"><div class="twi_button"></div></a>
+						target="_blank">
+						<div class="twi_button"></div></a>
 					</div>
 					
 					<div class="vimeo">
-						<a href="http://vimeo.com/user1919457"><div class="vim_button"></div></a>
+						<a href="http://vimeo.com/user1919457">
+						<div class="vim_button"></div></a>
 					</div>
-					
-				</div> <!-- social -->
-				
-	<div id="contacttab">
-		<h1 class="tab">Contact</h1>
-	</div>
+			
+			</div> <!-- social -->
+			
+			<div class="tab">
+				<h1 class="tab">Contact</h1>
+			</div>
+	</div> <!-- drawer -->
 	
-	</div> <!-- contactdrawer -->
-	
-	<div id="workheredrawer">
+	<div class="drawer">
 			<h1 class="workhereinfo">
 			The PUSH Program is a three-month internship opportunity for those who think they have the chops to work at an award-winning digital innovation (non) agency in New York City. During PUSH you’ll work on real-world projects from inception to completion along side some amazing people. You’ll have an opportunity to dive into everything we do at POKE: Brainstorming, concepting, strategizing, UXing, designing, coding, and Egg Party. 
 			
 			At the end of PUSH, if you like us, and we like you, we'll figure something out for the long term.
 	 		</h1>
 			
-		<div id="workheretab">
-			<h1 id="workhere">Work Here</h1>
-		</div>		
-	</div> <!-- workheredrawer -->
+			<div class="tab">
+				<h1 id="workhere">Work Here</h1>
+			</div>		
+	</div> <!-- drawer -->
 
 
-<div id="partnersdrawer">
-		<div id="theimages">
-			<span class="partnerstext">Partners</span>
-			<img src="http://minerscooperative.com/img/partner_driver.png" id="pic1"/>
-			<img src="http://minerscooperative.com/img/partner_udirect.png" id="pic2"/>
-			<img src="http://minerscooperative.com/img/partner_beta.png" id="pic3"/>
-			<img src="http://minerscooperative.com/img/partner_philosophie.png" id="pic4"/>
-			<img src="http://minerscooperative.com/img/partner_bodega.png" id="pic5"/>
-			<img src="http://minerscooperative.com/img/logo.png" id="pic6"/>
-		</div>
-		
-	<div id="partnerstab">
-		<h1 id="partner">Partners</h1>
-	</div>
-	
-</div> <!-- partnerdrawer -->
+	<div class="drawer">
+			<div id="theimages">
+				<span class="partnerstext">Partners</span>
+				<img src="http://minerscooperative.com/img/partner_driver.png" id="pic1"/>
+				<img src="http://minerscooperative.com/img/partner_udirect.png" id="pic2"/>
+				<img src="http://minerscooperative.com/img/partner_beta.png" id="pic3"/>
+				<img src="http://minerscooperative.com/img/partner_philosophie.png" id="pic4"/>
+				<img src="http://minerscooperative.com/img/partner_bodega.png" id="pic5"/>
+				<img src="http://minerscooperative.com/img/logo.png" id="pic6"/>
+			</div>
+			
+			<div class="tab">
+				<h1 id="partner">Partners</h1>
+			</div>
+	</div> <!-- drawer -->
+
 
 <script type="text/javascript">
 
