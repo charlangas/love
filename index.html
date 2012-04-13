@@ -526,18 +526,23 @@ $(document).ready(function(){
 		$(".invention").css('color', '#848484');
 	});
 	
+
 	
-		$('#contacttab').toggle( 
+		$('#contacttab').hover( 
 		function() {
-		$('#contactdrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		$('#contactedrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		})
+		$('#workheredrawer , #partnersdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
 		})
 		}, 
 		function() {
-		$('#contactdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
+		$('#contactedrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
+		})
+		$('#workheredrawer , #partnersdrawer').stop().animate({ bottom: -152 }, 'slow', function() {
 		})
 		});
 		
-		$('#workheretab').toggle( 
+		$('#workheretab').hover( 
 		function() {
 		$('#workheredrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
 		})
@@ -547,7 +552,7 @@ $(document).ready(function(){
 		})
 		});
 		
-		$('#partnerstab').toggle( 
+		$('#partnerstab').hover( 
 		function() {
 		$('#partnersdrawer , #masterdrawer').stop().animate({ bottom: 0 }, 'slow', function() {
 		})
@@ -676,7 +681,6 @@ $(document).ready(function(){
 			At the end of PUSH, if you like us, and we like you, we'll figure something out for the long term.
 	 
 			</h1>
-			
 	</div>
 	
 </div>
